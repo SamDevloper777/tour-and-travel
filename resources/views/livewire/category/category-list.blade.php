@@ -1,19 +1,32 @@
 <div>
     <div class="container mt-3">
+        <div class="category-panel mx-auto">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                    <h3 class="h4 mb-0">Categories</h3>
+                    <p class="text-muted mb-0 small">Manage categories — add, edit, upload images and toggle status.</p>
+                </div>
+                <div class="text-end">
+                    <button wire:click="create" class="btn btn-primary btn-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
+                        &nbsp;New Category
+                    </button>
+                </div>
+            </div>
         <div class="row mb-2">
             <div class="col-md-8">
-                <div class="input-group">
+                <div class="d-flex gap-2">
                     <input wire:model.debounce.300ms="search" type="text" class="form-control" placeholder="Search categories...">
-                    <select wire:model="perPage" class="form-select" style="width:120px;">
+                    <select wire:model="perPage" class="form-select" style="width:70px;">
                         <option value="5">5</option>
                         <option value="10">10</option>
                         <option value="25">25</option>
                     </select>
                 </div>
             </div>
-            <div class="col-md-4 text-end">
+            <!-- <div class="col-md-4 text-end">
                 <button wire:click="create" class="btn btn-primary">New Category</button>
-            </div>
+            </div> -->
         </div>
 
         @if (session()->has('message'))
@@ -28,7 +41,7 @@
                             <th>Name</th>
                             <th>Slug</nobr>
                             </th>
-                            <th class="text-center">Active</th>
+                            <th class="text-center">Status</th>
                             <th class="text-end">Actions</th>
                         </tr>
                     </thead>
@@ -37,7 +50,15 @@
                         <tr>
                             <td>{{ $category->name }}</td>
                             <td>{{ $category->slug }}</td>
-                            <td class="text-center">{{ $category->is_active ? 'Yes' : 'No' }}</td>
+                            <td class="text-center">
+                                <label class="form-check form-switch d-inline-block" for="activeSwitch{{ $category->id }}">
+                                    <input class="form-check-input" type="checkbox" id="activeSwitch{{ $category->id }}"
+                                           wire:click="toggleActive({{ $category->id }})"
+                                           @if($category->is_active) checked @endif
+                                           wire:loading.attr="disabled">
+                                    <span class="form-check-label"></span>
+                                </label>
+                            </td>
                             <td class="text-end">
                                 <button wire:click="edit({{ $category->id }})" class="btn btn-sm btn-outline-primary">Edit</button>
                                 <button wire:click="confirmDelete({{ $category->id }})" class="btn btn-sm btn-outline-danger">Delete</button>
@@ -71,7 +92,7 @@
                         <div class="modal-body">
                             <div class="mb-3">
                                 <label class="form-label">Name</label>
-                                <input wire:model.live="name" type="text" class="form-control @error('name') is-invalid @enderror">
+                                <input wire:model.defer="name" type="text" class="form-control @error('name') is-invalid @enderror">
                                 @error('name') <div class="invalid-feedback">{{ $message }}</div> @enderror
                             </div>
 
@@ -116,7 +137,7 @@
             </div>
         </div>
         @endif
-
+        
         @if($showDeleteModal)
         <div class="modal fade show d-block" tabindex="-1" role="dialog" style="display:block; background: rgba(0,0,0,0.45);">
             <div class="modal-dialog" role="document" style="z-index:1060; margin-top:20vh;">
@@ -136,7 +157,8 @@
             </div>
         </div>
         @endif
-    </div>
-
+            </div> <!-- /.category-panel -->
+    
+  
 
 </div>
