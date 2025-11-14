@@ -12,14 +12,14 @@
                 class="d-flex align-items-center justify-content-center gap-2 text-decoration-none">
 
                 <img src="{{ asset('assets/img/logo/admin_logo.png') }}"
-                    alt="{{ setting('site_name', config('settings.brand_name', 'Admin')) }}"
+                    alt="sadfsadf"
                     height="50"
 
                     class="align-middle mt-4"
                     style="margin-top: 4px;">
 
                 <span class="fw-bold fs-4 text-dark">
-                    {{ setting('site_name', config('settings.brand_name', 'Admin')) }}
+                    Admin Panel
                 </span>
             </a>
 
