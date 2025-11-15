@@ -3,6 +3,8 @@
 use App\Livewire\Auth\AdminLogin;
 use App\Livewire\Category\CategoryList;
 use App\Livewire\Dashboard\Dashboard;
+use App\Livewire\Destination\DestinationList;
+use App\Livewire\Hotel\Category\HotelCategoryList;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -13,7 +15,8 @@ Route::get('/', function () {
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
    Route::get('/',Dashboard::class)->name('dashboard');
    Route::get('/category',CategoryList::class)->name('category.list');
-   Route::get('/destination',App\Livewire\Destination\DestinationList::class)->name('destination.list');
+   Route::get('/destination',DestinationList::class)->name('destination.list');
+   Route::get('/hotel-category',HotelCategoryList::class)->name('hotel-category.list');
 });
 
 Route::get('/login',AdminLogin::class)->name('login');

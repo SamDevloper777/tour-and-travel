@@ -35,6 +35,13 @@ class AdminSidebar
                 'hasSubmenu' => false,
                 'submenu' => [],
             ],
+            (object)[
+                'title' => 'Hotel Categories',
+                'icon' => 'ti ti-layout-dashboard',
+                'url' => route('admin.hotel-category.list'),
+                'hasSubmenu' => false,
+                'submenu' => [],
+            ],
             // (object)[
             //     'title' => 'Users',
             //     'icon' => 'ti ti-users',
