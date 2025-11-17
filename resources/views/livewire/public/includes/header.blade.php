@@ -4,11 +4,11 @@
         <div class="container-fluid">
             <div class="row h-45px align-items-center m-0">
                 <div class="col-xl-6 col-lg-8 justify-content-center justify-content-lg-start">
-                    <div class="fs-15 text-dark-gray">We have a selection of over 50 tour programs! <a href="{{ route('destination') }}" class="text-base-color fw-500 text-decoration-line-bottom">Popular Destinations</a></div>
+                    <div class="fs-15 text-dark-gray">We have a selection of over 50 tour programs! <a href="{{ route('destination') }}" class="fw-500 text-decoration-line-bottom" style="color:#000">Popular Destinations</a></div>
                 </div>
                 <div class="col-xl-6 col-lg-4 text-end d-none d-lg-flex">
-                    <a href="tel:02228899900" class="widget fs-15 text-dark-gray text-dark-gray-hover"><i class="feather icon-feather-phone-call text-base-color"></i> 0222 8899900</a>
-                    <div class="widget fs-15 ms-30px text-dark-gray d-none d-xl-inline-block"><i class="feather icon-feather-map-pin text-base-color"></i> Broadway, 24th Floor, San Francisco</div>
+                    <a href="tel:02228899900" class="widget fs-15 text-dark-gray text-dark-gray-hover"><i class="feather icon-feather-phone-call" style="color:#000"></i> 0222 8899900</a>
+                    <div class="widget fs-15 ms-30px text-dark-gray d-none d-xl-inline-block"><i class="feather icon-feather-map-pin" style="color:#000"></i> Broadway, 24th Floor, San Francisco</div>
                 </div>
             </div>
         </div>

@@ -1,1752 +1,91 @@
 <div>
-       
+
     <main>
-             <section class="p-0 bg-dark-gray">
-            <article class="content">
-                <div id="travel-agency_wrapper" class="rev_slider_wrapper fullscreen-container">
-                    <!-- the ID here will be used in the JavaScript below to initialize the slider -->
-                    <div id="travel-agency-slider" class="rev_slider fullscreenbanner" data-version="5.4.5" >
-                        <!-- BEGIN SLIDES LIST -->
-                        <ul>
-                            <!-- MINIMUM SLIDE STRUCTURE -->
-                            <li id="rs-travel-agency-01" data-index="rs-travel-agency-01" data-transition="slidehorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="0" data-fsslotamount="2" data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10='{"revslider-weather-addon":{"type":"name","name":"Cologne","woeid":"667931","unit":"c"}}' data-description="">
-                                <!-- SLIDE'S MAIN BACKGROUND IMAGE -->
-                                <img src="https://placehold.co/1920x1100" alt="dummy" class="rev-slidebg">
-                                <!-- start image layer -->
-                                <div class="tp-caption tp-resizeme rs-parallaxlevel-2 background-image-layer" 
-                                     id="slide-01-layer-01" 
-                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                     data-y="['top','top','top','top']" data-voffset="['-200','0','0','0']" 
-                                     data-width="['2200','100%','2200','2000']"
-                                     data-height="100%"
-                                     data-whitespace="nowrap"
-                                     data-type="image"
-                                     data-responsive_offset="off"
-                                     data-responsive="on"
-                                     data-basealign="slide"
-                                     data-visibility="['on','on','off','off']"
-                                     data-frames='[{"delay":0,"speed":1000,"frame":"0","from":"y:100;z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;fb:20;opacity:0;","to":"o:1;fb:0;","ease":"power2.out"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']">
-                                    <img src="https://placehold.co/2200x1600" data-ww="100%" data-hh="100%" alt="" data-no-retina>  
-                                </div>
-                                <!-- end image layer -->
-                                <!-- start grass image layer -->
-                                <div class="tp-caption tp-resizeme rs-parallaxlevel-1 background-image-layer" 
-                                     id="slide-01-layer-02" 
-                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                     data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-200','-100','-300','-100']" 
-                                     data-width="['2200','2000','2200','1600']"
-                                     data-height="auto"
-                                     data-whitespace="nowrap"
-                                     data-type="image"
-                                     data-responsive_offset="off" 
-                                     data-responsive="on"
-                                     data-basealign="slide"
-                                     data-visibility="['on','on','off','off']"
-                                     data-frames='[{"delay":0,"speed":1000,"frame":"0","from":"y:-30:z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;fb:10;opacity:0;","to":"o:1;fb:0;","ease":"power2.out"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']"
-                                     >
-                                    <img src="https://placehold.co/2200x1100" data-ww="100%" data-hh="auto" alt="" data-no-retina>  
-                                </div>
-                                <!-- end image layer -->
-                                <!-- start image layer -->
-                                <div class="tp-caption tp-resizeme rs-parallaxlevel-2 object-layer" 
-                                     id="slide-01-layer-03" 
-                                     data-x="['center','center','center','center']" data-hoffset="['2','0','-10','0']" 
-                                     data-y="['middle','middle','middle','middle']" data-voffset="['-15','0','-30','0']" 
-                                     data-width="['1190','900','750','600']"
-                                     data-height="auto"
-                                     data-whitespace="nowrap"
-                                     data-type="image" 
-                                     data-responsive_offset="off" 
-                                     data-responsive="off"
-                                     data-frames='[{"delay":300,"speed":3000,"frame":"0","from":"x:[160%];opacity:1;","mask":"x:[-160%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']"
-                                     data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,70,0,50]"
-                                     data-paddingbottom="[0,0,0,0]"
-                                     data-paddingleft="[0,70,0,50]"
-                                     data-basealign="grid">
-                                    <img src="https://placehold.co/1190x653" data-ww="100%" data-hh="auto" alt="" data-no-retina>
-                                </div>
-                                <!-- end image layer -->
-                                <!-- start image layer -->
-                                <div class="tp-caption tp-resizeme rs-parallaxlevel-3 object-layer" 
-                                     id="slide-01-layer-04" 
-                                     data-x="['center','center','center','center']" data-hoffset="['2','0','0','0']" 
-                                     data-y="['middle','middle','middle','middle']" data-voffset="['-15','0','-30','0']" 
-                                     data-width="['1190','900','750','600']"
-                                     data-height="auto"
-                                     data-whitespace="nowrap"
-                                     data-type="image" 
-                                     data-responsive_offset="off" 
-                                     data-responsive="off"
-                                     data-frames='[{"delay":1700,"speed":1500,"frame":"0","from":"y:20px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']"
-                                     data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,50,0,50]"
-                                     data-paddingbottom="[0,0,0,0]"
-                                     data-paddingleft="[0,50,0,50]"
-                                     data-basealign="grid">
-                                    <img src="https://placehold.co/1190x653" data-ww="100%" data-hh="auto" alt="" data-no-retina>
-                                </div>
-                                <!-- end image layer -->
-                                <!-- start image layer -->
-                                <div class="tp-caption tp-resizeme rs-parallaxlevel-1 extra-grass-layer" 
-                                     id="slide-01-layer-05" 
-                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                     data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-340','-300','-350','-500']" 
-                                     data-width="['2200','2200','2200','2200']"
-                                     data-height="auto"
-                                     data-whitespace="nowrap"
-                                     data-type="image"
-                                     data-responsive_offset="off" 
-                                     data-responsive="on"
-                                     data-basealign="grid"
-                                     data-frames='[{"delay":1200,"speed":1000,"frame":"0","from":"y:0px;fb:0px;opacity:0;","to":"o:1;fb:0;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']">
-                                    <img src="https://placehold.co/2200x1100" data-ww="100%" data-hh="auto" alt="" data-no-retina>  
-                                </div>
-                                <!-- end image layer -->
-                                <!-- start red image layer -->
-                                  <div class="tp-caption tp-resizeme rs-parallaxlevel-1" 
-                                      id="slide-01-layer-06" 
-                                     data-x="['center','center','center','center']" data-hoffset="['320','280','261','140']" 
-                                     data-y="['top','top','top','middle']" data-voffset="['265','212','150','-80']" 
-                                     data-width="['146','146','120','100']"
-                                     data-height="auto"
-                                     data-whitespace="nowrap"
-                                     data-type="shape" 
-                                     data-responsive_offset="on"
-                                     data-responsive="on"
-                                     data-frames='[{"delay":2200,"speed":1000,"frame":"0","from":"x:0px;y:50px;rX:0deg;rY:0deg;rZ:0deg;sX:0.5;sY:0.5;opacity:0;","to":"o:1;","ease":"Back.easeOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']">
-                                    <img src="{{ asset('asset/images/demo-travel-agency-slider-04.png') }}" data-ww="100%" data-hh="auto" alt="" data-no-retina>  
-                                </div>
-                                <!-- end red image layer -->
-                                <!-- start price and text layer -->
-                                <div class="tp-caption tp-resizeme rs-parallaxlevel-1 alt-font text-white" 
-                                     id="slide-01-layer-07" 
-                                     data-x="['center','center','center','center']" data-hoffset="['320','280','260','140']" 
-                                     data-y="['top','top','top','middle']" data-voffset="['330','285','210','-65']" 
-                                     data-fontsize="['40','40','30','25']"
-                                     data-lineheight="['40','30','30','25']"
-                                     data-fontweight="['600','600','600','600']"
-                                     data-width="['201','150','150','120']"
-                                     data-height="none"
-                                     data-whitespace="['normal','nowrap','nowrap','nowrap']"
-                                     data-type="text" 
-                                     data-responsive_offset="on"
-                                     data-responsive="on"
-                                     data-frames='[{"delay":2300,"speed":1000,"frame":"0","from":"y:30px;sX:0.5;sY:0.5;opacity:0;","to":"o:1;","ease":"Back.easeOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                     data-textAlign="['center','center','center','center']">
-                                    $1200
-                                </div>
-                                <!-- end price and text layer -->
-                                <!-- start text layer -->
-                                <div class="tp-caption tp-resizeme rs-parallaxlevel-1 alt-font text-white text-uppercase" 
-                                     id="slide-01-layer-08" 
-                                     data-x="['center','center','center','center']" data-hoffset="['320','280','260','140']" 
-                                     data-y="['top','top','top','middle']" data-voffset="['303','250','180','-90']" 
-                                     data-fontsize="['16','18','16','15']"
-                                     data-fontweight="['500','500','500','500']"
-                                     data-width="['201','150','150','120']"
-                                     data-height="none"
-                                     data-whitespace="['normal','nowrap','nowrap','nowrap']"
-                                     data-type="text" 
-                                     data-responsive_offset="on" 
-                                     data-responsive="on"
-                                     data-frames='[{"delay":2400,"speed":1000,"frame":"0","from":"y:30px;sX:0.5;sY:0.5;opacity:0;","to":"o:1;","ease":"Back.easeOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                     data-textAlign="['center','center','center','center']">
-                                    Starting at
-                                </div>
-                                <!-- end text layer -->
-                                <!-- start bottom shadow layer -->
-                                <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme" 
-                                     id="slide-01-layer-09" 
-                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                     data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']" 
-                                     data-width="['100%','100%','100%','100%']"
-                                     data-height="['300','300','300','300']"
-                                     data-whitespace="nowrap"
-                                     data-type="shape" 
-                                     data-responsive_offset="off" 
-                                     data-responsive="on"
-                                     data-basealign="slide"
-                                     data-frames='[{"delay":2500,"speed":1000,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Back.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']"
-                                     style="background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);"></div>
-                                <!-- end bottom shadow layer -->
-                                <!-- start bottom shadow layer -->
-                                <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme" 
-                                     id="slide-01-layer-10" 
-                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                     data-y="['top','top','top','top']" data-voffset="['-70','-70','-70','0']" 
-                                     data-width="['100%','100%','100%','100%']"
-                                     data-height="['300','300','300','300']"
-                                     data-whitespace="nowrap"
-                                     data-type="shape" 
-                                     data-responsive_offset="off" 
-                                     data-responsive="on"
-                                     data-basealign="slide"
-                                     data-frames='[{"delay":2500,"speed":1000,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Back.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']"
-                                     style="background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);"></div>
-                                <!-- end bottom shadow layer -->
-                                <!-- start row zone layer -->
-                                <div id="rrzb_902" class="rev_row_zone rev_row_zone_bottom" style="z-index: 9999;">  
-                                    <!-- start row layer -->
-                                    <div class="tp-caption tp-resizeme " 
-                                         id="slide-01-layer-11" 
-                                         data-x="['left','left','left','left']" data-hoffset="['100','100','100','100']" 
-                                         data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']" 
-                                         data-width="auto"
-                                         data-height="auto"
-                                         data-whitespace="nowrap"
-                                         data-basealign="slide" 
-                                         data-type="row" 
-                                         data-columnbreak="2" 
-                                         data-responsive_offset="off" 
-                                         data-responsive="off"
-                                         data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                        <!-- start column layer -->
-                                        <div class="tp-caption tp-resizeme" 
-                                             id="slide-01-layer-12" 
-                                             data-x="['left','left','left','left']" data-hoffset="['0','0','100','100']" 
-                                             data-y="['top','top','top','top']" data-voffset="['0','0','100','100']" 
-                                             data-width="auto"
-                                             data-height="auto"
-                                             data-whitespace="nowrap"
-                                             data-basealign="slide" 
-                                             data-type="column" 
-                                             data-responsive_offset="off" 
-                                             data-responsive="off"
-                                             data-frames='[{"delay":0,"speed":800,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                             data-columnwidth="25%"
-                                             data-textAlign="['left','center','center','center']"
-                                             data-verticalalign="middle">
-                                            <!-- start border layer -->
-                                            <div class="tp-caption tp-shape tp-resizeme" 
-                                                 id="slide-01-layer-13" 
-                                                 data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['186','45','45','45']" 
-                                                 data-width="['100%','100%','100%','100%']"
-                                                 data-height="['1','1','1','1']"
-                                                 data-whitespace="nowrap"
-                                                 data-basealign="slide"
-                                                 data-type="shape" 
-                                                 data-responsive_offset="off" 
-                                                 data-responsive="off"
-                                                 data-frames='[{"delay":"2100","speed":750,"frame":"0","from":"x:[100%];opacity:1;","mask":"x:0px;y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                                 data-textAlign="['inherit','inherit','inherit','inherit']"
-                                                 style="z-index: 8;background-color:rgba(255,255,255,0.3);"> </div>
-                                            <!-- end border layer -->
-                                        </div>
-
+        <section class="p-0 full-screen md-h-600px sm-h-650px">
+            <div class="swiper h-100 magic-cursor swiper-light-pagination" data-slider-options='{ "slidesPerView": 1, "loop": true, "pagination": { "el": ".swiper-pagination-bullets", "clickable": true }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "autoplay": { "delay": 4000, "disableOnInteraction": false },  "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'>
+                <div class="swiper-wrapper">
+                    <!-- start slider item -->
+                    <div class="swiper-slide cover-background" style="background-image:url('{{asset('asset/images/demo-logistics-slider-01.jpg')}}');">
+                        <div class="container h-100">
+                            <div class="row align-items-center h-100 xl-ps-10 sm-ps-0">
+                                <div class="col-xxl-7 col-xl-10 text-white" style="margin-top: 80px;">
+                                    <h1 class="fw-600">Digital and very trusted transport logistic agency.</h1>
+                                    <div class="fs-20 opacity-6 mb-40px sm-mb-30px">Providing flexibile, improved service levels, and delivery.</div>
+                                    <div class="lg-mb-8 md-mb-0">
+                                        <a href="demo-logistics-about-us.html" class="btn btn-white btn-extra-large btn-round-edge fw-700 btn-box-shadow me-35px">Explore agency</a>
+                                        <a href="https://www.youtube.com/watch?v=cfXHhfNy7tU" class="text-center d-inline-flex sm-mt-20px rounded-circle video-icon-box video-icon-medium popup-vimeo">
+                                            <span class="video-icon bg-base-color me-10px">
+                                                <i class="fa-solid fa-play text-dark-gray"></i>
+                                                <span class="video-icon-sonar">
+                                                    <span class="video-icon-sonar-afr border border-2 border-color-base-color"></span>
+                                                </span>
+                                            </span>
+                                            <span class="text-white fs-20">How it work?</span>
+                                        </a>
                                     </div>
-                                    <!-- start row layer -->
-                                    <div class="tp-caption tp-resizeme package-details" 
-                                         id="slide-01-layer-14" 
-                                         data-x="['left','left','left','left']" data-hoffset="['100','100','100','100']" 
-                                         data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']" 
-                                         data-width="auto"
-                                         data-height="auto"
-                                         data-whitespace="nowrap"
-                                         data-basealign="grid" 
-                                         data-type="row" 
-                                         data-columnbreak="3" 
-                                         data-responsive_offset="off" 
-                                         data-responsive="on"
-                                         data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                        <!-- start column layer -->
-                                        <div class="tp-caption tp-resizeme" 
-                                             id="slide-01-layer-15" 
-                                             data-x="['left','left','left','left']" data-hoffset="['0','0','100','100']" 
-                                             data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" 
-                                             data-width="['auto','auto','auto','auto']"
-                                             data-height="auto"
-                                             data-whitespace="nowrap"
-                                             data-basealign="grid" 
-                                             data-type="column" 
-                                             data-responsive_offset="off" 
-                                             data-responsive="on"
-                                             data-frames='[{"delay":2300,"speed":800,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                             data-columnwidth="25%"
-                                             data-textAlign="['left','left','left','center']"
-                                             data-verticalalign="middle"
-                                             data-paddingtop="[30,20,20,15]"
-                                             data-paddingright="[0,20,10,0]"
-                                             data-paddingbottom="[80,80,100,0]"
-                                             data-paddingleft="[20,20,10,0]">
-                                            <!-- start text layer -->
-                                            <div class="tp-caption tp-resizeme alt-font" 
-                                                 id="slide-01-layer-16" 
-                                                 data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['top','bottom','bottom','bottom']" data-voffset="['0','170','140','120']" 
-                                                 data-fontsize="['34','28','24','26']"
-                                                 data-lineheight="['46','40','40','30']"
-                                                 data-letterspacing="['-1','0','0','0']"
-                                                 data-fontweight="['500','500','500','500']"
-                                                 data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                                 data-width="['auto']"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text"
-                                                 data-basealign="grid" 
-                                                 data-responsive_offset="off" 
-                                                 data-responsive="on"
-                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                                Africa wildlife
-                                            </div>
-                                            <!-- end text layer -->
-                                            <!-- start text layer -->
-                                            <div class="tp-caption tp-resizeme alt-font text-uppercase" 
-                                                 id="slide-01-layer-17" 
-                                                 data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['top','bottom','bottom','bottom']" data-voffset="['0','170','0','120']" 
-                                                 data-fontsize="['16','16','16','17']"
-                                                 data-lineheight="['26','26','24','24']"
-                                                 data-letterspacing="['0','0','0','0']"
-                                                 data-fontweight="['400','400','400','400']"
-                                                 data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                                 data-width="['auto']"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text" 
-                                                 data-basealign="grid"
-                                                 data-responsive_offset="off" 
-                                                 data-responsive="on"
-                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                                 data-margintop="[0,0,0,0]"
-                                                 data-marginright="[0,0,0,0]"
-                                                 data-marginbottom="[0,0,0,0]"
-                                                 data-marginleft="[0,0,0,0]"
-                                                 data-paddingtop="[0,0,0,5]"
-                                                 data-paddingright="[0,0,0,0]"
-                                                 data-paddingbottom="[0,0,0,0]"
-                                                 data-paddingleft="[0,0,0,0]">
-                                                <div class="d-block d-md-flex">
-                                                    <i class="bi bi-geo-alt-fill me-5px"></i>
-                                                    <span class="opacity-5">25Km from Madagascar</span>
-                                                </div>
-                                            </div>
-                                            <!-- end text layer -->
-                                        </div>
-                                        <!-- end column layer -->
-                                        <!-- start column layer -->
-                                        <div class="tp-caption" 
-                                             id="slide-01-layer-18" 
-                                             data-x="['left','left','left','left']" data-hoffset="['0','0','100','100']" 
-                                             data-y="['top','top','top','top']" data-voffset="['0','0','100','100']" 
-                                             data-width="auto"
-                                             data-height="100%"
-                                             data-whitespace="nowrap"
-                                             data-basealign="grid" 
-                                             data-type="column" 
-                                             data-responsive_offset="off" 
-                                             data-responsive="on"
-                                             data-frames='[{"delay":2500,"speed":800,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                             data-columnwidth="16.5%"
-                                             data-textAlign="['center','center','center','center']"
-                                             data-verticalalign="middle"
-                                             data-paddingtop="[30,20,20,10]"
-                                             data-paddingright="[0,20,0,0]"
-                                             data-paddingbottom="[80,80,100,0]"
-                                             data-paddingleft="[0,20,0,0]">
-                                            <!-- start text layer -->
-                                            <div class="tp-caption tp-resizeme alt-font" 
-                                                 id="slide-01-layer-19" 
-                                                 data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['top','bottom','bottom','bottom']" data-voffset="['0','170','140','120']" 
-                                                 data-fontsize="['24','26','24','24']"
-                                                 data-lineheight="['32','38','32','35']"
-                                                 data-letterspacing="['0','0','0','0']"
-                                                 data-fontweight="['500','500','500','500']"
-                                                 data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                                 data-width="['auto']"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text"
-                                                 data-basealign="grid" 
-                                                 data-responsive_offset="off"
-                                                 data-responsive="on"
-                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                                07 Days
-                                            </div>
-                                            <!-- end text layer -->
-                                            <!-- start text layer -->
-                                            <div class="tp-caption tp-resizeme alt-font text-uppercase" 
-                                                 id="slide-01-layer-20" 
-                                                 data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['top','bottom','bottom','bottom']" data-voffset="['0','170','140','120']" 
-                                                 data-fontsize="['16','16','17','17']"
-                                                 data-lineheight="['26','25','30','30']"
-                                                 data-letterspacing="['0','0','0','0']"
-                                                 data-fontweight="['400','400','400','400']"
-                                                 data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                                 data-width="['auto']"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text" 
-                                                 data-basealign="grid"
-                                                 data-responsive_offset="off"
-                                                 data-responsive="on"
-                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:0.5;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                                Tour duration
-                                            </div>
-                                            <!-- end text layer -->
-                                        </div>
-                                        <!-- end column layer -->
-                                        <!-- start column layer -->
-                                        <div class="tp-caption " 
-                                             id="slide-01-layer-21" 
-                                             data-x="['left','left','left','left']" data-hoffset="['0','0','100','100']" 
-                                             data-y="['top','top','top','top']" data-voffset="['0','0','100','100']" 
-                                             data-width="auto"
-                                             data-height="100%"
-                                             data-whitespace="nowrap"
-                                             data-basealign="grid" 
-                                             data-type="column" 
-                                             data-responsive_offset="off" 
-                                             data-responsive="on"
-                                             data-frames='[{"delay":2700,"speed":800,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                             data-columnwidth="16.5%"
-                                             data-textAlign="['center','center','center','center']"
-                                             data-verticalalign="middle"
-                                             data-paddingtop="[30,20,20,7]"
-                                             data-paddingright="[0,20,0,0]"
-                                             data-paddingbottom="[80,80,100,0]"
-                                             data-paddingleft="[0,20,0,0]">
-                                            <!-- start text layer -->
-                                            <div class="tp-caption tp-resizeme alt-font" 
-                                                 id="slide-01-layer-22" 
-                                                 data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['top','bottom','bottom','bottom']" data-voffset="['0','170','140','120']" 
-                                                 data-fontsize="['16','20','18','20']"
-                                                 data-lineheight="['32','40','30','30']"
-                                                 data-letterspacing="['2','2','2','2']"
-                                                 data-fontweight="['500','500','500','500']"
-                                                 data-color="['#ffa500','#ffa500','#ffa500','#ffa500']"
-                                                 data-width="['auto']"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text"
-                                                 data-basealign="grid" 
-                                                 data-responsive_offset="off"
-                                                 data-responsive="on"
-                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill "></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
-                                            </div>
-                                            <!-- end text layer -->
-                                            <!-- start text layer -->
-                                            <div class="tp-caption tp-resizeme alt-font text-uppercase" 
-                                                 id="slide-01-layer-23" 
-                                                 data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['top','bottom','bottom','bottom']" data-voffset="['0','170','140','120']" 
-                                                 data-fontsize="['16','16','17','17']"
-                                                 data-lineheight="['26','25','26','30']"
-                                                 data-letterspacing="['0','0','0','0']"
-                                                 data-fontweight="['400','400','400','400']"
-                                                 data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                                 data-width="['auto']"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text"
-                                                 data-basealign="grid"
-                                                 data-responsive_offset="off" 
-                                                 data-responsive="on"
-                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:0.5;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                                Tripadvisor rating
-                                            </div>
-                                            <!-- end text layer -->
-                                        </div>
-                                        <!-- end column layer -->
-                                        <!-- start column layer -->
-                                        <div class="tp-caption" 
-                                             id="slide-01-layer-24" 
-                                             data-x="['left','left','left','left']" data-hoffset="['0','0','100','100']" 
-                                             data-y="['top','top','top','top']" data-voffset="['0','0','100','100']" 
-                                             data-width="auto"
-                                             data-height="auto"
-                                             data-whitespace="nowrap"
-                                             data-basealign="grid" 
-                                             data-type="column" 
-                                             data-responsive_offset="off" 
-                                             data-responsive="on"
-                                             data-frames='[{"delay":2900,"speed":800,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                             data-columnwidth="16.5%"
-                                             data-textAlign="['center','center','center','center']"
-                                             data-verticalalign="middle"
-                                             data-paddingtop="[30,20,20,5]"
-                                             data-paddingright="[0,20,0,0]"
-                                             data-paddingbottom="[80,80,100,0]"
-                                             data-paddingleft="[0,20,0,0]">
-                                            <!-- start text layer -->
-                                            <div class="tp-caption tp-resizeme alt-font" 
-                                                 id="slide-01-layer-25" 
-                                                 data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['top','bottom','bottom','bottom']" data-voffset="['0','170','140','120']" 
-                                                 data-fontsize="['24','26','26','24']"
-                                                 data-lineheight="['32','40','30','30']"
-                                                 data-letterspacing="['0','0','0','0']"
-                                                 data-fontweight="['500','500','500','500']"
-                                                 data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                                 data-width="['auto']"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text"
-                                                 data-basealign="grid" 
-                                                 data-responsive_offset="off" 
-                                                 data-responsive="on"
-                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                                Deluxe AC
-                                            </div>
-                                            <!-- end text layer -->
-                                            <!-- start text layer -->
-                                            <div class="tp-caption tp-resizeme alt-font text-uppercase" 
-                                                 id="slide-01-layer-26" 
-                                                 data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['top','bottom','bottom','bottom']" data-voffset="['0','170','140','120']" 
-                                                 data-fontsize="['16','16','17','17']"
-                                                 data-lineheight="['26','25','30','30']"
-                                                 data-letterspacing="['0','0','0','0']"
-                                                 data-fontweight="['400','400','400','400']"
-                                                 data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                                 data-width="['auto']"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text" 
-                                                 data-basealign="grid"
-                                                 data-responsive_offset="off"
-                                                 data-responsive="on"
-                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:0.5;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                                WITH MEAL
-                                            </div>
-                                            <!-- end text layer -->
-                                        </div>
-                                        <!-- end column layer -->
-                                        <!-- start column layer -->
-                                        <div class="tp-caption" 
-                                             id="slide-01-layer-27" 
-                                             data-x="['left','left','left','left']" data-hoffset="['0','0','100','100']" 
-                                             data-y="['top','top','top','top']" data-voffset="['0','0','100','100']" 
-                                             data-width="auto"
-                                             data-height="100%"
-                                             data-whitespace="nowrap"
-                                             data-basealign="grid" 
-                                             data-type="column" 
-                                             data-responsive_offset="off" 
-                                             data-responsive="on"
-                                             data-frames='[{"delay":3100,"speed":800,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                             data-columnwidth="25%"
-                                             data-textAlign="['center','center','center','center']"
-                                             data-verticalalign="middle"
-                                             data-paddingtop="[30,20,20,10]"
-                                             data-paddingright="[0,0,0,0]"
-                                             data-paddingbottom="[80,80,100,80]"
-                                             data-paddingleft="[0,0,0,0]">
-                                            <!-- start button layer -->
-                                            <a class="tp-caption tp-resizeme alt-font text-center" 
-                                               data-shadow-animation="true"
-                                               href="#"
-                                               id="slide-01-layer-29" 
-                                               data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']" 
-                                               data-y="['top','top','bottom','bottom']" data-voffset="['0','170','140','120']" 
-                                               data-fontsize="['28','30','22','26']"
-                                               data-lineheight="['34','45','30','35']"
-                                               data-letterspacing="['0','0','0','0']"
-                                               data-fontweight="['500','500','500','500']"
-                                               data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                               data-width="['auto']"
-                                               data-height="none"
-                                               data-whitespace="normal"
-                                               data-type="text" 
-                                               data-actions=''
-                                               data-basealign="grid" 
-                                               data-responsive_offset="off" 
-                                               data-responsive="on"
-                                               data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                                Book holiday<i class="bi bi-arrow-right-short icon-extra-medium xs-pt-10px"></i>
-                                            </a>
-                                            <!-- end button layer -->
-                                        </div>
-                                        <!-- end column layer -->
-                                    </div>
-                                    <!-- end row layer -->
                                 </div>
-                                <!-- end row zone layer -->
-                            </li>
-                            <!-- MINIMUM SLIDE STRUCTURE -->
-                            <li id="rs-travel-agency-02" data-index="rs-travel-agency-02" data-transition="slidehorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="0" data-fsslotamount="2" data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10='{"revslider-weather-addon":{"type":"name","name":"Cologne","woeid":"667931","unit":"c"}}' data-description="">
-                                <!-- SLIDE'S MAIN BACKGROUND IMAGE -->
-                                <img src="https://placehold.co/3000x1688" alt="dummy" class="rev-slidebg">
-                                <!-- start image layer -->
-                                  <div class="tp-caption tp-resizeme rs-parallaxlevel-2" 
-                                     id="slide-02-layer-01" 
-                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                     data-y="['middle','middle','bottom','bottom']" data-voffset="['80','0','-300','-100']" 
-                                     data-width="['3000','3000','2000','1500']"
-                                     data-height="auto"
-                                     data-whitespace="nowrap"
-                                     data-type="image"
-                                     data-responsive_offset="off"
-                                     data-responsive="on"
-                                     data-basealign="grid"
-                                     data-visibility="['on','on','on','on']"
-                                     data-frames='[{"delay":300,"speed":1000,"frame":"0","from":"y:100:z:0;rX:0deg;rY:0;rZ:0;skX:0;skY:0;fb:10;opacity:0;","to":"o:1;fb:0;","ease":"power2.out"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']">
-                                    <img src="https://placehold.co/3000x1688" data-ww="100%" data-hh="auto" alt="" data-no-retina>  
-                                </div>
-                                <!-- end image layer -->
-                                <!-- start grass image layer -->
-                                <div class="tp-caption tp-resizeme rs-parallaxlevel-1" 
-                                     id="slide-02-layer-02" 
-                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                     data-y="['middle','middle','bottom','bottom']" data-voffset="['80','0','-250','-100']" 
-                                     data-width="['3000','3000','2000','1500']"
-                                     data-height="auto"
-                                     data-whitespace="nowrap"
-                                     data-type="image"
-                                     data-responsive_offset="off" 
-                                     data-responsive="on"
-                                     data-basealign="slide"
-                                     data-visibility="['on','on','on','on']"
-                                     data-frames='[{"delay":800,"speed":1000,"frame":"0","from":"y:100:z:0;rX:0deg;rY:0;rZ:0;skX:0;skY:0;fb:10;opacity:0;","to":"o:1;fb:0;","ease":"power2.out"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']"
-                                     >
-                                    <img src="https://placehold.co/3000x1688" data-ww="100%" data-hh="auto" alt="" data-no-retina>  
-                                </div>
-                                <!-- end image layer -->
-                                <!-- start image layer -->
-                                <div class="tp-caption tp-resizeme rs-parallaxlevel-1 object-layer" 
-                                     id="slide-02-layer-04" 
-                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                     data-y="['middle','middle','middle','middle']" data-voffset="['-50','0','0','0']" 
-                                     data-width="['987','800','500','450']"
-                                     data-height="auto"
-                                     data-whitespace="nowrap"
-                                     data-type="image" 
-                                     data-responsive_offset="off" 
-                                     data-responsive="off"
-                                     data-frames='[{"delay":1300,"speed":3000,"frame":"0","from":"x:[200%];opacity:1;","mask":"x:[-200%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']"
-                                     data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,50,0,50]"
-                                     data-paddingbottom="[0,0,0,0]"
-                                     data-paddingleft="[0,50,0,50]"
-                                     data-basealign="grid">
-                                    <img src="https://placehold.co/922x523" data-ww="100%" data-hh="auto" alt="" data-no-retina>
-                                </div>
-                                <!-- end image layer -->
-                                <!-- start image layer -->
-                                <div class="tp-caption tp-resizeme rs-parallaxlevel-3" 
-                                     id="slide-02-layer-05" 
-                                     data-x="['center','center','center','center']" data-hoffset="['2','0','0','0']" 
-                                     data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','-80']" 
-                                     data-width="['3000','2200','2600','3000']"
-                                     data-height="auto"
-                                     data-whitespace="nowrap"
-                                     data-type="image" 
-                                     data-responsive_offset="off" 
-                                     data-responsive="off"
-                                     data-frames='[{"delay":1700,"speed":1000,"frame":"0","from":"y:100:z:0;rX:0deg;rY:0;rZ:0;skX:0;skY:0;fb:10;opacity:0;","to":"o:1;fb:0;","ease":"power2.out"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']"
-                                     data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,50,0,50]"
-                                     data-paddingbottom="[0,0,0,0]"
-                                     data-paddingleft="[0,50,0,50]"
-                                     data-basealign="grid">
-                                    <img src="https://placehold.co/3000x1688" data-ww="100%" data-hh="auto" alt="" data-no-retina>
-                                </div>
-                                <!-- end image layer -->
-                                <!-- start image layer -->
-                                <div class="tp-caption tp-resizeme rs-parallaxlevel-2" 
-                                     id="slide-02-layer-03" 
-                                     data-x="['center','center','center','center']" data-hoffset="['2','0','-10','0']" 
-                                     data-y="['middle','middle','middle','middle']" data-voffset="['0','0','50','0']" 
-                                     data-width="['3000','2200','2000','1500']"
-                                     data-height="auto"
-                                     data-whitespace="nowrap"
-                                     data-type="image" 
-                                     data-responsive_offset="off" 
-                                     data-responsive="off"
-                                     data-frames='[{"delay":2600,"speed":1000,"frame":"0","from":"y:100:z:0;rX:0deg;rY:0;rZ:0;skX:0;skY:0;fb:10;opacity:0;","to":"o:1;fb:0;","ease":"power2.out"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']"
-                                     data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,70,0,50]"
-                                     data-paddingbottom="[0,0,0,0]"
-                                     data-paddingleft="[0,70,0,50]"
-                                     data-basealign="grid">
-                                    <img src="https://placehold.co/3000x1688" data-ww="100%" data-hh="auto" alt="" data-no-retina>
-                                </div>
-                                <!-- end image layer -->
-                                <!-- start red image layer -->
-                                <div class="tp-caption tp-resizeme rs-parallaxlevel-1" 
-                                     id="slide-02-layer-06" 
-                                     data-x="['center','center','center','center']" data-hoffset="['320','280','261','140']" 
-                                     data-y="['top','top','top','middle']" data-voffset="['265','212','150','-80']" 
-                                     data-width="['146','146','120','100']"
-                                     data-height="auto"
-                                     data-whitespace="nowrap"
-                                     data-type="shape" 
-                                     data-responsive_offset="on"
-                                     data-responsive="on"
-                                     data-frames='[{"delay":2800,"speed":1000,"frame":"0","from":"x:0px;y:50px;rX:0deg;rY:0deg;rZ:0deg;sX:0.5;sY:0.5;opacity:0;","to":"o:1;","ease":"Back.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']">
-                                    <img src="{{ asset('asset/images/demo-travel-agency-slider-04.png') }}" data-ww="100%" data-hh="auto" alt="" data-no-retina>  
-                                </div>
-                                <!-- end red image layer -->
-                                <!-- start price and text layer -->
-                                <div class="tp-caption tp-resizeme rs-parallaxlevel-1 alt-font text-white" 
-                                     id="slide-02-layer-07" 
-                                     data-x="['center','center','center','center']" data-hoffset="['320','280','260','140']" 
-                                     data-y="['top','top','top','middle']" data-voffset="['330','285','210','-65']" 
-                                     data-fontsize="['40','40','30','25']"
-                                     data-lineheight="['40','30','30','25']"
-                                     data-fontweight="['600','600','600','600']"
-                                     data-width="['201','150','150','120']"
-                                     data-height="none"
-                                     data-whitespace="['normal','nowrap','nowrap','nowrap']"
-                                     data-type="text" 
-                                     data-responsive_offset="on"
-                                     data-responsive="on"
-                                     data-frames='[{"delay":2900,"speed":1000,"frame":"0","from":"y:30px;sX:0.5;sY:0.5;opacity:0;","to":"o:1;","ease":"Back.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['center','center','center','center']">
-                                    $1600
-                                </div>
-                                <!-- end price and text layer -->
-                                <!-- start text layer -->
-                                <div class="tp-caption tp-resizeme rs-parallaxlevel-1 alt-font text-white text-uppercase" 
-                                     id="slide-02-layer-08" 
-                                     data-x="['center','center','center','center']" data-hoffset="['320','280','260','140']" 
-                                     data-y="['top','top','top','middle']" data-voffset="['303','250','180','-90']" 
-                                     data-fontsize="['16','18','16','15']"
-                                     data-fontweight="['500','500','500','500']"
-                                     data-width="['201','150','150','120']"
-                                     data-height="none"
-                                     data-whitespace="['normal','nowrap','nowrap','nowrap']"
-                                     data-type="text" 
-                                     data-responsive_offset="on" 
-                                     data-responsive="on"
-                                     data-frames='[{"delay":3000,"speed":1000,"frame":"0","from":"y:30px;sX:0.5;sY:0.5;opacity:0;","to":"o:1;","ease":"Back.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['center','center','center','center']">
-                                    Starting at
-                                </div>
-                                <!-- end text layer -->
-                                <!-- start bottom shadow layer -->
-                                <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme" 
-                                     id="slide-02-layer-09" 
-                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                     data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']" 
-                                     data-width="['100%','100%','100%','100%']"
-                                     data-height="['300','300','300','300']"
-                                     data-whitespace="nowrap"
-                                     data-type="shape" 
-                                     data-responsive_offset="off" 
-                                     data-responsive="on"
-                                     data-basealign="slide"
-                                     data-frames='[{"delay":2500,"speed":1000,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Back.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']"
-                                     style="background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);"></div>
-                                <!-- end bottom shadow layer -->
-                                <!-- start bottom shadow layer -->
-                                <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme" 
-                                     id="slide-02-layer-10" 
-                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                     data-y="['top','top','top','top']" data-voffset="['-70','-70','-70','0']" 
-                                     data-width="['100%','100%','100%','100%']"
-                                     data-height="['300','300','300','300']"
-                                     data-whitespace="nowrap"
-                                     data-type="shape" 
-                                     data-responsive_offset="off" 
-                                     data-responsive="on"
-                                     data-basealign="slide"
-                                     data-frames='[{"delay":2500,"speed":1000,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Back.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']"
-                                     style="background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);"></div>
-                                <!-- end bottom shadow layer -->
-                                <!-- start row zone layer -->
-                                <div id="rrzb_903" class="rev_row_zone rev_row_zone_bottom" style="z-index: 9999;">  
-                                    <!-- start row layer -->
-                                    <div class="tp-caption tp-resizeme " 
-                                         id="slide-02-layer-11" 
-                                         data-x="['left','left','left','left']" data-hoffset="['100','100','100','100']" 
-                                         data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']" 
-                                         data-width="auto"
-                                         data-height="auto"
-                                         data-whitespace="nowrap"
-                                         data-basealign="slide" 
-                                         data-type="row" 
-                                         data-columnbreak="2" 
-                                         data-responsive_offset="off" 
-                                         data-responsive="off"
-                                         data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                        <!-- start column layer -->
-                                        <div class="tp-caption tp-resizeme" 
-                                             id="slide-02-layer-12" 
-                                             data-x="['left','left','left','left']" data-hoffset="['0','0','100','100']" 
-                                             data-y="['top','top','top','top']" data-voffset="['0','0','100','100']" 
-                                             data-width="auto"
-                                             data-height="auto"
-                                             data-whitespace="nowrap"
-                                             data-basealign="slide" 
-                                             data-type="column" 
-                                             data-responsive_offset="off" 
-                                             data-responsive="off"
-                                             data-frames='[{"delay":0,"speed":800,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                             data-columnwidth="25%"
-                                             data-textAlign="['left','center','center','center']"
-                                             data-verticalalign="middle">
-                                            <!-- start border layer -->
-                                            <div class="tp-caption tp-shape tp-resizeme" 
-                                                 id="slide-02-layer-13" 
-                                                 data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['186','45','45','45']" 
-                                                 data-width="['100%','100%','100%','100%']"
-                                                 data-height="['1','1','1','1']"
-                                                 data-whitespace="nowrap"
-                                                 data-basealign="slide"
-                                                 data-type="shape" 
-                                                 data-responsive_offset="off" 
-                                                 data-responsive="off"
-                                                 data-frames='[{"delay":"2100","speed":750,"frame":"0","from":"x:[100%];opacity:1;","mask":"x:0px;y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                                 data-textAlign="['inherit','inherit','inherit','inherit']"
-                                                 style="z-index: 8;background-color:rgba(255,255,255,0.3);"> </div>
-                                            <!-- end border layer -->
-                                        </div>
-
-                                    </div>
-                                    <!-- start row layer -->
-                                    <div class="tp-caption tp-resizeme package-details" 
-                                         id="slide-02-layer-14" 
-                                         data-x="['left','left','left','left']" data-hoffset="['100','100','100','100']" 
-                                         data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']" 
-                                         data-width="auto"
-                                         data-height="auto"
-                                         data-whitespace="nowrap"
-                                         data-basealign="grid" 
-                                         data-type="row" 
-                                         data-columnbreak="3" 
-                                         data-responsive_offset="off" 
-                                         data-responsive="on"
-                                         data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                        <!-- start column layer -->
-                                        <div class="tp-caption tp-resizeme" 
-                                             id="slide-02-layer-15" 
-                                             data-x="['left','left','left','left']" data-hoffset="['0','0','100','100']" 
-                                             data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" 
-                                             data-width="['auto','auto','auto','auto']"
-                                             data-height="auto"
-                                             data-whitespace="nowrap"
-                                             data-basealign="grid" 
-                                             data-type="column" 
-                                             data-responsive_offset="off" 
-                                             data-responsive="on"
-                                             data-frames='[{"delay":2300,"speed":800,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                             data-columnwidth="25%"
-                                             data-textAlign="['left','left','left','center']"
-                                             data-verticalalign="middle"
-                                             data-paddingtop="[30,20,20,15]"
-                                             data-paddingright="[0,20,10,0]"
-                                             data-paddingbottom="[80,80,100,0]"
-                                             data-paddingleft="[20,20,10,0]">
-                                            <!-- start text layer -->
-                                            <div class="tp-caption tp-resizeme alt-font" 
-                                                 id="slide-02-layer-16" 
-                                                 data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['top','bottom','bottom','bottom']" data-voffset="['0','170','140','120']" 
-                                                 data-fontsize="['34','28','24','26']"
-                                                 data-lineheight="['46','40','40','30']"
-                                                 data-letterspacing="['-1','0','0','0']"
-                                                 data-fontweight="['500','500','500','500']"
-                                                 data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                                 data-width="['auto']"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text"
-                                                 data-basealign="grid" 
-                                                 data-responsive_offset="off" 
-                                                 data-responsive="on"
-                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                                Morocco desert
-                                            </div>
-                                            <!-- end text layer -->
-                                            <!-- start text layer -->
-                                            <div class="tp-caption tp-resizeme alt-font text-uppercase" 
-                                                 id="slide-02-layer-17" 
-                                                 data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['top','bottom','bottom','bottom']" data-voffset="['0','170','0','120']" 
-                                                 data-fontsize="['16','16','16','17']"
-                                                 data-lineheight="['26','26','24','24']"
-                                                 data-letterspacing="['0','0','0','0']"
-                                                 data-fontweight="['400','400','400','400']"
-                                                 data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                                 data-width="['auto']"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text" 
-                                                 data-basealign="grid"
-                                                 data-responsive_offset="off" 
-                                                 data-responsive="on"
-                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                                 data-margintop="[0,0,0,0]"
-                                                 data-marginright="[0,0,0,0]"
-                                                 data-marginbottom="[0,0,0,0]"
-                                                 data-marginleft="[0,0,0,0]"
-                                                 data-paddingtop="[0,0,0,5]"
-                                                 data-paddingright="[0,0,0,0]"
-                                                 data-paddingbottom="[0,0,0,0]"
-                                                 data-paddingleft="[0,0,0,0]">
-                                                <div class="d-block d-md-flex">
-                                                    <i class="bi bi-geo-alt-fill me-5px"></i>
-                                                    <span class="opacity-5">48Km from Ouarzazate</span>
-                                                </div>
-                                            </div>
-                                            <!-- end text layer -->
-                                        </div>
-                                        <!-- end column layer -->
-                                        <!-- start column layer -->
-                                        <div class="tp-caption" 
-                                             id="slide-02-layer-18" 
-                                             data-x="['left','left','left','left']" data-hoffset="['0','0','100','100']" 
-                                             data-y="['top','top','top','top']" data-voffset="['0','0','100','100']" 
-                                             data-width="auto"
-                                             data-height="100%"
-                                             data-whitespace="nowrap"
-                                             data-basealign="grid" 
-                                             data-type="column" 
-                                             data-responsive_offset="off" 
-                                             data-responsive="on"
-                                             data-frames='[{"delay":2500,"speed":800,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                             data-columnwidth="16.5%"
-                                             data-textAlign="['center','center','center','center']"
-                                             data-verticalalign="middle"
-                                             data-paddingtop="[30,20,20,10]"
-                                             data-paddingright="[0,20,0,0]"
-                                             data-paddingbottom="[80,80,100,0]"
-                                             data-paddingleft="[0,20,0,0]">
-                                            <!-- start text layer -->
-                                            <div class="tp-caption tp-resizeme alt-font" 
-                                                 id="slide-02-layer-19" 
-                                                 data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['top','bottom','bottom','bottom']" data-voffset="['0','170','140','120']" 
-                                                 data-fontsize="['24','26','24','24']"
-                                                 data-lineheight="['32','38','32','35']"
-                                                 data-letterspacing="['0','0','0','0']"
-                                                 data-fontweight="['500','500','500','500']"
-                                                 data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                                 data-width="['auto']"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text"
-                                                 data-basealign="grid" 
-                                                 data-responsive_offset="off"
-                                                 data-responsive="on"
-                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                                03 Days
-                                            </div>
-                                            <!-- end text layer -->
-                                            <!-- start text layer -->
-                                            <div class="tp-caption tp-resizeme alt-font text-uppercase" 
-                                                 id="slide-02-layer-20" 
-                                                 data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['top','bottom','bottom','bottom']" data-voffset="['0','170','140','120']" 
-                                                 data-fontsize="['16','16','17','17']"
-                                                 data-lineheight="['26','25','30','30']"
-                                                 data-letterspacing="['0','0','0','0']"
-                                                 data-fontweight="['400','400','400','400']"
-                                                 data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                                 data-width="['auto']"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text" 
-                                                 data-basealign="grid"
-                                                 data-responsive_offset="off"
-                                                 data-responsive="on"
-                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:0.5;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                                Tour duration
-                                            </div>
-                                            <!-- end text layer -->
-                                        </div>
-                                        <!-- end column layer -->
-                                        <!-- start column layer -->
-                                        <div class="tp-caption " 
-                                             id="slide-02-layer-21" 
-                                             data-x="['left','left','left','left']" data-hoffset="['0','0','100','100']" 
-                                             data-y="['top','top','top','top']" data-voffset="['0','0','100','100']" 
-                                             data-width="auto"
-                                             data-height="100%"
-                                             data-whitespace="nowrap"
-                                             data-basealign="grid" 
-                                             data-type="column" 
-                                             data-responsive_offset="off" 
-                                             data-responsive="on"
-                                             data-frames='[{"delay":2700,"speed":800,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                             data-columnwidth="16.5%"
-                                             data-textAlign="['center','center','center','center']"
-                                             data-verticalalign="middle"
-                                             data-paddingtop="[30,20,20,7]"
-                                             data-paddingright="[0,20,0,0]"
-                                             data-paddingbottom="[80,80,100,0]"
-                                             data-paddingleft="[0,20,0,0]">
-                                            <!-- start text layer -->
-                                            <div class="tp-caption tp-resizeme alt-font" 
-                                                 id="slide-02-layer-22" 
-                                                 data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['top','bottom','bottom','bottom']" data-voffset="['0','170','140','120']" 
-                                                 data-fontsize="['16','20','18','20']"
-                                                 data-lineheight="['32','40','30','30']"
-                                                 data-letterspacing="['2','2','2','2']"
-                                                 data-fontweight="['500','500','500','500']"
-                                                 data-color="['#ffa500','#ffa500','#ffa500','#ffa500']"
-                                                 data-width="['auto']"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text"
-                                                 data-basealign="grid" 
-                                                 data-responsive_offset="off"
-                                                 data-responsive="on"
-                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill "></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
-                                            </div>
-                                            <!-- end text layer -->
-                                            <!-- start text layer -->
-                                            <div class="tp-caption tp-resizeme alt-font text-uppercase" 
-                                                 id="slide-02-layer-23" 
-                                                 data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['top','bottom','bottom','bottom']" data-voffset="['0','170','140','120']" 
-                                                 data-fontsize="['16','16','17','17']"
-                                                 data-lineheight="['26','25','26','30']"
-                                                 data-letterspacing="['0','0','0','0']"
-                                                 data-fontweight="['400','400','400','400']"
-                                                 data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                                 data-width="['auto']"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text"
-                                                 data-basealign="grid"
-                                                 data-responsive_offset="off" 
-                                                 data-responsive="on"
-                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:0.5;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                                Tripadvisor rating
-                                            </div>
-                                            <!-- end text layer -->
-                                        </div>
-                                        <!-- end column layer -->
-                                        <!-- start column layer -->
-                                        <div class="tp-caption" 
-                                             id="slide-02-layer-24" 
-                                             data-x="['left','left','left','left']" data-hoffset="['0','0','100','100']" 
-                                             data-y="['top','top','top','top']" data-voffset="['0','0','100','100']" 
-                                             data-width="auto"
-                                             data-height="auto"
-                                             data-whitespace="nowrap"
-                                             data-basealign="grid" 
-                                             data-type="column" 
-                                             data-responsive_offset="off" 
-                                             data-responsive="on"
-                                             data-frames='[{"delay":2900,"speed":800,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                             data-columnwidth="16.5%"
-                                             data-textAlign="['center','center','center','center']"
-                                             data-verticalalign="middle"
-                                             data-paddingtop="[30,20,20,5]"
-                                             data-paddingright="[0,20,0,0]"
-                                             data-paddingbottom="[80,80,100,0]"
-                                             data-paddingleft="[0,20,0,0]">
-                                            <!-- start text layer -->
-                                            <div class="tp-caption tp-resizeme alt-font" 
-                                                 id="slide-02-layer-25" 
-                                                 data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['top','bottom','bottom','bottom']" data-voffset="['0','170','140','120']" 
-                                                 data-fontsize="['24','26','26','24']"
-                                                 data-lineheight="['32','40','30','30']"
-                                                 data-letterspacing="['0','0','0','0']"
-                                                 data-fontweight="['500','500','500','500']"
-                                                 data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                                 data-width="['auto']"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text"
-                                                 data-basealign="grid" 
-                                                 data-responsive_offset="off" 
-                                                 data-responsive="on"
-                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                                Classic AC
-                                            </div>
-                                            <!-- end text layer -->
-                                            <!-- start text layer -->
-                                            <div class="tp-caption tp-resizeme alt-font text-uppercase" 
-                                                 id="slide-02-layer-26" 
-                                                 data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['top','bottom','bottom','bottom']" data-voffset="['0','170','140','120']" 
-                                                 data-fontsize="['16','16','17','17']"
-                                                 data-lineheight="['26','25','30','30']"
-                                                 data-letterspacing="['0','0','0','0']"
-                                                 data-fontweight="['400','400','400','400']"
-                                                 data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                                 data-width="['auto']"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text" 
-                                                 data-basealign="grid"
-                                                 data-responsive_offset="off"
-                                                 data-responsive="on"
-                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:0.5;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                                WITH MEAL
-                                            </div>
-                                            <!-- end text layer -->
-                                        </div>
-                                        <!-- end column layer -->
-                                        <!-- start column layer -->
-                                        <div class="tp-caption" 
-                                             id="slide-02-layer-27" 
-                                             data-x="['left','left','left','left']" data-hoffset="['0','0','100','100']" 
-                                             data-y="['top','top','top','top']" data-voffset="['0','0','100','100']" 
-                                             data-width="auto"
-                                             data-height="100%"
-                                             data-whitespace="nowrap"
-                                             data-basealign="grid" 
-                                             data-type="column" 
-                                             data-responsive_offset="off" 
-                                             data-responsive="on"
-                                             data-frames='[{"delay":3100,"speed":800,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                             data-columnwidth="25%"
-                                             data-textAlign="['center','center','center','center']"
-                                             data-verticalalign="middle"
-                                             data-paddingtop="[30,20,20,10]"
-                                             data-paddingright="[0,0,0,0]"
-                                             data-paddingbottom="[80,80,100,80]"
-                                             data-paddingleft="[0,0,0,0]">
-                                            <!-- start button layer -->
-                                            <a class="tp-caption tp-resizeme alt-font text-center" 
-                                               data-shadow-animation="true"
-                                               href="#"
-                                               id="slide-02-layer-29" 
-                                               data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']" 
-                                               data-y="['top','top','bottom','bottom']" data-voffset="['0','170','140','120']" 
-                                               data-fontsize="['28','30','22','26']"
-                                               data-lineheight="['34','45','30','35']"
-                                               data-letterspacing="['0','0','0','0']"
-                                               data-fontweight="['500','500','500','500']"
-                                               data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                               data-width="['auto']"
-                                               data-height="none"
-                                               data-whitespace="normal"
-                                               data-type="text" 
-                                               data-actions=''
-                                               data-basealign="grid" 
-                                               data-responsive_offset="off" 
-                                               data-responsive="on"
-                                               data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                                Book holiday<i class="bi bi-arrow-right-short icon-extra-medium xs-pt-10px"></i>
-                                            </a>
-                                            <!-- end button layer -->
-                                        </div>
-                                        <!-- end column layer -->
-                                    </div>
-                                    <!-- end row layer -->
-                                </div>
-                                <!-- end row zone layer -->
-                            </li>
-                            <!-- MINIMUM SLIDE STRUCTURE -->
-                            <li id="rs-travel-agency-03" data-index="rs-travel-agency-03" data-transition="slidehorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="0" data-fsslotamount="2" data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10='{"revslider-weather-addon":{"type":"name","name":"Cologne","woeid":"667931","unit":"c"}}' data-description="">
-                                <!-- SLIDE'S MAIN BACKGROUND IMAGE -->
-                                <img src="https://placehold.co/3000x1688" alt="dummy" class="rev-slidebg">
-                                <!-- start image layer -->
-                                <div class="tp-caption tp-resizeme rs-parallaxlevel-2" 
-                                     id="slide-03-layer-01" 
-                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                     data-y="['middle','middle','middle','middle']" data-voffset="['0','100','0','0']" 
-                                     data-width="['3000','2500','2000','1500']"
-                                     data-height="auto"
-                                     data-whitespace="nowrap"
-                                     data-type="image"
-                                     data-responsive_offset="off"
-                                     data-responsive="on"
-                                     data-basealign="grid"
-                                     data-visibility="['on','on','on','on']"
-                                     data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"y:100;z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;fb:20;opacity:0;","to":"o:1;fb:0;","ease":"power2.out"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']">
-                                    <img src="https://placehold.co/3000x1688" data-ww="100%" data-hh="auto" alt="" data-no-retina>  
-                                </div>
-                                <!-- end image layer -->
-                                <!-- start image layer -->
-                                <div class="tp-caption tp-resizeme rs-parallaxlevel-1" 
-                                     id="slide-03-layer-02" 
-                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                     data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
-                                     data-width="['3000','2500','2000','1500']"
-                                     data-height="auto"
-                                     data-whitespace="nowrap"
-                                     data-type="image"
-                                     data-responsive_offset="off" 
-                                     data-responsive="on"
-                                     data-basealign="slide"
-                                     data-visibility="['on','on','on','on']"
-                                     data-frames='[{"delay":700,"speed":1000,"frame":"0","from":"y:-30:z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;fb:10;opacity:0;","to":"o:1;fb:0;","ease":"power2.out"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']"
-                                     >
-                                    <img src="https://placehold.co/3000x1688" data-ww="100%" data-hh="auto" alt="" data-no-retina>  
-                                </div>
-                                <!-- end image layer -->
-                                <!-- start image layer -->
-                                <div class="tp-caption tp-resizeme rs-parallaxlevel-1 object-layer" 
-                                     id="slide-03-layer-03" 
-                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                     data-y="['middle','middle','middle','middle']" data-voffset="['-50','0','-50','-50']" 
-                                     data-width="['987','800','550','450']"
-                                     data-height="auto"
-                                     data-whitespace="nowrap"
-                                     data-type="image" 
-                                     data-responsive_offset="off" 
-                                     data-responsive="off"
-                                     data-frames='[{"delay":1600,"speed":3000,"frame":"0","from":"x:[200%];opacity:1;","mask":"x:[-200%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']"
-                                     data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,50,0,50]"
-                                     data-paddingbottom="[0,0,0,0]"
-                                     data-paddingleft="[0,50,0,50]"
-                                     data-basealign="grid">
-                                    <img src="https://placehold.co/987x388" data-ww="100%" data-hh="auto" alt="" data-no-retina>
-                                </div>
-                                <!-- end image layer -->
-                                <!-- start image layer -->
-                                <div class="tp-caption tp-resizeme rs-parallaxlevel-3" 
-                                     id="slide-03-layer-04" 
-                                     data-x="['center','center','center','center']" data-hoffset="['2','0','0','0']" 
-                                     data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
-                                     data-width="['3000','2500','2000','1500']"
-                                     data-height="auto"
-                                     data-whitespace="nowrap"
-                                     data-type="image" 
-                                     data-responsive_offset="off" 
-                                     data-responsive="off"
-                                     data-frames='[{"delay":1600,"speed":1500,"frame":"0","from":"y:20px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']"
-                                     data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,50,0,50]"
-                                     data-paddingbottom="[0,0,0,0]"
-                                     data-paddingleft="[0,50,0,50]"
-                                     data-basealign="grid">
-                                    <img src="https://placehold.co/3000x1688" data-ww="100%" data-hh="auto" alt="" data-no-retina>
-                                </div>
-                                <!-- end image layer -->
-                                <!-- start image layer -->
-                                <div class="tp-caption tp-resizeme rs-parallaxlevel-2" 
-                                     id="slide-03-layer-05" 
-                                     data-x="['center','center','center','center']" data-hoffset="['2','0','-10','0']" 
-                                     data-y="['middle','middle','middle','middle']" data-voffset="['0','50','0','0']" 
-                                     data-width="['3000','2500','2000','1600']"
-                                     data-height="auto"
-                                     data-whitespace="nowrap"
-                                     data-type="image" 
-                                     data-responsive_offset="off" 
-                                     data-responsive="off"
-                                     data-frames='[{"delay":2800,"speed":1000,"frame":"0","from":"y:100:z:0;rX:0deg;rY:0;rZ:0;skX:0;skY:0;fb:10;opacity:0;","to":"o:1;fb:0;","ease":"power2.out"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']"
-                                     data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,70,0,50]"
-                                     data-paddingbottom="[0,0,0,0]"
-                                     data-paddingleft="[0,70,0,50]"
-                                     data-basealign="grid">
-                                    <img src="https://placehold.co/3000x1688" data-ww="100%" data-hh="auto" alt="" data-no-retina>
-                                </div>
-                                <!-- end image layer -->
-                                <!-- start image layer -->
-                                <div class="tp-caption tp-resizeme rs-parallaxlevel-2" 
-                                     id="slide-03-layer-06" 
-                                     data-x="['center','center','center','center']" data-hoffset="['2','0','0','0']" 
-                                     data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
-                                     data-width="['3000','2500','2000','1500']"
-                                     data-height="auto"
-                                     data-whitespace="nowrap"
-                                     data-type="image" 
-                                     data-responsive_offset="off" 
-                                     data-responsive="off"
-                                     data-frames='[{"delay":1200,"speed":1500,"frame":"0","from":"y:20px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']"
-                                     data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,50,0,50]"
-                                     data-paddingbottom="[0,0,0,0]"
-                                     data-paddingleft="[0,50,0,50]"
-                                     data-basealign="grid">
-                                    <img src="https://placehold.co/3000x1688" data-ww="100%" data-hh="auto" alt="" data-no-retina>
-                                </div>
-                                <!-- end image layer -->
-                                <!-- start red image layer -->
-                                <div class="tp-caption tp-resizeme" 
-                                     id="slide-03-layer-07" 
-                                     data-x="['center','center','center','center']" data-hoffset="['320','280','261','140']" 
-                                     data-y="['top','top','top','middle']" data-voffset="['265','212','150','-80']" 
-                                     data-width="['146','146','120','100']"
-                                     data-height="auto"
-                                     data-whitespace="nowrap"
-                                     data-type="shape" 
-                                     data-responsive_offset="on"
-                                     data-responsive="on"
-                                     data-frames='[{"delay":3000,"speed":1000,"frame":"0","from":"x:0px;y:50px;rX:0deg;rY:0deg;rZ:0deg;sX:0.5;sY:0.5;opacity:0;","to":"o:1;","ease":"Back.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']">
-                                    <img src="{{ asset('asset/images/demo-travel-agency-slider-04.png') }}" data-ww="100%" data-hh="auto" alt="" data-no-retina>  
-                                </div>
-                                <!-- end red image layer -->
-                                <!-- start price and text layer -->
-                                <div class="tp-caption tp-resizeme alt-font text-white" 
-                                     id="slide-03-layer-08" 
-                                     data-x="['center','center','center','center']" data-hoffset="['320','280','260','140']" 
-                                     data-y="['top','top','top','middle']" data-voffset="['330','285','210','-65']" 
-                                     data-fontsize="['40','40','30','25']"
-                                     data-lineheight="['40','30','30','25']"
-                                     data-fontweight="['600','600','600','600']"
-                                     data-width="['201','150','150','120']"
-                                     data-height="none"
-                                     data-whitespace="['normal','nowrap','nowrap','nowrap']"
-                                     data-type="text" 
-                                     data-responsive_offset="on"
-                                     data-responsive="on"
-                                     data-frames='[{"delay":3100,"speed":1000,"frame":"0","from":"y:30px;sX:0.5;sY:0.5;opacity:0;","to":"o:1;","ease":"Back.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['center','center','center','center']">
-                                    $1000
-                                </div>
-                                <!-- end price and text layer -->
-                                <!-- start text layer -->
-                                <div class="tp-caption tp-resizeme alt-font text-white text-uppercase" 
-                                     id="slide-03-layer-09" 
-                                     data-x="['center','center','center','center']" data-hoffset="['320','280','260','140']" 
-                                     data-y="['top','top','top','middle']" data-voffset="['303','250','180','-90']" 
-                                     data-fontsize="['16','18','16','15']"
-                                     data-fontweight="['500','500','500','500']"
-                                     data-width="['201','150','150','120']"
-                                     data-height="none"
-                                     data-whitespace="['normal','nowrap','nowrap','nowrap']"
-                                     data-type="text" 
-                                     data-responsive_offset="on" 
-                                     data-responsive="on"
-                                     data-frames='[{"delay":3200,"speed":1000,"frame":"0","from":"y:30px;sX:0.5;sY:0.5;opacity:0;","to":"o:1;","ease":"Back.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['center','center','center','center']">
-                                    Starting at
-                                </div>
-                                <!-- end text layer -->
-                                <!-- start bottom shadow layer -->
-                                <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme" 
-                                     id="slide-03-layer-10" 
-                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                     data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']" 
-                                     data-width="['100%','100%','100%','100%']"
-                                     data-height="['300','300','300','300']"
-                                     data-whitespace="nowrap"
-                                     data-type="shape" 
-                                     data-responsive_offset="off" 
-                                     data-responsive="on"
-                                     data-basealign="slide"
-                                     data-frames='[{"delay":2400,"speed":1000,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Back.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']"
-                                     style="background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);"></div>
-                                <!-- end bottom shadow layer -->
-                                <!-- start bottom shadow layer -->
-                                <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme" 
-                                     id="slide-03-layer-11" 
-                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                     data-y="['top','top','top','top']" data-voffset="['-70','-70','-70','0']" 
-                                     data-width="['100%','100%','100%','100%']"
-                                     data-height="['300','300','300','300']"
-                                     data-whitespace="nowrap"
-                                     data-type="shape" 
-                                     data-responsive_offset="off" 
-                                     data-responsive="on"
-                                     data-basealign="slide"
-                                     data-frames='[{"delay":2400,"speed":1000,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Back.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']"
-                                     style="background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);"></div>
-                                <!-- end bottom shadow layer -->
-                                <!-- start row zone layer -->
-                                <div id="rrzb_904" class="rev_row_zone rev_row_zone_bottom" style="z-index: 9999;">  
-                                    <!-- start row layer -->
-                                    <div class="tp-caption tp-resizeme " 
-                                         id="slide-03-layer-11-01" 
-                                         data-x="['left','left','left','left']" data-hoffset="['100','100','100','100']" 
-                                         data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']" 
-                                         data-width="auto"
-                                         data-height="auto"
-                                         data-whitespace="nowrap"
-                                         data-basealign="slide" 
-                                         data-type="row" 
-                                         data-columnbreak="2" 
-                                         data-responsive_offset="off" 
-                                         data-responsive="off"
-                                         data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                        <!-- start column layer -->
-                                        <div class="tp-caption tp-resizeme" 
-                                             id="slide-03-layer-12" 
-                                             data-x="['left','left','left','left']" data-hoffset="['0','0','100','100']" 
-                                             data-y="['top','top','top','top']" data-voffset="['0','0','100','100']" 
-                                             data-width="auto"
-                                             data-height="auto"
-                                             data-whitespace="nowrap"
-                                             data-basealign="slide" 
-                                             data-type="column" 
-                                             data-responsive_offset="off" 
-                                             data-responsive="off"
-                                             data-frames='[{"delay":0,"speed":800,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                             data-columnwidth="25%"
-                                             data-textAlign="['left','center','center','center']"
-                                             data-verticalalign="middle">
-                                            <!-- start border layer -->
-                                            <div class="tp-caption tp-shape tp-resizeme" 
-                                                 id="slide-03-layer-13" 
-                                                 data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['186','45','45','45']" 
-                                                 data-width="['100%','100%','100%','100%']"
-                                                 data-height="['1','1','1','1']"
-                                                 data-whitespace="nowrap"
-                                                 data-basealign="slide"
-                                                 data-type="shape" 
-                                                 data-responsive_offset="off" 
-                                                 data-responsive="off"
-                                                 data-frames='[{"delay":"2100","speed":750,"frame":"0","from":"x:[100%];opacity:1;","mask":"x:0px;y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                                 data-textAlign="['inherit','inherit','inherit','inherit']"
-                                                 style="z-index: 8;background-color:rgba(255,255,255,0.3);"> </div>
-                                            <!-- end border layer -->
-                                        </div>
-
-                                    </div>
-                                    <!-- start row layer -->
-                                    <div class="tp-caption tp-resizeme package-details" 
-                                         id="slide-03-layer-14" 
-                                         data-x="['left','left','left','left']" data-hoffset="['100','100','100','100']" 
-                                         data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']" 
-                                         data-width="auto"
-                                         data-height="auto"
-                                         data-whitespace="nowrap"
-                                         data-basealign="grid" 
-                                         data-type="row" 
-                                         data-columnbreak="3" 
-                                         data-responsive_offset="off" 
-                                         data-responsive="on"
-                                         data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                        <!-- start column layer -->
-                                        <div class="tp-caption tp-resizeme" 
-                                             id="slide-03-layer-15" 
-                                             data-x="['left','left','left','left']" data-hoffset="['0','0','100','100']" 
-                                             data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" 
-                                             data-width="['auto','auto','auto','auto']"
-                                             data-height="auto"
-                                             data-whitespace="nowrap"
-                                             data-basealign="grid" 
-                                             data-type="column" 
-                                             data-responsive_offset="off" 
-                                             data-responsive="on"
-                                             data-frames='[{"delay":2300,"speed":800,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                             data-columnwidth="25%"
-                                             data-textAlign="['left','left','left','center']"
-                                             data-verticalalign="middle"
-                                             data-paddingtop="[30,20,20,15]"
-                                             data-paddingright="[0,20,10,0]"
-                                             data-paddingbottom="[80,80,100,0]"
-                                             data-paddingleft="[20,20,10,0]">
-                                            <!-- start text layer -->
-                                            <div class="tp-caption tp-resizeme alt-font" 
-                                                 id="slide-03-layer-16" 
-                                                 data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['top','bottom','bottom','bottom']" data-voffset="['0','170','140','120']" 
-                                                 data-fontsize="['34','28','24','26']"
-                                                 data-lineheight="['46','40','40','30']"
-                                                 data-letterspacing="['-1','0','0','0']"
-                                                 data-fontweight="['500','500','500','500']"
-                                                 data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                                 data-width="['auto']"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text"
-                                                 data-basealign="grid" 
-                                                 data-responsive_offset="off" 
-                                                 data-responsive="on"
-                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                                Gunung rinjan
-                                            </div>
-                                            <!-- end text layer -->
-                                            <!-- start text layer -->
-                                            <div class="tp-caption tp-resizeme alt-font text-uppercase" 
-                                                 id="slide-03-layer-17" 
-                                                 data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['top','bottom','bottom','bottom']" data-voffset="['0','170','0','120']" 
-                                                 data-fontsize="['16','16','16','17']"
-                                                 data-lineheight="['26','26','24','24']"
-                                                 data-letterspacing="['0','0','0','0']"
-                                                 data-fontweight="['400','400','400','400']"
-                                                 data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                                 data-width="['auto']"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text" 
-                                                 data-basealign="grid"
-                                                 data-responsive_offset="off" 
-                                                 data-responsive="on"
-                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                                 data-margintop="[0,0,0,0]"
-                                                 data-marginright="[0,0,0,0]"
-                                                 data-marginbottom="[0,0,0,0]"
-                                                 data-marginleft="[0,0,0,0]"
-                                                 data-paddingtop="[0,0,0,5]"
-                                                 data-paddingright="[0,0,0,0]"
-                                                 data-paddingbottom="[0,0,0,0]"
-                                                 data-paddingleft="[0,0,0,0]">
-                                                <div class="d-block d-md-flex">
-                                                    <i class="bi bi-geo-alt-fill me-5px"></i>
-                                                    <span class="opacity-5">24Km from Indonesia</span>
-                                                </div>
-                                            </div>
-                                            <!-- end text layer -->
-                                        </div>
-                                        <!-- end column layer -->
-                                        <!-- start column layer -->
-                                        <div class="tp-caption" 
-                                             id="slide-03-layer-18" 
-                                             data-x="['left','left','left','left']" data-hoffset="['0','0','100','100']" 
-                                             data-y="['top','top','top','top']" data-voffset="['0','0','100','100']" 
-                                             data-width="auto"
-                                             data-height="100%"
-                                             data-whitespace="nowrap"
-                                             data-basealign="grid" 
-                                             data-type="column" 
-                                             data-responsive_offset="off" 
-                                             data-responsive="on"
-                                             data-frames='[{"delay":2500,"speed":800,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                             data-columnwidth="16.5%"
-                                             data-textAlign="['center','center','center','center']"
-                                             data-verticalalign="middle"
-                                             data-paddingtop="[30,20,20,10]"
-                                             data-paddingright="[0,20,0,0]"
-                                             data-paddingbottom="[80,80,100,0]"
-                                             data-paddingleft="[0,20,0,0]">
-                                            <!-- start text layer -->
-                                            <div class="tp-caption tp-resizeme alt-font" 
-                                                 id="slide-03-layer-19" 
-                                                 data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['top','bottom','bottom','bottom']" data-voffset="['0','170','140','120']" 
-                                                 data-fontsize="['24','26','24','24']"
-                                                 data-lineheight="['32','38','32','35']"
-                                                 data-letterspacing="['0','0','0','0']"
-                                                 data-fontweight="['500','500','500','500']"
-                                                 data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                                 data-width="['auto']"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text"
-                                                 data-basealign="grid" 
-                                                 data-responsive_offset="off"
-                                                 data-responsive="on"
-                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                                05 Days
-                                            </div>
-                                            <!-- end text layer -->
-                                            <!-- start text layer -->
-                                            <div class="tp-caption tp-resizeme alt-font text-uppercase" 
-                                                 id="slide-03-layer-20" 
-                                                 data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['top','bottom','bottom','bottom']" data-voffset="['0','170','140','120']" 
-                                                 data-fontsize="['16','16','17','17']"
-                                                 data-lineheight="['26','25','30','30']"
-                                                 data-letterspacing="['0','0','0','0']"
-                                                 data-fontweight="['400','400','400','400']"
-                                                 data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                                 data-width="['auto']"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text" 
-                                                 data-basealign="grid"
-                                                 data-responsive_offset="off"
-                                                 data-responsive="on"
-                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:0.5;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                                Tour duration
-                                            </div>
-                                            <!-- end text layer -->
-                                        </div>
-                                        <!-- end column layer -->
-                                        <!-- start column layer -->
-                                        <div class="tp-caption " 
-                                             id="slide-03-layer-21" 
-                                             data-x="['left','left','left','left']" data-hoffset="['0','0','100','100']" 
-                                             data-y="['top','top','top','top']" data-voffset="['0','0','100','100']" 
-                                             data-width="auto"
-                                             data-height="100%"
-                                             data-whitespace="nowrap"
-                                             data-basealign="grid" 
-                                             data-type="column" 
-                                             data-responsive_offset="off" 
-                                             data-responsive="on"
-                                             data-frames='[{"delay":2700,"speed":800,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                             data-columnwidth="16.5%"
-                                             data-textAlign="['center','center','center','center']"
-                                             data-verticalalign="middle"
-                                             data-paddingtop="[30,20,20,7]"
-                                             data-paddingright="[0,20,0,0]"
-                                             data-paddingbottom="[80,80,100,0]"
-                                             data-paddingleft="[0,20,0,0]">
-                                            <!-- start text layer -->
-                                            <div class="tp-caption tp-resizeme alt-font" 
-                                                 id="slide-03-layer-22" 
-                                                 data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['top','bottom','bottom','bottom']" data-voffset="['0','170','140','120']" 
-                                                 data-fontsize="['16','20','18','20']"
-                                                 data-lineheight="['32','40','30','30']"
-                                                 data-letterspacing="['2','2','2','2']"
-                                                 data-fontweight="['500','500','500','500']"
-                                                 data-color="['#ffa500','#ffa500','#ffa500','#ffa500']"
-                                                 data-width="['auto']"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text"
-                                                 data-basealign="grid" 
-                                                 data-responsive_offset="off"
-                                                 data-responsive="on"
-                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill "></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
-                                            </div>
-                                            <!-- end text layer -->
-                                            <!-- start text layer -->
-                                            <div class="tp-caption tp-resizeme alt-font text-uppercase" 
-                                                 id="slide-03-layer-23" 
-                                                 data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['top','bottom','bottom','bottom']" data-voffset="['0','170','140','120']" 
-                                                 data-fontsize="['16','16','17','17']"
-                                                 data-lineheight="['26','25','26','30']"
-                                                 data-letterspacing="['0','0','0','0']"
-                                                 data-fontweight="['400','400','400','400']"
-                                                 data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                                 data-width="['auto']"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text"
-                                                 data-basealign="grid"
-                                                 data-responsive_offset="off" 
-                                                 data-responsive="on"
-                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:0.5;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                                Tripadvisor rating
-                                            </div>
-                                            <!-- end text layer -->
-                                        </div>
-                                        <!-- end column layer -->
-                                        <!-- start column layer -->
-                                        <div class="tp-caption" 
-                                             id="slide-03-layer-24" 
-                                             data-x="['left','left','left','left']" data-hoffset="['0','0','100','100']" 
-                                             data-y="['top','top','top','top']" data-voffset="['0','0','100','100']" 
-                                             data-width="auto"
-                                             data-height="auto"
-                                             data-whitespace="nowrap"
-                                             data-basealign="grid" 
-                                             data-type="column" 
-                                             data-responsive_offset="off" 
-                                             data-responsive="on"
-                                             data-frames='[{"delay":2900,"speed":800,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                             data-columnwidth="16.5%"
-                                             data-textAlign="['center','center','center','center']"
-                                             data-verticalalign="middle"
-                                             data-paddingtop="[30,20,20,5]"
-                                             data-paddingright="[0,20,0,0]"
-                                             data-paddingbottom="[80,80,100,0]"
-                                             data-paddingleft="[0,20,0,0]">
-                                            <!-- start text layer -->
-                                            <div class="tp-caption tp-resizeme alt-font" 
-                                                 id="slide-03-layer-25" 
-                                                 data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['top','bottom','bottom','bottom']" data-voffset="['0','170','140','120']" 
-                                                 data-fontsize="['24','26','26','24']"
-                                                 data-lineheight="['32','40','30','30']"
-                                                 data-letterspacing="['0','0','0','0']"
-                                                 data-fontweight="['500','500','500','500']"
-                                                 data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                                 data-width="['auto']"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text"
-                                                 data-basealign="grid" 
-                                                 data-responsive_offset="off" 
-                                                 data-responsive="on"
-                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                                Deluxe AC
-                                            </div>
-                                            <!-- end text layer -->
-                                            <!-- start text layer -->
-                                            <div class="tp-caption tp-resizeme alt-font text-uppercase" 
-                                                 id="slide-03-layer-26" 
-                                                 data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                                 data-y="['top','bottom','bottom','bottom']" data-voffset="['0','170','140','120']" 
-                                                 data-fontsize="['16','16','17','17']"
-                                                 data-lineheight="['26','25','30','30']"
-                                                 data-letterspacing="['0','0','0','0']"
-                                                 data-fontweight="['400','400','400','400']"
-                                                 data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                                 data-width="['auto']"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text" 
-                                                 data-basealign="grid"
-                                                 data-responsive_offset="off"
-                                                 data-responsive="on"
-                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:0.5;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                                WITH MEAL
-                                            </div>
-                                            <!-- end text layer -->
-                                        </div>
-                                        <!-- end column layer -->
-                                        <!-- start column layer -->
-                                        <div class="tp-caption" 
-                                             id="slide-03-layer-27" 
-                                             data-x="['left','left','left','left']" data-hoffset="['0','0','100','100']" 
-                                             data-y="['top','top','top','top']" data-voffset="['0','0','100','100']" 
-                                             data-width="auto"
-                                             data-height="100%"
-                                             data-whitespace="nowrap"
-                                             data-basealign="grid" 
-                                             data-type="column" 
-                                             data-responsive_offset="off" 
-                                             data-responsive="on"
-                                             data-frames='[{"delay":3100,"speed":800,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
-                                             data-columnwidth="25%"
-                                             data-textAlign="['center','center','center','center']"
-                                             data-verticalalign="middle"
-                                             data-paddingtop="[30,20,20,10]"
-                                             data-paddingright="[0,0,0,0]"
-                                             data-paddingbottom="[80,80,100,80]"
-                                             data-paddingleft="[0,0,0,0]">
-                                            <!-- start button layer -->
-                                            <a class="tp-caption tp-resizeme alt-font text-center" 
-                                               data-shadow-animation="true"
-                                               href="#"
-                                               id="slide-03-layer-29" 
-                                               data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']" 
-                                               data-y="['top','top','bottom','bottom']" data-voffset="['0','170','140','120']" 
-                                               data-fontsize="['28','30','22','26']"
-                                               data-lineheight="['34','45','30','35']"
-                                               data-letterspacing="['0','0','0','0']"
-                                               data-fontweight="['500','500','500','500']"
-                                               data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                               data-width="['auto']"
-                                               data-height="none"
-                                               data-whitespace="normal"
-                                               data-type="text" 
-                                               data-actions=''
-                                               data-basealign="grid" 
-                                               data-responsive_offset="off" 
-                                               data-responsive="on"
-                                               data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'>
-                                                Book holiday<i class="bi bi-arrow-right-short icon-extra-medium xs-pt-10px"></i>
-                                            </a>
-                                            <!-- end button layer -->
-                                        </div>
-                                        <!-- end column layer -->
-                                    </div>
-                                    <!-- end row layer -->
-                                </div>
-                                <!-- end row zone layer -->
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </div>
+                    <!-- end slider item -->
+                    <!-- start slider item -->
+                    <div class="swiper-slide cover-background" style="background-image:url('{{asset('asset/images/demo-logistics-slider-02.jpg')}}');">
+                        <div class="container h-100">
+                            <div class="row align-items-center h-100 xl-ps-10 sm-ps-0">
+                                <div class="col-xxl-7 col-xl-10 text-white" style="margin-top: 80px;">
+                                    <h1 class="fw-600">Your airborne shipping trusted globally partner.</h1>
+                                    <div class="fs-20 opacity-6 mb-40px sm-mb-30px">Swift and reliable air freight solutions worldwide.</div>
+                                    <div class="lg-mb-8 md-mb-0">
+                                        <a href="demo-logistics-about-us.html" class="btn btn-white btn-extra-large btn-round-edge fw-700 btn-box-shadow me-35px">Explore agency</a>
+                                        <a href="https://www.youtube.com/watch?v=cfXHhfNy7tU" class="text-center d-inline-flex sm-mt-20px rounded-circle video-icon-box video-icon-medium popup-vimeo">
+                                            <span class="video-icon bg-base-color me-10px">
+                                                <i class="fa-solid fa-play text-dark-gray"></i>
+                                                <span class="video-icon-sonar">
+                                                    <span class="video-icon-sonar-afr border border-2 border-color-base-color"></span>
+                                                </span>
+                                            </span>
+                                            <span class="text-white fs-20">How it work?</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end slider item -->
+                    <!-- start slider item -->
+                    <div class="swiper-slide cover-background" style="background-image:url('{{asset('asset/images/demo-logistics-slider-03.jpg')}}');">
+                        <div class="container h-100">
+                            <div class="row align-items-center h-100 xl-ps-10 sm-ps-0">
+                                <div class="col-xxl-7 col-xl-10 text-white" style="margin-top: 80px;">
+                                    <h1 class="fw-600">Provided authentic train cargo solutions nationwide.</h1>
+                                    <div class="fs-20 opacity-6 mb-40px sm-mb-30px">Reliable train freight services for seamless transport.</div>
+                                    <div class="lg-mb-8 md-mb-0">
+                                        <a href="demo-logistics-about-us.html" class="btn btn-white btn-extra-large btn-round-edge fw-700 btn-box-shadow me-35px">Explore agency</a>
+                                        <a href="https://www.youtube.com/watch?v=cfXHhfNy7tU" class="text-center d-inline-flex sm-mt-20px rounded-circle video-icon-box video-icon-medium popup-vimeo">
+                                            <span class="video-icon bg-base-color me-10px">
+                                                <i class="fa-solid fa-play text-dark-gray"></i>
+                                                <span class="video-icon-sonar">
+                                                    <span class="video-icon-sonar-afr border border-2 border-color-base-color"></span>
+                                                </span>
+                                            </span>
+                                            <span class="text-white fs-20">How it work?</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end slider item -->
                 </div>
-            </article>
+                <!-- start slider pagination -->
+                <!-- end slider pagination -->
+                <!-- start slider navigation -->
+                <div class="slider-one-slide-prev-1 icon-very-medium text-white swiper-button-prev slider-navigation-style-06 bg-black-transparent-medium h-60px w-60px d-none d-sm-flex border-radius-100"><i class="bi bi-arrow-left-short"></i></div>
+                <div class="slider-one-slide-next-1 icon-very-medium text-white swiper-button-next slider-navigation-style-06 bg-black-transparent-medium h-60px w-60px d-none d-sm-flex border-radius-100"><i class="bi bi-arrow-right-short"></i></div>
+                <!-- end slider navigation -->
+            </div>
         </section>
-        <!-- end section --> 
+        <!-- end section -->
         <!-- start section -->
         <section class="position-relative pb-0 xs-pt-30px">
             <div class="w-100 h-70px position-absolute top-minus-70px md-top-minus-50px left-0px" style="background-image:url('{{ asset("asset/images/demo-travel-agency-slider-07.png") }}');"></div>
@@ -1764,24 +103,26 @@
                             <div class="title fs-24 alt-font text-base-color fw-600 text-uppercase">Explore the world for yourself</div>
                         </div>
                     </div>
-                    <div class="col-lg-1 col-md-2 d-none d-md-inline-block"><div class="divider-dot d-flex align-items-center w-100 h-200px"></div></div>
+                    <div class="col-lg-1 col-md-2 d-none d-md-inline-block">
+                        <div class="divider-dot d-flex align-items-center w-100 h-200px"></div>
+                    </div>
                     <div class="col-lg-5 col-md-9 offset-md-1" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 800, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
                         <h1 class="alt-font fw-600 text-dark-gray ls-minus-3px w-90 xl-w-100 mb-30px">Discover the world's leading travel agency.</h1>
-                        <p class="w-75 lg-w-100">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since.</p> 
-                        <div class="d-inline-block mt-5px"> 
+                        <p class="w-75 lg-w-100">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since.</p>
+                        <div class="d-inline-block mt-5px">
                             <a href="demo-travel-agency-about.html" class="btn btn-large btn-round-edge btn-dark-gray btn-hover-animation btn-box-shadow me-25px">
-                                <span> 
-                                    <span class="btn-text">About company</span><span class="btn-icon"><i class="feather icon-feather-feather"></i></span> 
+                                <span>
+                                    <span class="btn-text">About company</span><span class="btn-icon"><i class="feather icon-feather-feather"></i></span>
                                 </span>
                             </a>
                             <a href="demo-travel-agency-tours.html" class="btn btn-link-gradient expand btn-extra-large text-dark-gray text-dark-gray-hover ls-0px">Discover tour<span class="bg-dark-gray"></span></a>
                         </div>
-                    </div> 
-                    <div class="col-lg-4 col-md-8 position-relative offset-lg-1 offset-md-4 ps-0 sm-ps-15px md-mt-50px" data-anime='{ "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'> 
-                        <img src="https://placehold.co/405x560" class="border-radius-6px md-w-100" alt="">  
-                        <img class="position-absolute left-minus-120px top-80px sm-top-0px sm-w-160px sm-left-0px" src="{{ asset('asset/images/demo-travel-agency-home-02.png') }}" alt="" data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)"> 
                     </div>
-                </div>  
+                    <div class="col-lg-4 col-md-8 position-relative offset-lg-1 offset-md-4 ps-0 sm-ps-15px md-mt-50px" data-anime='{ "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                        <img src="https://placehold.co/405x560" class="border-radius-6px md-w-100" alt="">
+                        <img class="position-absolute left-minus-120px top-80px sm-top-0px sm-w-160px sm-left-0px" src="{{ asset('asset/images/demo-travel-agency-home-02.png') }}" alt="" data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)">
+                    </div>
+                </div>
                 <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 justify-content-center" data-anime='{ "el": "childs", "rotateZ": [5, 0], "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
                     <!-- start features box item -->
                     <div class="col icon-with-text-style-01 md-mb-30px">
@@ -1834,13 +175,13 @@
                             </div>
                         </div>
                     </div>
-                    <!-- end features box item --> 
+                    <!-- end features box item -->
                 </div>
             </div>
         </section>
         <!-- end section -->
         <section class="bg-very-light-gray background-position-center-bottom background-size-contain background-no-repeat pt-2 pb-6" style="background-image:url('{{ asset("asset/images/demo-travel-agency-home-bg-05.png") }}');">
-            <div class="container"> 
+            <div class="container">
                 <div class="row justify-content-center mb-3">
                     <div class="col-lg-6 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
                         <span class="fw-500 text-base-color text-uppercase d-inline-block">Most popular tours</span>
@@ -1859,7 +200,7 @@
                                             <a href="demo-travel-agency-tour-details-page.html">
                                                 <img class="w-100" src="https://placehold.co/800x655" alt="">
                                             </a>
-                                        </div> 
+                                        </div>
                                         <div class="bg-white p-35px position-relative">
                                             <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">10 days</div>
                                             <div class="fs-24 fw-700 text-dark-gray"><span class="text-uppercase d-block fs-14 lh-18 fw-500 text-medium-gray">Just</span>$1299<span class="ms-5px position-relative text-red fs-19 fw-500">$1500<span class="w-100 h-1px position-absolute left-0px top-50 bg-red"></span></span></div>
@@ -1881,7 +222,7 @@
                                             <a href="demo-travel-agency-tour-details-page.html">
                                                 <img class="w-100" src="https://placehold.co/800x655" alt="">
                                             </a>
-                                        </div> 
+                                        </div>
                                         <div class="bg-white p-35px position-relative">
                                             <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">08 days</div>
                                             <div class="fs-24 fw-700 text-dark-gray"><span class="text-uppercase d-block fs-14 lh-18 fw-500 text-medium-gray">Just</span>$1099<span class="ms-5px position-relative text-red fs-19 fw-500">$1200<span class="w-100 h-1px position-absolute left-0px top-50 bg-red"></span></span></div>
@@ -1903,7 +244,7 @@
                                             <a href="demo-travel-agency-tour-details-page.html">
                                                 <img class="w-100" src="https://placehold.co/800x655" alt="">
                                             </a>
-                                        </div> 
+                                        </div>
                                         <div class="bg-white p-35px position-relative">
                                             <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">05 days</div>
                                             <div class="fs-24 fw-700 text-dark-gray"><span class="text-uppercase d-block fs-14 lh-18 fw-500 text-medium-gray">Just</span>$1349<span class="ms-5px position-relative text-red fs-19 fw-500">$1700<span class="w-100 h-1px position-absolute left-0px top-50 bg-red"></span></span></div>
@@ -1925,7 +266,7 @@
                                             <a href="demo-travel-agency-tour-details-page.html">
                                                 <img class="w-100" src="https://placehold.co/800x655" alt="">
                                             </a>
-                                        </div> 
+                                        </div>
                                         <div class="bg-white p-35px position-relative">
                                             <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">10 days</div>
                                             <div class="fs-24 fw-700 text-dark-gray"><span class="text-uppercase d-block fs-14 lh-18 fw-500 text-medium-gray">Just</span>$1699<span class="ms-5px position-relative text-red fs-19 fw-500">$1800<span class="w-100 h-1px position-absolute left-0px top-50 bg-red"></span></span></div>
@@ -1934,12 +275,12 @@
                                                 <span class="fw-500 fs-14 d-inline-block text-uppercase">16 Reviews</span>
                                                 <div class="review-star-icon ms-auto">
                                                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                                                </div> 
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- end content carousal item --> 
+                                <!-- end content carousal item -->
                                 <!-- start content carousal item -->
                                 <div class="swiper-slide">
                                     <div class="overflow-hidden border-radius-6px box-shadow-large">
@@ -1947,7 +288,7 @@
                                             <a href="demo-travel-agency-tour-details-page.html">
                                                 <img class="w-100" src="https://placehold.co/800x655" alt="">
                                             </a>
-                                        </div> 
+                                        </div>
                                         <div class="bg-white p-35px position-relative">
                                             <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">10 days</div>
                                             <div class="fs-24 fw-700 text-dark-gray"><span class="text-uppercase d-block fs-14 lh-18 fw-500 text-medium-gray">Just</span>$1299<span class="ms-5px position-relative text-red fs-19 fw-500">$1500<span class="w-100 h-1px position-absolute left-0px top-50 bg-red"></span></span></div>
@@ -1969,7 +310,7 @@
                                             <a href="demo-travel-agency-tour-details-page.html">
                                                 <img class="w-100" src="https://placehold.co/800x655" alt="">
                                             </a>
-                                        </div> 
+                                        </div>
                                         <div class="bg-white p-35px position-relative">
                                             <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">08 days</div>
                                             <div class="fs-24 fw-700 text-dark-gray"><span class="text-uppercase d-block fs-14 lh-18 fw-500 text-medium-gray">Just</span>$1099<span class="ms-5px position-relative text-red fs-19 fw-500">$1200<span class="w-100 h-1px position-absolute left-0px top-50 bg-red"></span></span></div>
@@ -1991,7 +332,7 @@
                                             <a href="demo-travel-agency-tour-details-page.html">
                                                 <img class="w-100" src="https://placehold.co/800x655" alt="">
                                             </a>
-                                        </div> 
+                                        </div>
                                         <div class="bg-white p-35px position-relative">
                                             <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">05 days</div>
                                             <div class="fs-24 fw-700 text-dark-gray"><span class="text-uppercase d-block fs-14 lh-18 fw-500 text-medium-gray">Just</span>$1349<span class="ms-5px position-relative text-red fs-19 fw-500">$1700<span class="w-100 h-1px position-absolute left-0px top-50 bg-red"></span></span></div>
@@ -2013,7 +354,7 @@
                                             <a href="demo-travel-agency-tour-details-page.html">
                                                 <img class="w-100" src="https://placehold.co/800x655" alt="">
                                             </a>
-                                        </div> 
+                                        </div>
                                         <div class="bg-white p-35px position-relative">
                                             <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">10 days</div>
                                             <div class="fs-24 fw-700 text-dark-gray"><span class="text-uppercase d-block fs-14 lh-18 fw-500 text-medium-gray">Just</span>$1699<span class="ms-5px position-relative text-red fs-19 fw-500">$1800<span class="w-100 h-1px position-absolute left-0px top-50 bg-red"></span></span></div>
@@ -2022,23 +363,27 @@
                                                 <span class="fw-500 fs-14 d-inline-block text-uppercase">16 Reviews</span>
                                                 <div class="review-star-icon ms-auto">
                                                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                                                </div> 
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- end content carousal item --> 
+                                <!-- end content carousal item -->
                             </div>
                             <!-- start slider pagination -->
                             <div class="swiper-navigation-wrapper d-flex align-items-center justify-content-center">
-                                <div class="swiper-button-previous-nav swiper-button-prev slider-four-slide-prev"><i class="feather icon-feather-arrow-left icon-small text-dark-gray"></i><div class="number-prev fs-14 fw-500"></div></div>
+                                <div class="swiper-button-previous-nav swiper-button-prev slider-four-slide-prev"><i class="feather icon-feather-arrow-left icon-small text-dark-gray"></i>
+                                    <div class="number-prev fs-14 fw-500"></div>
+                                </div>
                                 <div class="swiper-pagination-progress w-200px xs-w-150px bg-medium-gray-transparent"><span class="swiper-progress"></span></div>
-                                <div class="swiper-button-next-nav swiper-button-next slider-four-slide-next"><div class="number-next fs-14 fw-500"></div><i class="feather icon-feather-arrow-right icon-small text-dark-gray"></i></div>
+                                <div class="swiper-button-next-nav swiper-button-next slider-four-slide-next">
+                                    <div class="number-next fs-14 fw-500"></div><i class="feather icon-feather-arrow-right icon-small text-dark-gray"></i>
+                                </div>
                             </div>
                             <!-- end slider pagination -->
-                        </div> 
+                        </div>
                     </div>
-                </div> 
+                </div>
             </div>
         </section>
         <!-- start section -->
@@ -2062,10 +407,10 @@
                                     <a href="demo-travel-agency-tours.html" class="alt-font fs-22 fw-500 text-white d-block text-uppercase">India</a>
                                 </div>
                                 <div class="box-overlay bg-dark-gray"></div>
-                            </figcaption>                            
+                            </figcaption>
                         </figure>
                     </div>
-                    <!-- end interactive banners item -->  
+                    <!-- end interactive banners item -->
                     <!-- start interactive banners item -->
                     <div class="col text-center interactive-banner-style-01 last-paragraph-no-margin mb-30px">
                         <figure class="m-0 position-relative hover-box border-radius-6px overflow-hidden">
@@ -2077,10 +422,10 @@
                                     <a href="demo-travel-agency-tours.html" class="alt-font fs-22 fw-500 text-white d-block text-uppercase">Poland</a>
                                 </div>
                                 <div class="box-overlay bg-dark-gray"></div>
-                            </figcaption>                            
+                            </figcaption>
                         </figure>
                     </div>
-                    <!-- end interactive banners item --> 
+                    <!-- end interactive banners item -->
                     <!-- start interactive banners item -->
                     <div class="col text-center interactive-banner-style-01 last-paragraph-no-margin mb-30px">
                         <figure class="m-0 position-relative hover-box border-radius-6px overflow-hidden">
@@ -2092,10 +437,10 @@
                                     <a href="demo-travel-agency-tours.html" class="alt-font fs-22 fw-500 text-white d-block text-uppercase">Mexico</a>
                                 </div>
                                 <div class="box-overlay bg-dark-gray"></div>
-                            </figcaption>                            
+                            </figcaption>
                         </figure>
                     </div>
-                    <!-- end interactive banners item --> 
+                    <!-- end interactive banners item -->
                     <!-- start interactive banners item -->
                     <div class="col text-center interactive-banner-style-01 last-paragraph-no-margin mb-30px">
                         <figure class="m-0 position-relative hover-box border-radius-6px overflow-hidden">
@@ -2107,10 +452,10 @@
                                     <a href="demo-travel-agency-tours.html" class="alt-font fs-22 fw-500 text-white d-block text-uppercase">Egypt</a>
                                 </div>
                                 <div class="box-overlay bg-dark-gray"></div>
-                            </figcaption>                            
+                            </figcaption>
                         </figure>
                     </div>
-                    <!-- end interactive banners item --> 
+                    <!-- end interactive banners item -->
                     <!-- start interactive banners item -->
                     <div class="col text-center interactive-banner-style-01 last-paragraph-no-margin lg-mb-30px">
                         <figure class="m-0 position-relative hover-box border-radius-6px overflow-hidden">
@@ -2122,10 +467,10 @@
                                     <a href="demo-travel-agency-tours.html" class="alt-font fs-22 fw-500 text-white d-block text-uppercase">Africa</a>
                                 </div>
                                 <div class="box-overlay bg-dark-gray"></div>
-                            </figcaption>                            
+                            </figcaption>
                         </figure>
                     </div>
-                    <!-- end interactive banners item --> 
+                    <!-- end interactive banners item -->
                     <!-- start interactive banners item -->
                     <div class="col text-center interactive-banner-style-01 last-paragraph-no-margin lg-mb-30px">
                         <figure class="m-0 position-relative hover-box border-radius-6px overflow-hidden">
@@ -2137,10 +482,10 @@
                                     <a href="demo-travel-agency-tours.html" class="alt-font fs-22 fw-500 text-white d-block text-uppercase">Kenya</a>
                                 </div>
                                 <div class="box-overlay bg-dark-gray"></div>
-                            </figcaption>                            
+                            </figcaption>
                         </figure>
                     </div>
-                    <!-- end interactive banners item --> 
+                    <!-- end interactive banners item -->
                     <!-- start interactive banners item -->
                     <div class="col text-center interactive-banner-style-01 last-paragraph-no-margin lg-mb-30px">
                         <figure class="m-0 position-relative hover-box border-radius-6px overflow-hidden">
@@ -2152,10 +497,10 @@
                                     <a href="demo-travel-agency-tours.html" class="alt-font fs-22 fw-500 text-white d-block text-uppercase">Maldives</a>
                                 </div>
                                 <div class="box-overlay bg-dark-gray"></div>
-                            </figcaption>                            
+                            </figcaption>
                         </figure>
                     </div>
-                    <!-- end interactive banners item --> 
+                    <!-- end interactive banners item -->
                     <!-- start interactive banners item -->
                     <div class="col text-center interactive-banner-style-01 last-paragraph-no-margin">
                         <figure class="m-0 position-relative hover-box border-radius-6px overflow-hidden">
@@ -2167,10 +512,10 @@
                                     <a href="demo-travel-agency-tours.html" class="alt-font fs-22 fw-500 text-white d-block text-uppercase">Dubai</a>
                                 </div>
                                 <div class="box-overlay bg-dark-gray"></div>
-                            </figcaption>                            
+                            </figcaption>
                         </figure>
                     </div>
-                    <!-- end interactive banners item --> 
+                    <!-- end interactive banners item -->
                 </div>
                 <div class="row text-center" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 100, "staggervalue": 150, "easing": "easeOutQuad" }'>
                     <div class="col-12">
@@ -2240,7 +585,7 @@
                                     <div class="row align-items-center">
                                         <div class="col-md-5 text-center text-md-start sm-mb-15px">
                                             <img src="https://placehold.co/350x335" alt="">
-                                        </div> 
+                                        </div>
                                         <div class="col-md-7 position-relative ps-16 sm-ps-15px text-center text-md-start">
                                             <p class="fs-20 lh-28 text-dark-gray mb-20px">Our Africa travel specialist planned the most <span class="text-decoration-line-bottom fw-600">amazing trip</span> to kenya for us. We had an <span class="text-decoration-line-bottom fw-600">incredible time</span> and were able to capture so many awesome pictures.</p>
                                             <div class="text-center bg-base-color text-white fs-15 border-radius-22px d-inline-block ps-20px pe-20px lh-36 ls-minus-1px">
@@ -2249,14 +594,14 @@
                                                 <i class="bi bi-star-fill"></i>
                                                 <i class="bi bi-star-fill"></i>
                                                 <i class="bi bi-star-fill"></i>
-                                            </div> 
+                                            </div>
                                             <div class="position-absolute left-0px top-0px h-100 w-90px sm-w-100 border-end border-color-transparent-dark-very-light sm-position-relative sm-mt-10px sm-border-end-0">
                                                 <div class="vertical-title-center align-items-center justify-content-center sm-vertical-title-inherit">
                                                     <div class="title fs-20 alt-font text-base-color fw-600 text-uppercase">Alexander moore</div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> 
+                                    </div>
                                 </div>
                                 <!-- end text slider item -->
                                 <!-- start text slider item -->
@@ -2264,7 +609,7 @@
                                     <div class="row align-items-center">
                                         <div class="col-md-5 text-center text-md-start sm-mb-15px">
                                             <img src="https://placehold.co/350x335" alt="">
-                                        </div> 
+                                        </div>
                                         <div class="col-md-7 position-relative ps-16 sm-ps-15px text-center text-md-start">
                                             <p class="fs-20 lh-28 text-dark-gray mb-20px">Excellent travel company. We have already <span class="text-decoration-line-bottom fw-600">recommended</span> it to our family and friends. We are looking forward to our <span class="text-decoration-line-bottom fw-600">next trip.</span> Everything was very well organized.</p>
                                             <div class="text-center bg-base-color text-white fs-15 border-radius-22px d-inline-block ps-20px pe-20px lh-36 ls-minus-1px">
@@ -2273,7 +618,7 @@
                                                 <i class="bi bi-star-fill"></i>
                                                 <i class="bi bi-star-fill"></i>
                                                 <i class="bi bi-star-fill"></i>
-                                            </div> 
+                                            </div>
                                             <div class="position-absolute left-0px top-0px h-100 w-90px sm-w-100 border-end border-color-transparent-dark-very-light sm-position-relative sm-mt-10px sm-border-end-0">
                                                 <div class="vertical-title-center align-items-center justify-content-center sm-vertical-title-inherit">
                                                     <div class="title fs-20 alt-font text-base-color fw-600 text-uppercase">Matthew taylor</div>
@@ -2288,7 +633,7 @@
                                     <div class="row align-items-center">
                                         <div class="col-md-5 text-center text-md-start sm-mb-15px">
                                             <img src="https://placehold.co/350x335" alt="">
-                                        </div> 
+                                        </div>
                                         <div class="col-md-7 position-relative ps-16 sm-ps-15px text-center text-md-start">
                                             <p class="fs-20 lh-28 text-dark-gray mb-20px">This itinerary was a perfect <span class="text-decoration-line-bottom fw-500">combination</span> of city sights, history and culture together with the peace of the <span class="text-decoration-line-bottom fw-500">amazon rainforest</span> and the adventure.</p>
                                             <div class="text-center bg-base-color text-white fs-15 border-radius-22px d-inline-block ps-20px pe-20px lh-36 ls-minus-1px">
@@ -2297,7 +642,7 @@
                                                 <i class="bi bi-star-fill"></i>
                                                 <i class="bi bi-star-fill"></i>
                                                 <i class="bi bi-star-fill"></i>
-                                            </div> 
+                                            </div>
                                             <div class="position-absolute left-0px top-0px h-100 w-90px sm-w-100 border-end border-color-transparent-dark-very-light sm-position-relative sm-mt-10px sm-border-end-0">
                                                 <div class="vertical-title-center align-items-center justify-content-center sm-vertical-title-inherit">
                                                     <div class="title fs-20 alt-font text-base-color fw-600 text-uppercase">Herman miller</div>
@@ -2307,7 +652,7 @@
                                     </div>
                                 </div>
                                 <!-- end text slider item -->
-                            </div> 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2322,7 +667,7 @@
                         <span class="fw-500 text-base-color text-uppercase d-inline-block">Inspiring story</span>
                         <h2 class="alt-font fw-600 text-dark-gray ls-minus-2px">Travel blogs</h2>
                     </div>
-                </div> 
+                </div>
                 <div class="row">
                     <div class="col-12">
                         <ul class="blog-modern blog-wrapper grid-loading grid grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
@@ -2335,7 +680,7 @@
                                             <a href="demo-travel-agency-blog-single-modern.html"><img src="https://placehold.co/800x1015" alt="" /></a>
                                         </div>
                                         <figcaption class="post-content-wrapper overflow-hidden border-radius-6px">
-                                            <div class="position-relative bg-dark-gray post-content p-30px z-index-2 lh-initial"> 
+                                            <div class="position-relative bg-dark-gray post-content p-30px z-index-2 lh-initial">
                                                 <a href="demo-travel-agency-blog-single-modern.html" class="card-title mb-0 fs-20 lh-28 text-white d-inline-block">It takes a real designer to design for real women</a>
                                                 <div class="box-overlay bg-dark-gray z-index-minus-1"></div>
                                             </div>
@@ -2353,7 +698,7 @@
                                             <a href="demo-travel-agency-blog-single-modern.html"><img src="https://placehold.co/800x1015" alt="" /></a>
                                         </div>
                                         <figcaption class="post-content-wrapper overflow-hidden border-radius-6px">
-                                            <div class="position-relative bg-dark-gray post-content p-30px z-index-2 lh-initial"> 
+                                            <div class="position-relative bg-dark-gray post-content p-30px z-index-2 lh-initial">
                                                 <a href="demo-travel-agency-blog-single-modern.html" class="card-title mb-0 fs-20 lh-28 text-white d-inline-block">Experience breathtaking views and perspectives</a>
                                                 <div class="box-overlay bg-dark-gray z-index-minus-1"></div>
                                             </div>
@@ -2371,7 +716,7 @@
                                             <a href="demo-travel-agency-blog-single-modern.html"><img src="https://placehold.co/800x1015" alt="" /></a>
                                         </div>
                                         <figcaption class="post-content-wrapper overflow-hidden border-radius-6px">
-                                            <div class="position-relative bg-dark-gray post-content p-30px z-index-2 lh-initial"> 
+                                            <div class="position-relative bg-dark-gray post-content p-30px z-index-2 lh-initial">
                                                 <a href="demo-travel-agency-blog-single-modern.html" class="card-title mb-0 fs-20 lh-28 text-white d-inline-block">Teamwork is essential for small teams to challenges</a>
                                                 <div class="box-overlay bg-dark-gray z-index-minus-1"></div>
                                             </div>
@@ -2388,113 +733,112 @@
         </section>
         <!-- start section -->
         <!-- start footer -->
-    
-     
+
+
 
     </main>
 
     @push('scripts')
-         <script>
-            jQuery(document).ready(function () {
-                 jQuery('#travel-agency-slider').show().revolution({
-                    sliderType: "standard",
-                    /* options are 'auto', 'fullwidth' or 'fullscreen' */
-                    sliderLayout: 'fullscreen',
-                    /* sets the Slider's default timeline */
-                    delay: 9000,
-                    /* options that disable autoplay */
-                    stopLoop: "off",
-                    stopAfterLoops: 0,
-                    stopAtSlide: 1,
-                    navigation: {
+    <script>
+        jQuery(document).ready(function() {
+            jQuery('#travel-agency-slider').show().revolution({
+                sliderType: "standard",
+                /* options are 'auto', 'fullwidth' or 'fullscreen' */
+                sliderLayout: 'fullscreen',
+                /* sets the Slider's default timeline */
+                delay: 9000,
+                /* options that disable autoplay */
+                stopLoop: "off",
+                stopAfterLoops: 0,
+                stopAtSlide: 1,
+                navigation: {
 
-                        keyboardNavigation: 'on',
-                        keyboard_direction: 'horizontal',
-                        mouseScrollNavigation: 'off',
-                        mouseScrollReverse: 'reverse',
-                        onHoverStop: 'off',
-                        touch: {
-                            touchenabled: 'on',
-                            touchOnDesktop: "on",
-                            swipe_threshold: 75,
-                            swipe_min_touches: 1,
-                            swipe_direction: 'horizontal',
-                            drag_block_vertical: true
+                    keyboardNavigation: 'on',
+                    keyboard_direction: 'horizontal',
+                    mouseScrollNavigation: 'off',
+                    mouseScrollReverse: 'reverse',
+                    onHoverStop: 'off',
+                    touch: {
+                        touchenabled: 'on',
+                        touchOnDesktop: "on",
+                        swipe_threshold: 75,
+                        swipe_min_touches: 1,
+                        swipe_direction: 'horizontal',
+                        drag_block_vertical: true
+                    },
+                    arrows: {
+
+                        enable: true,
+                        style: 'hesperiden',
+                        tmp: '',
+                        rtl: false,
+                        hide_onleave: false,
+                        hide_onmobile: true,
+                        hide_under: 0,
+                        hide_over: 9999,
+                        hide_delay: 200,
+                        hide_delay_mobile: 1200,
+
+                        left: {
+                            container: 'slider',
+                            h_align: 'left',
+                            v_align: 'center',
+                            h_offset: 30,
+                            v_offset: 0
                         },
-                        arrows: {
 
-                            enable: true,
-                            style: 'hesperiden',
-                            tmp: '',
-                            rtl: false,
-                            hide_onleave: false,
-                            hide_onmobile: true,
-                            hide_under: 0,
-                            hide_over: 9999,
-                            hide_delay: 200,
-                            hide_delay_mobile: 1200,
-
-                            left: {
-                                container: 'slider',
-                                h_align: 'left',
-                                v_align: 'center',
-                                h_offset: 30,
-                                v_offset: 0
-                            },
-
-                            right: {
-                                container: 'slider',
-                                h_align: 'right',
-                                v_align: 'center',
-                                h_offset: 30,
-                                v_offset: 0
-                            }
-
+                        right: {
+                            container: 'slider',
+                            h_align: 'right',
+                            v_align: 'center',
+                            h_offset: 30,
+                            v_offset: 0
                         }
-                    },
-                    responsiveLevels: [1240, 1024, 778, 480],
-                    /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-                    gridwidth: [1190, 1024, 778, 480],
-                    /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-                    gridheight: [900, 920, 700, 650],
-                    /* Lazy Load options are "all", "smart", "single" and "none" */
-                    lazyType: "smart",
-                    spinner: "spinner0",
-                    parallax: {
-                        type: "mouse",
-                        origo: "slidercenter",
-                        speed: 1000,
-                        speedbg: 1500,
-                        speedls: 1000,
-                        levels: [3, 5, 8, 10, 12, 15, 35, 40, 45, 50, -50, -45, -40, -35, -30, -25],
-                        ddd_shadow: "on",
-                        ddd_bgfreeze: "off",
-                        ddd_overflow: "hidden",
-                        ddd_layer_overflow: "visible",
-                        ddd_z_correction: 40,
-                        disable_onmobile: 'on'
-                    },
-                    shadow: 0,
-                    shuffle: "off",
-                    autoHeight: "on",
-                    fullScreenAutoWidth: "off",
-                    fullScreenAlignForce: "off",
-                    fullScreenOffsetContainer: "",
-                    fullScreenOffset: "",
-                    disableProgressBar: "on",
-                    hideThumbsOnMobile: "on",
-                    hideSliderAtLimit: 0,
-                    hideCaptionAtLimit: 0,
-                    hideAllCaptionAtLilmit: 0,
-                    debugMode: false,
-                    fallbacks: {
-                        simplifyAll: "off",
-                        nextSlideOnWindowFocus: "off",
-                        disableFocusListener: false,
+
                     }
-                });
-            }); /*ready*/
-          
-        </script>
+                },
+                responsiveLevels: [1240, 1024, 778, 480],
+                /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
+                gridwidth: [1190, 1024, 778, 480],
+                /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
+                gridheight: [900, 920, 700, 650],
+                /* Lazy Load options are "all", "smart", "single" and "none" */
+                lazyType: "smart",
+                spinner: "spinner0",
+                parallax: {
+                    type: "mouse",
+                    origo: "slidercenter",
+                    speed: 1000,
+                    speedbg: 1500,
+                    speedls: 1000,
+                    levels: [3, 5, 8, 10, 12, 15, 35, 40, 45, 50, -50, -45, -40, -35, -30, -25],
+                    ddd_shadow: "on",
+                    ddd_bgfreeze: "off",
+                    ddd_overflow: "hidden",
+                    ddd_layer_overflow: "visible",
+                    ddd_z_correction: 40,
+                    disable_onmobile: 'on'
+                },
+                shadow: 0,
+                shuffle: "off",
+                autoHeight: "on",
+                fullScreenAutoWidth: "off",
+                fullScreenAlignForce: "off",
+                fullScreenOffsetContainer: "",
+                fullScreenOffset: "",
+                disableProgressBar: "on",
+                hideThumbsOnMobile: "on",
+                hideSliderAtLimit: 0,
+                hideCaptionAtLimit: 0,
+                hideAllCaptionAtLilmit: 0,
+                debugMode: false,
+                fallbacks: {
+                    simplifyAll: "off",
+                    nextSlideOnWindowFocus: "off",
+                    disableFocusListener: false,
+                }
+            });
+        }); /*ready*/
+    </script>
     @endpush
 </div>
