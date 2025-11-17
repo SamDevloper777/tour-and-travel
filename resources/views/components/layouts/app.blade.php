@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="{{ asset('asset/css/style.css') }}" />
     <link rel="stylesheet" href="{{ asset('asset/css/responsive.css') }}" />
     <link rel="stylesheet" href="{{ asset('asset/travel-agency/travel-agency.css') }}" />
+    @livewireStyles
 </head>
 
 <body data-mobile-nav-style="classic">
@@ -166,6 +167,7 @@
     </script>
 
     <script type="text/javascript" src="{{ asset('asset/js/main.js') }}"></script>
+    @livewireScripts
 </body>
 
 </html>

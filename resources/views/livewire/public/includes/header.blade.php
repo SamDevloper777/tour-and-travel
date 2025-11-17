@@ -4,7 +4,7 @@
         <div class="container-fluid">
             <div class="row h-45px align-items-center m-0">
                 <div class="col-xl-6 col-lg-8 justify-content-center justify-content-lg-start">
-                    <div class="fs-15 text-dark-gray">We have a selection of over 50 tour programs! <a href="demo-travel-agency-destinations.html" class="text-base-color fw-500 text-decoration-line-bottom">Popular Destinations</a></div>
+                    <div class="fs-15 text-dark-gray">We have a selection of over 50 tour programs! <a href="{{ route('destination') }}" class="text-base-color fw-500 text-decoration-line-bottom">Popular Destinations</a></div>
                 </div>
                 <div class="col-xl-6 col-lg-4 text-end d-none d-lg-flex">
                     <a href="tel:02228899900" class="widget fs-15 text-dark-gray text-dark-gray-hover"><i class="feather icon-feather-phone-call text-base-color"></i> 0222 8899900</a>
@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-lg header-transparent bg-transparent border-bottom border-color-transparent-white-light disable-fixed">
         <div class="container-fluid">
             <div class="col-auto col-lg-2 me-auto">
-                <a class="navbar-brand" href="demo-travel-agency.html">
+                <a class="navbar-brand" href="{{ route('home') }}">
                     <img src="{{ asset('asset/images/demo-travel-agency-logo-white.png') }}" data-at2x="{{ asset('asset/images/demo-travel-agency-logo-white@2x.png') }}" alt="" class="default-logo">
                     <img src="{{ asset('asset/images/demo-travel-agency-logo-white.png') }}" data-at2x="{{ asset('asset/images/demo-travel-agency-logo-white@2x.png') }}" alt="" class="alt-logo">
                     <img src="{{ asset('asset/images/demo-travel-agency-logo-black.png') }}" data-at2x="{{ asset('asset/images/demo-travel-agency-logo-black@2x.png') }}" alt="" class="mobile-logo">
@@ -32,10 +32,10 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav alt-font text-uppercase">
-                        <li class="nav-item"><a href="demo-travel-agency.html" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="demo-travel-agency-about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="{{ route('home') }}" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">About</a></li>
                         <li class="nav-item dropdown dropdown-with-icon">
-                            <a href="demo-travel-agency-destinations.html" class="nav-link">Destinations</a>
+                            <a href="{{ route('destination') }}" class="nav-link">Destinations</a>
                             <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li>
@@ -79,10 +79,10 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a href="demo-travel-agency-tours.html" class="nav-link">Tours</a></li>
-                        <li class="nav-item"><a href="demo-travel-agency-reviews.html" class="nav-link">Reviews</a></li>
-                        <li class="nav-item"><a href="demo-travel-agency-blog.html" class="nav-link">Blog</a></li>
-                        <li class="nav-item"><a href="demo-travel-agency-contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="{{ route('tour') }}" class="nav-link">Tours</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Reviews</a></li>
+                        <li class="nav-item"><a href="{{ route('blog') }}" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
                     </ul>
                 </div>
             </div>
