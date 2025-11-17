@@ -109,8 +109,8 @@
                                 </div>
                                 <!-- end image layer -->
                                 <!-- start red image layer -->
-                                <div class="tp-caption tp-resizeme rs-parallaxlevel-1" 
-                                     id="slide-01-layer-06" 
+                                  <div class="tp-caption tp-resizeme rs-parallaxlevel-1" 
+                                      id="slide-01-layer-06" 
                                      data-x="['center','center','center','center']" data-hoffset="['320','280','261','140']" 
                                      data-y="['top','top','top','middle']" data-voffset="['265','212','150','-80']" 
                                      data-width="['146','146','120','100']"
@@ -121,7 +121,7 @@
                                      data-responsive="on"
                                      data-frames='[{"delay":2200,"speed":1000,"frame":"0","from":"x:0px;y:50px;rX:0deg;rY:0deg;rZ:0deg;sX:0.5;sY:0.5;opacity:0;","to":"o:1;","ease":"Back.easeOut"},{"delay":"wait","speed":1200,"frame":"999","to":"x:left(L);sX:1;sY:1;opacity:1;","ease":"power3.inOut"}]'
                                      data-textAlign="['inherit','inherit','inherit','inherit']">
-                                    <img src="images/demo-travel-agency-slider-04.png" data-ww="100%" data-hh="auto" alt="" data-no-retina>  
+                                    <img src="{{ asset('asset/images/demo-travel-agency-slider-04.png') }}" data-ww="100%" data-hh="auto" alt="" data-no-retina>  
                                 </div>
                                 <!-- end red image layer -->
                                 <!-- start price and text layer -->
@@ -581,7 +581,7 @@
                                 <!-- SLIDE'S MAIN BACKGROUND IMAGE -->
                                 <img src="https://placehold.co/3000x1688" alt="dummy" class="rev-slidebg">
                                 <!-- start image layer -->
-                                <div class="tp-caption tp-resizeme rs-parallaxlevel-2" 
+                                  <div class="tp-caption tp-resizeme rs-parallaxlevel-2" 
                                      id="slide-02-layer-01" 
                                      data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
                                      data-y="['middle','middle','bottom','bottom']" data-voffset="['80','0','-300','-100']" 
@@ -693,7 +693,7 @@
                                      data-responsive="on"
                                      data-frames='[{"delay":2800,"speed":1000,"frame":"0","from":"x:0px;y:50px;rX:0deg;rY:0deg;rZ:0deg;sX:0.5;sY:0.5;opacity:0;","to":"o:1;","ease":"Back.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                                      data-textAlign="['inherit','inherit','inherit','inherit']">
-                                    <img src="images/demo-travel-agency-slider-04.png" data-ww="100%" data-hh="auto" alt="" data-no-retina>  
+                                    <img src="{{ asset('asset/images/demo-travel-agency-slider-04.png') }}" data-ww="100%" data-hh="auto" alt="" data-no-retina>  
                                 </div>
                                 <!-- end red image layer -->
                                 <!-- start price and text layer -->
@@ -1286,7 +1286,7 @@
                                      data-responsive="on"
                                      data-frames='[{"delay":3000,"speed":1000,"frame":"0","from":"x:0px;y:50px;rX:0deg;rY:0deg;rZ:0deg;sX:0.5;sY:0.5;opacity:0;","to":"o:1;","ease":"Back.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                                      data-textAlign="['inherit','inherit','inherit','inherit']">
-                                    <img src="images/demo-travel-agency-slider-04.png" data-ww="100%" data-hh="auto" alt="" data-no-retina>  
+                                    <img src="{{ asset('asset/images/demo-travel-agency-slider-04.png') }}" data-ww="100%" data-hh="auto" alt="" data-no-retina>  
                                 </div>
                                 <!-- end red image layer -->
                                 <!-- start price and text layer -->
@@ -1749,11 +1749,11 @@
         <!-- end section --> 
         <!-- start section -->
         <section class="position-relative pb-0 xs-pt-30px">
-            <div class="w-100 h-70px position-absolute top-minus-70px md-top-minus-50px left-0px" style="background-image:url('images/demo-travel-agency-slider-07.png');"></div>
+            <div class="w-100 h-70px position-absolute top-minus-70px md-top-minus-50px left-0px" style="background-image:url('{{ asset("asset/images/demo-travel-agency-slider-07.png") }}');"></div>
         </section>
         <!-- end section -->
         <!-- start section -->
-        <section class="extra-big-section background-position-center-bottom background-size-contain background-no-repeat position-relative pt-0" style="background-image:url('images/demo-travel-agency-home-bg-02.png');">
+        <section class="extra-big-section background-position-center-bottom background-size-contain background-no-repeat position-relative pt-0" style="background-image:url('{{ asset("asset/images/demo-travel-agency-home-bg-02.png") }}');">
             <div class="position-absolute left-0px bottom-minus-50px d-none d-lg-inline-block" data-bottom-top="transform: translateY(-50px)" data-top-bottom="transform: translateY(50px)">
                 <img src="https://placehold.co/88x230" alt="" />
             </div>
@@ -1779,7 +1779,7 @@
                     </div> 
                     <div class="col-lg-4 col-md-8 position-relative offset-lg-1 offset-md-4 ps-0 sm-ps-15px md-mt-50px" data-anime='{ "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'> 
                         <img src="https://placehold.co/405x560" class="border-radius-6px md-w-100" alt="">  
-                        <img class="position-absolute left-minus-120px top-80px sm-top-0px sm-w-160px sm-left-0px" src="images/demo-travel-agency-home-02.png" alt="" data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)"> 
+                        <img class="position-absolute left-minus-120px top-80px sm-top-0px sm-w-160px sm-left-0px" src="{{ asset('asset/images/demo-travel-agency-home-02.png') }}" alt="" data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)"> 
                     </div>
                 </div>  
                 <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 justify-content-center" data-anime='{ "el": "childs", "rotateZ": [5, 0], "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
@@ -1839,7 +1839,7 @@
             </div>
         </section>
         <!-- end section -->
-        <section class="bg-very-light-gray background-position-center-bottom background-size-contain background-no-repeat pt-2 pb-6" style="background-image:url('images/demo-travel-agency-home-bg-05.png');">
+        <section class="bg-very-light-gray background-position-center-bottom background-size-contain background-no-repeat pt-2 pb-6" style="background-image:url('{{ asset("asset/images/demo-travel-agency-home-bg-05.png") }}');">
             <div class="container"> 
                 <div class="row justify-content-center mb-3">
                     <div class="col-lg-6 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
@@ -2315,7 +2315,7 @@
         </section>
         <!-- end section -->
         <!-- end section -->
-        <section class="bg-very-light-gray background-position-center-top background-no-repeat overlap-height" style="background-image:url('images/demo-travel-agency-home-bg-04.png');">
+        <section class="bg-very-light-gray background-position-center-top background-no-repeat overlap-height" style="background-image:url('{{ asset("asset/images/demo-travel-agency-home-bg-04.png") }}');">
             <div class="container overlap-gap-section">
                 <div class="row justify-content-center mb-2">
                     <div class="col-lg-7 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>

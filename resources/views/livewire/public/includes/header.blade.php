@@ -18,9 +18,9 @@
         <div class="container-fluid">
             <div class="col-auto col-lg-2 me-auto">
                 <a class="navbar-brand" href="demo-travel-agency.html">
-                    <img src="images/demo-travel-agency-logo-white.png" data-at2x="images/demo-travel-agency-logo-white@2x.png" alt="" class="default-logo">
-                    <img src="images/demo-travel-agency-logo-white.png" data-at2x="images/demo-travel-agency-logo-white@2x.png" alt="" class="alt-logo">
-                    <img src="images/demo-travel-agency-logo-black.png" data-at2x="images/demo-travel-agency-logo-black@2x.png" alt="" class="mobile-logo">
+                    <img src="{{ asset('asset/images/demo-travel-agency-logo-white.png') }}" data-at2x="{{ asset('asset/images/demo-travel-agency-logo-white@2x.png') }}" alt="" class="default-logo">
+                    <img src="{{ asset('asset/images/demo-travel-agency-logo-white.png') }}" data-at2x="{{ asset('asset/images/demo-travel-agency-logo-white@2x.png') }}" alt="" class="alt-logo">
+                    <img src="{{ asset('asset/images/demo-travel-agency-logo-black.png') }}" data-at2x="{{ asset('asset/images/demo-travel-agency-logo-black@2x.png') }}" alt="" class="mobile-logo">
                 </a>
             </div>
             <div class="col-auto col-lg-8 menu-order position-static">
@@ -119,7 +119,7 @@
         <span class="close-menu text-white bg-dark-gray"><i class="fa-solid fa-xmark"></i></span>
         <div class="text-center push-menu-wrapper text-dark-gray" data-scroll-options='{ "theme": "dark" }'>
             <div class="w-100">
-                <img src="images/demo-travel-agency-logo-black.png" data-at2x="images/demo-travel-agency-logo-black@2x.png" class="mb-20" alt="" />
+                <img src="{{ asset('asset/images/demo-travel-agency-logo-black.png') }}" data-at2x="{{ asset('asset/images/demo-travel-agency-logo-black@2x.png') }}" class="mb-20" alt="" />
                 <div class="d-inline-block align-middle bg-very-light-gray fw-600 text-dark-gray text-uppercase border-radius-22px ps-25px pe-25px fs-13 mb-15px">Explore the world</div>
                 <h3 class="fw-600 mb-0 alt-font ls-minus-1px lh-38">World's leading travel agency</h3>
             </div>
