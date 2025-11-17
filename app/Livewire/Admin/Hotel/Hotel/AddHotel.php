@@ -78,6 +78,6 @@ class AddHotel extends Component
     #[Layout('components.layouts.admin')]
     public function render()
     {
-        return view('livewire.hotel.hotel.add-hotel');
+        return view('livewire.admin.hotel.hotel.add-hotel');
     }
 }

@@ -5,7 +5,7 @@ use App\Livewire\Admin\Destination\DestinationList;
 use App\Livewire\Admin\Hotel\Category\HotelCategoryList;
 use App\Livewire\Admin\Hotel\Hotel\HotelList;
 use App\Livewire\Auth\AdminLogin;
-use App\Livewire\Dashboard\Dashboard;
+use App\Livewire\Admin\Dashboard\Dashboard;
 use App\Livewire\Public\Home\Home;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
