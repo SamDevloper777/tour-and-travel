@@ -152,7 +152,7 @@ class DestinationList extends Component
             } else {
                 $path = $this->imageFile->store('destinations', 'public');
                 $data['storage_path'] = $path;
-                $data['image'] = null;
+                $data['image'] = asset('storage/' . $path);
                 $data['imagekit_file_id'] = null;
             }
 
