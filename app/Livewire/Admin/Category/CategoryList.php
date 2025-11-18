@@ -66,6 +66,7 @@ class CategoryList extends Component
             'categories' => $categories,
         ]);
     }
+ 
 
     public function updatedSearch()
     {
