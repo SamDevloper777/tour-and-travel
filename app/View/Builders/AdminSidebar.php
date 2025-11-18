@@ -22,107 +22,64 @@ class AdminSidebar
     {
         $menu = collect([
             (object)[
-                'title' => 'Category',
-                'icon' => 'ti ti-layout-dashboard',
-                'url' => route('admin.category.list'),
+                'title' => 'Dashboard',
+                'icon' => 'ti ti-home',
+                'url' => route('admin.dashboard'),
                 'hasSubmenu' => false,
                 'submenu' => [],
             ],
             (object)[
-                'title' => 'Destinations',
-                'icon' => 'ti ti-layout-dashboard',
-                'url' => route('admin.destination.list'),
-                'hasSubmenu' => false,
-                'submenu' => [],
+                'title' => 'Tour & Travel',
+                'icon' => 'ti ti-map',
+                'url' => '#',
+                'hasSubmenu' => true,
+                'submenu' => [
+                    (object)[
+                        'title' => 'Categories',
+                        'url' => route('admin.tour.category.list'),
+                    ],
+                    (object)[
+                        'title' => 'Destinations',
+                        'url' => route('admin.tour.destination.list'),
+                    ],
+                    (object)[
+                        'title' => 'Experiences',
+                        'url' => route('admin.tour.experience.list'),
+                    ],
+                ],
             ],
             (object)[
-                'title' => 'Hotel Categories',
-                'icon' => 'ti ti-layout-dashboard',
-                'url' => route('admin.hotel-category.list'),
-                'hasSubmenu' => false,
-                'submenu' => [],
+                'title' => 'Blog',
+                'icon' => 'ti ti-article',
+                'url' => '#',
+                'hasSubmenu' => true,
+                'submenu' => [
+                    (object)[
+                        'title' => 'Categories',
+                        'url' => route('admin.blog.category.list'),
+                    ],
+                ],
             ],
             (object)[
                 'title' => 'Hotel',
-                'icon' => 'ti ti-layout-dashboard',
-                'url' => route('admin.hotel.list'),
-                'hasSubmenu' => false,
-                'submenu' => [],
+                'icon' => 'ti ti-building-hospital',
+                'url' => '#',
+                'hasSubmenu' => true,
+                'submenu' => [
+                    (object)[
+                        'title' => 'Categories',
+                        'url' => route('admin.hotel.category.list'),
+                    ],
+                    (object)[
+                        'title' => 'Hotel List',
+                        'url' => route('admin.hotel.list'),
+                    ],
+                    (object)[
+                        'title' => 'Add Hotel',
+                        'url' => route('admin.hotel.create'),
+                    ],
+                ],
             ],
-            // (object)[
-            //     'title' => 'Users',
-            //     'icon' => 'ti ti-users',
-            //     'url' => '#',
-            //     'hasSubmenu' => false,
-            // ],
-            // (object)[
-            //     'title' => 'Services',
-            //     'icon' => 'ti ti-tools',
-            //     'url' => '#',
-            //     'hasSubmenu' => false,
-            // ],
-            // (object)[
-            //     'title' => 'Service Requests',
-            //     'icon' => 'ti ti-inbox',
-            //     'url' => '#',
-            //     'hasSubmenu' => false,
-
-            // ],
-            // (object)[
-            //     'title' => 'Registrations',
-            //     'icon' => 'ti ti-clipboard-list',
-            //     'url' => '#',
-            //     'hasSubmenu' => false,
-
-            // ],
-            // (object)[
-            //     'title' => 'Case Study',
-            //     'icon' => 'ti ti-briefcase',
-            //     'url' => '#',
-            //     'hasSubmenu' => true,
-            //     'submenu' => [
-            //         (object)['title' => 'Case Categories', 'url' => '#'],
-            //         (object)['title' => 'Case Studies', 'url' => '#'],
-            //     ],
-            // ],
-            // (object)[
-            //     'title' => 'Blogs',
-            //     'icon' => 'ti ti-article',
-            //     'url' => '#',
-            //     'hasSubmenu' => true,
-            //     'submenu' => [
-            //         (object)['title' => 'Categories', 'url' => '#'],
-            //         (object)['title' => 'Blogs', 'url' => '#'],
-            //     ],
-            // ],
-            // (object)[
-            //     'title' => 'Testimonials',
-            //     'icon' => 'ti ti-star',
-            //     'url' => '#',
-            //     'hasSubmenu' => false,
-
-            // ],
-            // (object)[
-            //     'title' => 'Faq',
-            //     'icon' => 'ti ti-help-circle',
-            //     'url' => '#',
-            //     'hasSubmenu' => false,
-
-            // ],
-            // (object)[
-            //     'title' => 'Contacts',
-            //     'icon' => 'ti ti-mail',
-            //     'url' => '#',
-            //     'hasSubmenu' => false,
-
-            // ],
-            // (object)[
-            //     'title' => 'Settings',
-            //     'icon' => 'ti ti-settings',
-            //     'url' => '#',
-            //     'hasSubmenu' => false,
-
-            // ],
         ]);
         return $menu;
     }

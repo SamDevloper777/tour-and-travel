@@ -41,7 +41,7 @@ class CategoryList extends Component
             'description' => 'nullable|string',
             'slug' => ['required', 'string', 'max:255', $uniqueRule],
             'status' => 'boolean',
-            'imageFile' => 'nullable|image|max:2048',
+            'imageFile' => 'nullable|image|max:1024',
         ];
     }
 
