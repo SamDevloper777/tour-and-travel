@@ -16,8 +16,11 @@ return new class extends Migration
             $table->string('name');
             $table->text('description')->nullable();
             $table->string('slug')->unique();
-            $table->boolean('is_active')->default(true);
-            $table->string('category_image')->nullable();
+            $table->boolean('status')->default(true);
+            $table->string('category_image')->nullable(); 
+            $table->string('storage_path')->nullable();   
+            $table->string('imagekit_file_id')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

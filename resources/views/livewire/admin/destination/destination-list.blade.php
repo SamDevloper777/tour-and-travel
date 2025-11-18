@@ -11,7 +11,7 @@
                     </p>
                 </div>
                 <div>
-                    <button wire:click="create" wire:loading.attr="disabled" class="btn btn-primary btn-sm">
+                    <button wire:click="create" wire:loading.attr="disabled" class="btn btn-primary btn-md">
                         <span wire:loading wire:target="create" class="spinner-border spinner-border-sm me-1"></span>
                         New Destination
                     </button>

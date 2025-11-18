@@ -70,7 +70,7 @@ class DestinationList extends Component
         }
 
         $destinations = $query->orderBy('created_at', 'desc')->paginate($this->perPage);
-        $categories = Category::where('is_active', 1)->orderBy('name')->get();
+        $categories = Category::where('status', 1)->orderBy('name')->get();
 
         return view('livewire.admin.destination.destination-list', [
             'destinations' => $destinations,

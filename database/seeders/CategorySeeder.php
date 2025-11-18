@@ -20,11 +20,51 @@ class CategorySeeder extends Seeder
         $now = Carbon::now();
 
         $categories = [
-            ['name' => 'Beaches', 'slug' => 'beaches', 'description' => 'Sandy beaches and coastal destinations.', 'is_active' => 1],
-            ['name' => 'Mountains', 'slug' => 'mountains', 'description' => 'Highland and mountain getaways.', 'is_active' => 1],
-            ['name' => 'Cities', 'slug' => 'cities', 'description' => 'Urban destinations, tours and stays.', 'is_active' => 1],
-            ['name' => 'Adventure', 'slug' => 'adventure', 'description' => 'Adventure travel and activities.', 'is_active' => 1],
-            ['name' => 'Family', 'slug' => 'family', 'description' => 'Family friendly trips and stays.', 'is_active' => 1],
+            [
+                'name' => 'Beaches',
+                'slug' => 'beaches',
+                'description' => 'Sandy beaches and coastal destinations.',
+                'status' => true,
+                'category_image' => null,
+                'storage_path' => null,
+                'imagekit_file_id' => null,
+            ],
+            [
+                'name' => 'Mountains',
+                'slug' => 'mountains',
+                'description' => 'Highland and mountain getaways.',
+                'status' => true,
+                'category_image' => null,
+                'storage_path' => null,
+                'imagekit_file_id' => null,
+            ],
+            [
+                'name' => 'Cities',
+                'slug' => 'cities',
+                'description' => 'Urban destinations, tours and stays.',
+                'status' => true,
+                'category_image' => null,
+                'storage_path' => null,
+                'imagekit_file_id' => null,
+            ],
+            [
+                'name' => 'Adventure',
+                'slug' => 'adventure',
+                'description' => 'Adventure travel and activities.',
+                'status' => true,
+                'category_image' => null,
+                'storage_path' => null,
+                'imagekit_file_id' => null,
+            ],
+            [
+                'name' => 'Family',
+                'slug' => 'family',
+                'description' => 'Family friendly trips and stays.',
+                'status' => true,
+                'category_image' => null,
+                'storage_path' => null,
+                'imagekit_file_id' => null,
+            ],
         ];
 
         foreach ($categories as $cat) {
