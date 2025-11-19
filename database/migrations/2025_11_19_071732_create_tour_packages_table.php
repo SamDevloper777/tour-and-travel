@@ -25,7 +25,7 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->boolean('status')->default(true);
             $table->decimal('price', 10, 2)->nullable();
-            $table->timestamps();
+            $table->timestamps(); 
         });
     }
 
