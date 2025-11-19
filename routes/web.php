@@ -21,6 +21,9 @@ use App\Livewire\Public\Tour\Tour;
 use App\Livewire\Public\Tour\TourView;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Livewire\Admin\Tour\TourPackageList;
+use App\Livewire\Admin\Tour\AddTourPackage;
+use App\Livewire\Admin\Tour\UpdateTourPackage;
 
 
 Route::get('/', Home::class)->name('home');
@@ -40,6 +43,10 @@ Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
         Route::get('/category', CategoryList::class)->name('category.list');
         Route::get('/destination', DestinationList::class)->name('destination.list');
         Route::get('/experience', ExperinceList::class)->name('experience.list');
+        // tour packages
+        Route::get('/packages', TourPackageList::class)->name('package.list');
+        Route::get('/packages/create', AddTourPackage::class)->name('package.create');
+        Route::get('/packages/{id}/edit', UpdateTourPackage::class)->name('package.edit');
     });
     //blog routes
     Route::prefix('blog')->name('blog.')->group(function () {

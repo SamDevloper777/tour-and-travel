@@ -1,0 +1,345 @@
+<?php
+
+namespace App\Livewire\Admin\Tour;
+
+use Livewire\Component;
+use Livewire\WithFileUploads;
+use App\Models\TourPackage;
+use App\Models\Category;
+use App\Models\Destination;
+use App\Models\TourPackageGallery;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
+use App\Services\ImageKitService;
+use Livewire\Attributes\Layout;
+
+class UpdateTourPackage extends Component
+{
+    use WithFileUploads;
+
+    public $packageId;
+    public $title;
+    public $slug;
+    public $description;
+    public $price;
+    public $is_featured = false;
+    public $featuredImage; // single featured image upload (replacement)
+
+    // current featured image info
+    public $currentFeaturedUrl;
+    public $currentFeaturedStoragePath;
+    public $currentFeaturedImagekitFileId;
+
+    public $category_ids = [];
+    public $destination_ids = [];
+
+    /** @var \Livewire\TemporaryUploadedFile[] */
+    public $images = []; // newly selected uploads
+    public $galleries = []; // existing gallery models
+
+    public $itineraryDays = [];
+
+    protected function rules()
+    {
+        return [
+            'title' => 'required|string|max:255',
+            // unique except current package
+            'slug' => 'nullable|string|max:255|unique:tour_packages,slug,' . ($this->packageId ?? 'NULL'),
+            'description' => 'nullable|string',
+            'price' => 'nullable|numeric',
+            'is_featured' => 'boolean',
+            'category_ids' => 'nullable|array',
+            'category_ids.*' => 'exists:categories,id',
+            'destination_ids' => 'nullable|array',
+            'destination_ids.*' => 'exists:destinations,id',
+            'images' => 'nullable|array',
+            'images.*' => 'image|max:5120', // 5MB
+            'featuredImage' => 'nullable|image|max:5120',
+        ];
+    }
+
+    public function mount($id)
+    {
+        $package = TourPackage::findOrFail($id);
+
+        $this->packageId = $package->id;
+        $this->title = $package->title;
+        $this->slug = $package->slug;
+        $this->description = $package->description;
+        $this->price = $package->price;
+        $this->is_featured = (bool) $package->is_featured;
+
+        $this->category_ids = $package->categories()->pluck('categories.id')->toArray();
+        $this->destination_ids = $package->destinations()->pluck('destinations.id')->toArray();
+
+        // hydrate itineraryDays from stored JSON
+        if ($package->itinerary) {
+            $decoded = @json_decode($package->itinerary, true);
+            if (is_array($decoded)) {
+                $this->itineraryDays = [];
+                foreach ($decoded as $day) {
+                    $this->itineraryDays[] = [
+                        'title' => $day['title'] ?? '',
+                        'points_text' => !empty($day['points']) ? implode("\n", $day['points']) : '',
+                    ];
+                }
+            }
+        }
+
+        if (empty($this->itineraryDays)) {
+            $this->itineraryDays = [['title' => '', 'points_text' => '']];
+        }
+
+        $this->galleries = $package->galleries()->get();
+
+        // current featured image info
+        $this->currentFeaturedUrl = $package->featured_image;
+        $this->currentFeaturedStoragePath = $package->storage_path;
+        $this->currentFeaturedImagekitFileId = $package->imagekit_file_id;
+    }
+
+    public function updatedTitle($value)
+    {
+        if (!$this->slug) {
+            $this->slug = Str::slug($value);
+        }
+    }
+
+    public function addItineraryDay()
+    {
+        $this->itineraryDays[] = ['title' => '', 'points_text' => ''];
+    }
+
+    public function removeItineraryDay($index)
+    {
+        if (isset($this->itineraryDays[$index])) {
+            array_splice($this->itineraryDays, $index, 1);
+        }
+    }
+
+    protected function prepareItinerary()
+    {
+        $result = [];
+        foreach ($this->itineraryDays as $i => $d) {
+            $dayKey = 'day' . ($i + 1);
+            $points = [];
+            if (!empty($d['points_text'])) {
+                $lines = preg_split('/\r?\n/', $d['points_text']);
+                foreach ($lines as $line) {
+                    $t = trim($line);
+                    if ($t !== '') $points[] = $t;
+                }
+            }
+            $result[$dayKey] = [
+                'title' => $d['title'] ?? '',
+                'points' => $points,
+            ];
+        }
+        return empty($result) ? null : json_encode($result);
+    }
+
+    /**
+     * Remove selected new image before update
+     */
+    public function removeNewImage($index)
+    {
+        if (!isset($this->images[$index])) return;
+        array_splice($this->images, $index, 1);
+    }
+
+    /**
+     * Delete existing gallery image (remains on page, shows loading)
+     */
+    public function deleteGallery($id)
+    {
+        $g = TourPackageGallery::find($id);
+        if (!$g) return;
+
+        // delete remote (ImageKit) or local storage if present
+        if ($g->imagekit_file_id) {
+            try {
+                $ik = new ImageKitService();
+                $ik->deleteFile($g->imagekit_file_id);
+            } catch (\Exception $e) {
+                // ignore deletion errors
+            }
+        }
+
+        if ($g->storage_path) {
+            try {
+                Storage::disk('public')->delete($g->storage_path);
+            } catch (\Exception $e) {
+                // ignore
+            }
+        }
+
+        $g->delete();
+
+        // refresh galleries for this package and stay on the same page
+        $this->galleries = TourPackageGallery::where('tour_package_id', $this->packageId)->get();
+    }
+
+    /**
+     * Optional: set a gallery image as featured image for package
+     */
+    public function setFeaturedGallery($id)
+    {
+        $g = TourPackageGallery::find($id);
+        if (!$g) return;
+
+        $package = TourPackage::findOrFail($this->packageId);
+        $package->update([
+            'featured_image' => $g->image_url,
+            'storage_path' => $g->storage_path,
+            'imagekit_file_id' => $g->imagekit_file_id,
+        ]);
+
+        // to reflect change immediately (if needed)
+        $this->galleries = TourPackageGallery::where('tour_package_id', $this->packageId)->get();
+
+        // update current featured info
+        $this->currentFeaturedUrl = $g->image_url;
+        $this->currentFeaturedStoragePath = $g->storage_path;
+        $this->currentFeaturedImagekitFileId = $g->imagekit_file_id;
+    }
+
+    public function update()
+    {
+        $this->validate();
+
+        $itineraryJson = $this->prepareItinerary();
+
+        $package = TourPackage::findOrFail($this->packageId);
+
+        $package->update([
+            'title' => $this->title,
+            'slug' => $this->slug ?? Str::slug($this->title),
+            'itinerary' => $itineraryJson,
+            'description' => $this->description,
+            'price' => $this->price,
+            'is_featured' => (bool)$this->is_featured,
+        ]);
+
+        // sync relations
+        $package->categories()->sync($this->category_ids ?? []);
+        $package->destinations()->sync($this->destination_ids ?? []);
+
+        // Upload newly selected images (if any)
+        if (!empty($this->images) && is_array($this->images)) {
+            $useImageKit = env('IMAGEKIT_PRIVATE_KEY') && env('IMAGEKIT_URL_ENDPOINT');
+
+            foreach ($this->images as $i => $img) {
+                try {
+                    if ($useImageKit) {
+                        $ik = new ImageKitService();
+                        $upload = $ik->uploadToFolder($img->getRealPath(), $img->getClientOriginalName(), '/tour_packages');
+                        $data = is_array($upload) ? $upload : json_decode(json_encode($upload), true);
+                        $url = $data['result']['url'] ?? $data['result']['filePath'] ?? null;
+                        $fileId = $data['result']['fileId'] ?? null;
+
+                        TourPackageGallery::create([
+                            'tour_package_id' => $package->id,
+                            'image_url' => $url,
+                            'storage_path' => null,
+                            'imagekit_file_id' => $fileId,
+                        ]);
+
+                        if ($i === 0 && !$package->featured_image) {
+                            $package->update([ 'featured_image' => $url, 'imagekit_file_id' => $fileId ]);
+                        }
+
+                        continue;
+                    }
+                } catch (\Exception $e) {
+                    // fallback to local storage
+                }
+
+                $path = $img->store('tour_packages', 'public');
+                $url = Storage::url($path);
+
+                TourPackageGallery::create([
+                    'tour_package_id' => $package->id,
+                    'image_url' => $url,
+                    'storage_path' => $path,
+                ]);
+
+                if ($i === 0 && !$package->featured_image) {
+                    $package->update([ 'featured_image' => $url, 'storage_path' => $path ]);
+                }
+            }
+        }
+
+        // Handle featured image replacement (if user uploaded one)
+        if ($this->featuredImage) {
+            // delete previous featured remote/local resources if present
+            if ($this->currentFeaturedImagekitFileId) {
+                try {
+                    $ik = new ImageKitService();
+                    $ik->deleteFile($this->currentFeaturedImagekitFileId);
+                } catch (\Exception $e) {
+                    // ignore
+                }
+            }
+
+            if ($this->currentFeaturedStoragePath) {
+                try {
+                    Storage::disk('public')->delete($this->currentFeaturedStoragePath);
+                } catch (\Exception $e) {
+                    // ignore
+                }
+            }
+
+            // upload new featured image
+            $useImageKit = env('IMAGEKIT_PRIVATE_KEY') && env('IMAGEKIT_URL_ENDPOINT');
+            try {
+                if ($useImageKit) {
+                    $ik = new ImageKitService();
+                    $upload = $ik->uploadToFolder($this->featuredImage->getRealPath(), $this->featuredImage->getClientOriginalName(), '/tour_packages');
+                    $data = is_array($upload) ? $upload : json_decode(json_encode($upload), true);
+                    $url = $data['result']['url'] ?? $data['result']['filePath'] ?? null;
+                    $fileId = $data['result']['fileId'] ?? null;
+
+                    $package->update([
+                        'featured_image' => $url,
+                        'imagekit_file_id' => $fileId,
+                        'storage_path' => null,
+                    ]);
+
+                    $this->currentFeaturedUrl = $url;
+                    $this->currentFeaturedImagekitFileId = $fileId;
+                    $this->currentFeaturedStoragePath = null;
+                } else {
+                    throw new \Exception('no imagekit');
+                }
+            } catch (\Exception $e) {
+                $path = $this->featuredImage->store('tour_packages', 'public');
+                $url = Storage::url($path);
+                $package->update([
+                    'featured_image' => $url,
+                    'storage_path' => $path,
+                    'imagekit_file_id' => null,
+                ]);
+
+                $this->currentFeaturedUrl = $url;
+                $this->currentFeaturedStoragePath = $path;
+                $this->currentFeaturedImagekitFileId = null;
+            }
+        }
+
+        // refresh galleries and clear newly selected images after upload
+        $this->galleries = TourPackageGallery::where('tour_package_id', $this->packageId)->get();
+        $this->images = [];
+
+        session()->flash('message', 'Tour package updated successfully!');
+        return redirect()->route('admin.tour.package.list');
+    }
+
+    #[Layout('components.layouts.admin')]
+    public function render()
+    {
+        return view('livewire.admin.tour.update-tour-package', [
+            'allCategories' => Category::all(),
+            'allDestinations' => Destination::all(),
+        ]);
+    }
+}

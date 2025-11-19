@@ -46,6 +46,10 @@ class AdminSidebar
                         'title' => 'Experiences',
                         'url' => route('admin.tour.experience.list'),
                     ],
+                    (object)[
+                        'title' => 'Tour Packages',
+                        'url' => route('admin.tour.package.list'),
+                    ],
                 ],
             ],
             (object)[
