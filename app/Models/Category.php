@@ -39,6 +39,6 @@ class Category extends Model
      */
     public function destinations()
     {
-        return $this->belongsToMany(\App\Models\Destination::class, 'destination_categories');
+        return $this->belongsToMany(Destination::class, 'destination_categories');
     }
 }

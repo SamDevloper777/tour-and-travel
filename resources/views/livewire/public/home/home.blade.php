@@ -388,15 +388,18 @@
         </section>
         <!-- start section -->
         <section class="pt-0">
+@foreach($categories as $category)
+        <section class="pt-0">
             <div class="container">
                 <div class="row justify-content-center mb-3">
                     <div class="col-lg-6 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <span class="fw-500 text-base-color text-uppercase d-inline-block">Authentic experiences</span>
-                        <h2 class="alt-font fw-600 text-dark-gray ls-minus-2px">Prime destination</h2>
+                        <span class="fw-500 text-base-color text-uppercase d-inline-block">{{ $category->description ?? ('Category: ' . $category->name) }}</span>
+                        <h2 class="alt-font fw-600 text-dark-gray ls-minus-2px">{{ $category->name }}</h2>
                     </div>
                 </div>
 
-                <!-- SLIDER -->
+                <!-- SLIDER for destinations in this category -->
+                @if($category->destinations->count())
                 <div class="swiper slider-one-slide magic-cursor slider-zoom"
                     data-slider-options='{
                             "slidesPerView": 1,
@@ -413,127 +416,26 @@
                     }'>
 
                     <div class="swiper-wrapper pb-5 md-pb-6 d-flex align-items-center gap-4">
+                        @foreach($category->destinations as $destination)
+                            <div class="swiper-slide">
+                                <div class="col text-center interactive-banner-style-01 last-paragraph-no-margin mb-30px">
+                                    <figure class="m-0 position-relative hover-box border-radius-6px overflow-hidden">
+                                        <img src="{{ $destination->image ?? 'https://placehold.co/600x600' }}" alt="{{ $destination->name }}">
+                                        <div class="position-absolute top-0px left-0px w-100 h-100 bg-gradient-gray-light-dark-transparent opacity-1"></div>
 
-                        <!-- 1 -->
-                        <div class="swiper-slide">
-                            <div class="col text-center interactive-banner-style-01 last-paragraph-no-margin mb-30px">
-                                <figure class="m-0 position-relative hover-box border-radius-6px overflow-hidden">
-                                    <img src="https://placehold.co/600x600" alt="">
-                                    <div class="position-absolute top-0px left-0px w-100 h-100 bg-gradient-gray-light-dark-transparent opacity-1"></div>
-
-                                    <figcaption class="w-100 h-100 d-flex flex-column justify-content-end align-items-center p-30px">
-                                        <div class="position-relative z-index-1">
-                                            <a href="#" class="d-flex justify-content-center align-items-center mx-auto icon-box w-70px h-70px rounded-circle bg-white mb-50px box-shadow-quadruple-large">
-                                                <i class="bi bi-arrow-right-short text-dark-gray icon-medium lh-0px"></i>
-                                            </a>
-                                            <a href="#" class="alt-font fs-22 fw-500 text-white d-block text-uppercase">India</a>
-                                        </div>
-                                        <div class="box-overlay bg-dark-gray"></div>
-                                    </figcaption>
-                                </figure>
+                                        <figcaption class="w-100 h-100 d-flex flex-column justify-content-end align-items-center p-30px">
+                                            <div class="position-relative z-index-1">
+                                                <a href="#" class="d-flex justify-content-center align-items-center mx-auto icon-box w-70px h-70px rounded-circle bg-white mb-50px box-shadow-quadruple-large">
+                                                    <i class="bi bi-arrow-right-short text-dark-gray icon-medium lh-0px"></i>
+                                                </a>
+                                                <a href="#" class="alt-font fs-22 fw-500 text-white d-block text-uppercase">{{ $destination->name }}</a>
+                                            </div>
+                                            <div class="box-overlay bg-dark-gray"></div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
                             </div>
-                        </div>
-
-                        <!-- 2 -->
-                        <div class="swiper-slide">
-                            <div class="col text-center interactive-banner-style-01 last-paragraph-no-margin mb-30px">
-                                <figure class="m-0 position-relative hover-box border-radius-6px overflow-hidden">
-                                    <img src="https://placehold.co/600x600" alt="">
-                                    <div class="position-absolute top-0px left-0px w-100 h-100 bg-gradient-gray-light-dark-transparent opacity-1"></div>
-
-                                    <figcaption class="w-100 h-100 d-flex flex-column justify-content-end align-items-center p-30px">
-                                        <div class="position-relative z-index-1">
-                                            <a href="#" class="d-flex justify-content-center align-items-center mx-auto icon-box w-70px h-70px rounded-circle bg-white mb-50px box-shadow-quadruple-large">
-                                                <i class="bi bi-arrow-right-short text-dark-gray icon-medium lh-0px"></i>
-                                            </a>
-                                            <a href="#" class="alt-font fs-22 fw-500 text-white d-block text-uppercase">Australia</a>
-                                        </div>
-                                        <div class="box-overlay bg-dark-gray"></div>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-
-                        <!-- 3 -->
-                        <div class="swiper-slide">
-                            <div class="col text-center interactive-banner-style-01 last-paragraph-no-margin mb-30px">
-                                <figure class="m-0 position-relative hover-box border-radius-6px overflow-hidden">
-                                    <img src="https://placehold.co/600x600" alt="">
-                                    <div class="position-absolute top-0px left-0px w-100 h-100 bg-gradient-gray-light-dark-transparent opacity-1"></div>
-
-                                    <figcaption class="w-100 h-100 d-flex flex-column justify-content-end align-items-center p-30px">
-                                        <div class="position-relative z-index-1">
-                                            <a href="#" class="d-flex justify-content-center align-items-center mx-auto icon-box w-70px h-70px rounded-circle bg-white mb-50px box-shadow-quadruple-large">
-                                                <i class="bi bi-arrow-right-short text-dark-gray icon-medium lh-0px"></i>
-                                            </a>
-                                            <a href="#" class="alt-font fs-22 fw-500 text-white d-block text-uppercase">France</a>
-                                        </div>
-                                        <div class="box-overlay bg-dark-gray"></div>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-
-                        <!-- 4 -->
-                        <div class="swiper-slide">
-                            <div class="col text-center interactive-banner-style-01 last-paragraph-no-margin mb-30px">
-                                <figure class="m-0 position-relative hover-box border-radius-6px overflow-hidden">
-                                    <img src="https://placehold.co/600x600" alt="">
-                                    <div class="position-absolute top-0px left-0px w-100 h-100 bg-gradient-gray-light-dark-transparent opacity-1"></div>
-
-                                    <figcaption class="w-100 h-100 d-flex flex-column justify-content-end align-items-center p-30px">
-                                        <div class="position-relative z-index-1">
-                                            <a href="#" class="d-flex justify-content-center align-items-center mx-auto icon-box w-70px h-70px rounded-circle bg-white mb-50px box-shadow-quadruple-large">
-                                                <i class="bi bi-arrow-right-short text-dark-gray icon-medium lh-0px"></i>
-                                            </a>
-                                            <a href="#" class="alt-font fs-22 fw-500 text-white d-block text-uppercase">Turkey</a>
-                                        </div>
-                                        <div class="box-overlay bg-dark-gray"></div>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-
-                        <!-- 5 -->
-                        <div class="swiper-slide">
-                            <div class="col text-center interactive-banner-style-01 last-paragraph-no-margin mb-30px">
-                                <figure class="m-0 position-relative hover-box border-radius-6px overflow-hidden">
-                                    <img src="https://placehold.co/600x600" alt="">
-                                    <div class="position-absolute top-0px left-0px w-100 h-100 bg-gradient-gray-light-dark-transparent opacity-1"></div>
-
-                                    <figcaption class="w-100 h-100 d-flex flex-column justify-content-end align-items-center p-30px">
-                                        <div class="position-relative z-index-1">
-                                            <a href="#" class="d-flex justify-content-center align-items-center mx-auto icon-box w-70px h-70px rounded-circle bg-white mb-50px box-shadow-quadruple-large">
-                                                <i class="bi bi-arrow-right-short text-dark-gray icon-medium lh-0px"></i>
-                                            </a>
-                                            <a href="#" class="alt-font fs-22 fw-500 text-white d-block text-uppercase">Singapore</a>
-                                        </div>
-                                        <div class="box-overlay bg-dark-gray"></div>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-
-                        <!-- 6 -->
-                        <div class="swiper-slide">
-                            <div class="col text-center interactive-banner-style-01 last-paragraph-no-margin mb-30px">
-                                <figure class="m-0 position-relative hover-box border-radius-6px overflow-hidden">
-                                    <img src="https://placehold.co/600x600" alt="">
-                                    <div class="position-absolute top-0px left-0px w-100 h-100 bg-gradient-gray-light-dark-transparent opacity-1"></div>
-
-                                    <figcaption class="w-100 h-100 d-flex flex-column justify-content-end align-items-center p-30px">
-                                        <div class="position-relative z-index-1">
-                                            <a href="#" class="d-flex justify-content-center align-items-center mx-auto icon-box w-70px h-70px rounded-circle bg-white mb-50px box-shadow-quadruple-large">
-                                                <i class="bi bi-arrow-right-short text-dark-gray icon-medium lh-0px"></i>
-                                            </a>
-                                            <a href="#" class="alt-font fs-22 fw-500 text-white d-block text-uppercase">Saudi Arabia</a>
-                                        </div>
-                                        <div class="box-overlay bg-dark-gray"></div>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-
+                        @endforeach
                     </div>
 
                     <!-- PAGINATION (WITH INLINE COLORS) -->
@@ -542,9 +444,13 @@
                     </div>
 
                 </div>
+                @else
+                    <div class="text-center py-4">No destinations available for this category.</div>
+                @endif
 
             </div>
         </section>
+@endforeach
 
         <!-- INLINE PAGINATION STYLES -->
         <style>

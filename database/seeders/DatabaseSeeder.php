@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $this->call(\Database\Seeders\AdminUserSeeder::class);
+        $this->call(\Database\Seeders\DestinationSeeder::class);
         $this->call(\Database\Seeders\CategorySeeder::class);
         $this->call(\Database\Seeders\BlogCategorySeeder::class);
         $this->call(\Database\Seeders\ExperienceSeeder::class);

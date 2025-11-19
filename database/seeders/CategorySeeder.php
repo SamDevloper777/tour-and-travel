@@ -21,45 +21,36 @@ class CategorySeeder extends Seeder
 
         $categories = [
             [
-                'name' => 'Beaches',
-                'slug' => 'beaches',
-                'description' => 'Sandy beaches and coastal destinations.',
+                'name' => 'Religious',
+                'slug' => 'religious',
+                'description' => 'Spiritual and pilgrimage destinations.',
                 'status' => true,
                 'category_image' => null,
                 'storage_path' => null,
                 'imagekit_file_id' => null,
             ],
             [
-                'name' => 'Mountains',
-                'slug' => 'mountains',
-                'description' => 'Highland and mountain getaways.',
+                'name' => 'International',
+                'slug' => 'international',
+                'description' => 'Destinations outside your country.',
                 'status' => true,
                 'category_image' => null,
                 'storage_path' => null,
                 'imagekit_file_id' => null,
             ],
             [
-                'name' => 'Cities',
-                'slug' => 'cities',
-                'description' => 'Urban destinations, tours and stays.',
+                'name' => 'Domestic',
+                'slug' => 'domestic',
+                'description' => 'Destinations within your country.',
                 'status' => true,
                 'category_image' => null,
                 'storage_path' => null,
                 'imagekit_file_id' => null,
             ],
             [
-                'name' => 'Adventure',
-                'slug' => 'adventure',
-                'description' => 'Adventure travel and activities.',
-                'status' => true,
-                'category_image' => null,
-                'storage_path' => null,
-                'imagekit_file_id' => null,
-            ],
-            [
-                'name' => 'Family',
-                'slug' => 'family',
-                'description' => 'Family friendly trips and stays.',
+                'name' => 'Honeymoon',
+                'slug' => 'honeymoon',
+                'description' => 'Romantic honeymoon destinations.',
                 'status' => true,
                 'category_image' => null,
                 'storage_path' => null,
@@ -67,8 +58,39 @@ class CategorySeeder extends Seeder
             ],
         ];
 
+        $categoryIds = [];
         foreach ($categories as $cat) {
-            DB::table('categories')->insert(array_merge($cat, ['created_at' => $now, 'updated_at' => $now]));
+            $id = DB::table('categories')->insertGetId(array_merge($cat, ['created_at' => $now, 'updated_at' => $now]));
+            $categoryIds[$cat['name']] = $id;
+        }
+
+        // Get all destination IDs by name
+        $destinations = DB::table('destinations')->get();
+        $destinationIds = [];
+        foreach ($destinations as $dest) {
+            $destinationIds[$dest->name] = $dest->id;
+        }
+
+        // Assign 8 destinations to each category
+        $categoryDestinationMap = [
+            'Religious' => ['Varanasi','Haridwar','Amritsar','Tirupati','Bodh Gaya','Shirdi','Rameswaram','Dwarka'],
+            'International' => ['Paris','London','New York','Dubai','Singapore','Bangkok','Rome','Maldives'],
+            'Domestic' => ['Goa','Jaipur','Kerala','Shimla','Manali','Udaipur','Agra','Mysore'],
+            'Honeymoon' => ['Maldives','Goa','Shimla','Kerala','Bali','Mauritius','Santorini','Venice'],
+        ];
+        foreach ($categoryDestinationMap as $catName => $destNames) {
+            $catId = $categoryIds[$catName] ?? null;
+            foreach ($destNames as $dName) {
+                $destId = $destinationIds[$dName] ?? null;
+                if ($catId && $destId) {
+                    DB::table('destination_categories')->insert([
+                        'destination_id' => $destId,
+                        'category_id' => $catId,
+                        'created_at' => $now,
+                        'updated_at' => $now,
+                    ]);
+                }
+            }
         }
     }
 }
