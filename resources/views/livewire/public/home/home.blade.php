@@ -428,25 +428,25 @@
                     }'>
 
                         <div class="swiper-wrapper pb-5 md-pb-6 d-flex align-items-center gap-4">
-                            @foreach($category->destinations as $destination)
-                            <div class="swiper-slide">
-                                <div class="col text-center interactive-banner-style-01 last-paragraph-no-margin mb-30px">
-                                    <figure class="m-0 position-relative hover-box border-radius-6px overflow-hidden">
-                                        <img src="{{ $destination->image ?? 'https://placehold.co/600x600' }}" alt="{{ $destination->name }}">
-                                        <div class="position-absolute top-0px left-0px w-100 h-100 bg-gradient-gray-light-dark-transparent opacity-1"></div>
+                            @foreach($category->destinations->where('is_featured', true) as $destination)
+                                <div class="swiper-slide">
+                                    <div class="col text-center interactive-banner-style-01 last-paragraph-no-margin mb-30px">
+                                        <figure class="m-0 position-relative hover-box border-radius-6px overflow-hidden">
+                                            <img src="{{ $destination->image ?? 'https://placehold.co/600x600' }}" alt="{{ $destination->name }}">
+                                            <div class="position-absolute top-0px left-0px w-100 h-100 bg-gradient-gray-light-dark-transparent opacity-1"></div>
 
-                                        <figcaption class="w-100 h-100 d-flex flex-column justify-content-end align-items-center p-30px">
-                                            <div class="position-relative z-index-1">
-                                                <a href="#" class="d-flex justify-content-center align-items-center mx-auto icon-box w-70px h-70px rounded-circle bg-white mb-50px box-shadow-quadruple-large">
-                                                    <i class="bi bi-arrow-right-short text-dark-gray icon-medium lh-0px"></i>
-                                                </a>
-                                                <a href="#" class="alt-font fs-22 fw-500 text-white d-block text-uppercase">{{ $destination->name }}</a>
-                                            </div>
-                                            <div class="box-overlay bg-dark-gray"></div>
-                                        </figcaption>
-                                    </figure>
+                                            <figcaption class="w-100 h-100 d-flex flex-column justify-content-end align-items-center p-30px">
+                                                <div class="position-relative z-index-1">
+                                                    <a href="#" class="d-flex justify-content-center align-items-center mx-auto icon-box w-70px h-70px rounded-circle bg-white mb-50px box-shadow-quadruple-large">
+                                                        <i class="bi bi-arrow-right-short text-dark-gray icon-medium lh-0px"></i>
+                                                    </a>
+                                                    <a href="#" class="alt-font fs-22 fw-500 text-white d-block text-uppercase">{{ $destination->name }}</a>
+                                                </div>
+                                                <div class="box-overlay bg-dark-gray"></div>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
                                 </div>
-                            </div>
                             @endforeach
                         </div>
 
