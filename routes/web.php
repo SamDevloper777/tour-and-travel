@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Admin\Banner\BannerManagement;
 use App\Livewire\Admin\Blog\Category\BlogCategoryList;
 use App\Livewire\Admin\Category\CategoryList;
 use App\Livewire\Admin\Destination\DestinationList;
@@ -31,6 +32,7 @@ Route::get('/blog', Blog::class)->name('blog');
 Route::get('/blog-view', BlogView::class)->name('blog.view');
 Route::get('destination', Destination::class)->name('destination');
 
+
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/', Dashboard::class)->name('dashboard');
     //tour and travel routes
@@ -50,6 +52,7 @@ Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
         Route::get('/create', AddHotel::class)->name('create');
         Route::get('/{id}/edit', UpdateHotel::class)->name('edit');
     });
+    Route::get('/banners',BannerManagement::class)->name('banners');
 });
 
 Route::get('/login', AdminLogin::class)->name('login');

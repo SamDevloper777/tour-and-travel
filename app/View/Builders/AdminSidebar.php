@@ -49,6 +49,13 @@ class AdminSidebar
                 ],
             ],
             (object)[
+                'title' => 'Banners',
+                'icon' => 'ti ti-photo',
+                'url' => route('admin.banners'),
+                'hasSubmenu' => false,
+                'submenu' => [],
+            ],
+            (object)[
                 'title' => 'Blog',
                 'icon' => 'ti ti-article',
                 'url' => '#',

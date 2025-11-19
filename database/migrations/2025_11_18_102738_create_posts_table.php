@@ -14,12 +14,13 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->foreignId('category_id');
-            $table->foreignId('author_id');
             $table->string('meta_title')->nullable();
             $table->text('meta_description')->nullable();
             $table->string('meta_keywords')->nullable();
             $table->string('featured_image')->nullable();
             $table->string('thumbnail_image')->nullable();
+            $table->string('featured_storage_path')->nullable();
+            $table->string('thumbnail_storage_path')->nullable();
             $table->string('featured_image_kit_file_id')->nullable();
             $table->string('thumbnail_image_kit_file_id')->nullable();
             $table->string('title');
