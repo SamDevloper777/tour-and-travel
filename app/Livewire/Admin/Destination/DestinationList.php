@@ -39,19 +39,19 @@ class DestinationList extends Component
 
     protected function rules()
     {
-        $uniqueRule = $this->destinationId 
-            ? "unique:destinations,slug,{$this->destinationId}" 
+        $uniqueRule = $this->destinationId
+            ? "unique:destinations,slug,{$this->destinationId}"
             : 'unique:destinations,slug';
 
         return [
             'name' => 'required|string|max:255',
-            'slug' => ['required','string','max:255',$uniqueRule],
+            'slug' => ['required', 'string', 'max:255', $uniqueRule],
             'description' => 'nullable|string',
             'status' => 'boolean',
             'is_featured' => 'boolean',
             'categoryIds' => 'required|array|min:1',
             'categoryIds.*' => 'integer|exists:categories,id',
-            'imageFile' => 'nullable|image|max:1024',
+            'imageFile' => 'nullable|image|dimensions:width=600,height=600|max:1024',
         ];
     }
     public function updatedName()
@@ -66,7 +66,7 @@ class DestinationList extends Component
 
         if ($this->search) {
             $query->where('name', 'like', "%{$this->search}%")
-                  ->orWhere('slug', 'like', "%{$this->search}%");
+                ->orWhere('slug', 'like', "%{$this->search}%");
         }
 
         $destinations = $query->orderBy('created_at', 'desc')->paginate($this->perPage);
@@ -162,12 +162,18 @@ class DestinationList extends Component
 
                 // Delete old local file
                 if ($dest->storage_path) {
-                    try { Storage::disk('public')->delete($dest->storage_path); } catch (\Throwable $e) {}
+                    try {
+                        Storage::disk('public')->delete($dest->storage_path);
+                    } catch (\Throwable $e) {
+                    }
                 }
 
                 // Delete old ImageKit file
                 if ($dest->imagekit_file_id) {
-                    try { app(ImageKitService::class)->deleteFile($dest->imagekit_file_id); } catch (\Throwable $e) {}
+                    try {
+                        app(ImageKitService::class)->deleteFile($dest->imagekit_file_id);
+                    } catch (\Throwable $e) {
+                    }
                 }
             }
         }
@@ -175,11 +181,17 @@ class DestinationList extends Component
         if ($this->destinationId) {
             $dest = Destination::findOrFail($this->destinationId);
             $dest->update($data);
-            try { $dest->categories()->sync($this->categoryIds); } catch (\Throwable $e) {}
+            try {
+                $dest->categories()->sync($this->categoryIds);
+            } catch (\Throwable $e) {
+            }
             session()->flash('message', 'Destination updated successfully.');
         } else {
             $dest = Destination::create($data);
-            try { $dest->categories()->sync($this->categoryIds); } catch (\Throwable $e) {}
+            try {
+                $dest->categories()->sync($this->categoryIds);
+            } catch (\Throwable $e) {
+            }
             session()->flash('message', 'Destination created successfully.');
         }
 

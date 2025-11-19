@@ -1,6 +1,18 @@
 <div>
 
     <main>
+        <style>
+            .swiper-pagination-bullet {
+                background: #cfd8dc !important;
+                width: 10px;
+                height: 10px;
+                opacity: 1 !important;
+            }
+
+            .swiper-pagination-bullet-active {
+                background: #d2a057 !important;
+            }
+        </style>
         <section class="p-0 full-screen md-h-600px sm-h-650px">
             <div class="swiper h-100 magic-cursor swiper-light-pagination" data-slider-options='{ "slidesPerView": 1, "loop": true, "pagination": { "el": ".swiper-pagination-bullets", "clickable": true }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "autoplay": { "delay": 4000, "disableOnInteraction": false },  "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'>
                 <div class="swiper-wrapper">
@@ -388,20 +400,20 @@
         </section>
         <!-- start section -->
         <section class="pt-0">
-@foreach($categories as $category)
-        <section class="pt-0">
-            <div class="container">
-                <div class="row justify-content-center mb-3">
-                    <div class="col-lg-6 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <span class="fw-500 text-base-color text-uppercase d-inline-block">{{ $category->description ?? ('Category: ' . $category->name) }}</span>
-                        <h2 class="alt-font fw-600 text-dark-gray ls-minus-2px">{{ $category->name }}</h2>
+            @foreach($categories as $category)
+            <section class="pt-0">
+                <div class="container">
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-lg-6 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                            <span class="fw-500 text-base-color text-uppercase d-inline-block">{{ $category->description ?? ('Category: ' . $category->name) }}</span>
+                            <h2 class="alt-font fw-600 text-dark-gray ls-minus-2px">{{ $category->name }}</h2>
+                        </div>
                     </div>
-                </div>
 
-                <!-- SLIDER for destinations in this category -->
-                @if($category->destinations->count())
-                <div class="swiper slider-one-slide magic-cursor slider-zoom"
-                    data-slider-options='{
+                    <!-- SLIDER for destinations in this category -->
+                    @if($category->destinations->count())
+                    <div class="swiper slider-one-slide magic-cursor slider-zoom"
+                        data-slider-options='{
                             "slidesPerView": 1,
                             "loop": true,
                             "pagination": { "el": ".swiper-pagination", "clickable": true },
@@ -415,8 +427,8 @@
                             }
                     }'>
 
-                    <div class="swiper-wrapper pb-5 md-pb-6 d-flex align-items-center gap-4">
-                        @foreach($category->destinations as $destination)
+                        <div class="swiper-wrapper pb-5 md-pb-6 d-flex align-items-center gap-4">
+                            @foreach($category->destinations as $destination)
                             <div class="swiper-slide">
                                 <div class="col text-center interactive-banner-style-01 last-paragraph-no-margin mb-30px">
                                     <figure class="m-0 position-relative hover-box border-radius-6px overflow-hidden">
@@ -435,248 +447,231 @@
                                     </figure>
                                 </div>
                             </div>
-                        @endforeach
-                    </div>
+                            @endforeach
+                        </div>
 
-                    <!-- PAGINATION (WITH INLINE COLORS) -->
-                    <div class="swiper-pagination"
-                        style="margin-top: 15px;">
-                    </div>
+                        <!-- PAGINATION (WITH INLINE COLORS) -->
+                        <div class="swiper-pagination"
+                            style="margin-top: 15px;">
+                        </div>
 
-                </div>
-                @else
+                    </div>
+                    @else
                     <div class="text-center py-4">No destinations available for this category.</div>
-                @endif
+                    @endif
 
-            </div>
-        </section>
-@endforeach
-
-        <!-- INLINE PAGINATION STYLES -->
-        <style>
-            /* inactive pagination dot */
-            .swiper-pagination-bullet {
-                background: #cfd8dc !important;
-                width: 10px;
-                height: 10px;
-                opacity: 1 !important;
-            }
-
-            /* active dot with your theme color */
-            .swiper-pagination-bullet-active {
-                background: #d2a057 !important;
-            }
-        </style>
-
-        <!-- end section -->
-        <!-- start parallax style-1 -->
-        <section class="position-relative overlap-height" data-parallax-background-ratio="0.5" style="background-image: url('https://placehold.co/1920x1100');">
-            <div class="opacity-extra-medium bg-gradient-gulf-blue-sepia-brown"></div>
-            <div class="container overlap-gap-section">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-xl-8 col-lg-10 position-relative text-center parallax-scrolling-style-1" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <span class="fw-500 text-white text-uppercase mb-5px d-inline-block ls-1px">Finding the perfect trips</span>
-                        <h1 class="text-white mx-auto alt-font fw-500 mb-40px ls-minus-2px">Get ready to explore and discover your world.</h1>
-                        <a href="#explore" class="section-link d-flex justify-content-center align-items-center mx-auto icon-box w-70px h-70px rounded-circle bg-base-color"><i class="bi bi-arrow-down-short text-white icon-medium d-flex"></i></a>
-                    </div>
                 </div>
-            </div>
-        </section>
-        <!-- end parallax style-1 -->
-        <!-- start section -->
-        <section id="explore" class="cover-background overflow-visible" style="background-image: url('https://placehold.co/1920x780');">
-            <div class="container overlap-section">
-                <div class="row row-cols-1 row-cols-xl-5 row-cols-md-5 row-cols-sm-3 bg-white border-radius-6px mx-0 ps-8 pe-8 lg-ps-3 lg-pe-3 pt-4 pb-4 sm-pt-8 sm-pb-8 xs-pt-15 xs-pb-40px align-items-center mb-7 xs-mb-50px justify-content-center" data-anime='{ "el": "childs", "translateX": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <div class="col text-center border-end border-color-extra-medium-gray sm-mb-40px xs-border-end-0">
-                        <img src="https://placehold.co/140x125" class="mb-10px w-70px d-block mx-auto" alt="" />
-                        <span class="alt-font fs-19 fw-600 text-dark-gray text-uppercase ls-minus-05px">Adventure</span>
-                    </div>
-                    <div class="col text-center border-end border-color-extra-medium-gray sm-mb-40px xs-border-end-0">
-                        <img src="https://placehold.co/140x125" class="mb-10px w-70px d-block mx-auto" alt="" />
-                        <span class="alt-font fs-19 fw-600 text-dark-gray text-uppercase ls-minus-05px">Friendly</span>
-                    </div>
-                    <div class="col text-center border-end sm-border-end-0 border-color-extra-medium-gray sm-mb-40px">
-                        <img src="https://placehold.co/140x125" class="mb-10px w-70px d-block mx-auto" alt="" />
-                        <span class="alt-font fs-19 fw-600 text-dark-gray text-uppercase ls-minus-05px">Popular</span>
-                    </div>
-                    <div class="col text-center border-end border-color-extra-medium-gray xs-border-end-0 xs-mb-40px">
-                        <img src="https://placehold.co/140x125" class="mb-10px w-70px d-block mx-auto" alt="" />
-                        <span class="alt-font fs-19 fw-600 text-dark-gray text-uppercase ls-minus-05px">Beaches</span>
-                    </div>
-                    <div class="col text-center">
-                        <img src="https://placehold.co/140x125" class="mb-10px w-70px d-block mx-auto" alt="" />
-                        <span class="alt-font fs-19 fw-600 text-dark-gray text-uppercase ls-minus-05px">Honeymoon</span>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row align-items-center justify-content-center" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                    <div class="col-lg-3 md-mb-20px text-center text-lg-start">
-                        <span class="fw-500 text-base-color text-uppercase">Testimonials</span>
-                        <h2 class="alt-font fw-600 text-dark-gray ls-minus-2px">Our happy traveller.</h2>
-                        <div class="d-flex justify-content-center justify-content-lg-start">
-                            <!-- start slider navigation -->
-                            <div class="slider-one-slide-prev-1 bg-white box-shadow-double-large swiper-button-prev slider-navigation-style-04"><i class="bi bi-arrow-left-short icon-very-medium"></i></div>
-                            <div class="slider-one-slide-next-1 bg-white box-shadow-double-large swiper-button-next slider-navigation-style-04"><i class="bi bi-arrow-right-short icon-very-medium"></i></div>
-                            <!-- end slider navigation -->
+            </section>
+            @endforeach
+            <!-- end section -->
+            <!-- start parallax style-1 -->
+            <section class="position-relative overlap-height" data-parallax-background-ratio="0.5" style="background-image: url('https://placehold.co/1920x1100');">
+                <div class="opacity-extra-medium bg-gradient-gulf-blue-sepia-brown"></div>
+                <div class="container overlap-gap-section">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-xl-8 col-lg-10 position-relative text-center parallax-scrolling-style-1" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                            <span class="fw-500 text-white text-uppercase mb-5px d-inline-block ls-1px">Finding the perfect trips</span>
+                            <h1 class="text-white mx-auto alt-font fw-500 mb-40px ls-minus-2px">Get ready to explore and discover your world.</h1>
+                            <a href="#explore" class="section-link d-flex justify-content-center align-items-center mx-auto icon-box w-70px h-70px rounded-circle bg-base-color"><i class="bi bi-arrow-down-short text-white icon-medium d-flex"></i></a>
                         </div>
                     </div>
-                    <div class="col-xl-8 col-lg-9">
-                        <div class="swiper position-relative magic-cursor" data-slider-options='{ "autoHeight": true, "loop": true, "allowTouchMove": true, "autoplay": { "delay": 3000, "disableOnInteraction": false }, "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }, "effect": "slide" }'>
-                            <div class="swiper-wrapper">
-                                <!-- start text slider item -->
-                                <div class="swiper-slide review-style-11">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-5 text-center text-md-start sm-mb-15px">
-                                            <img src="https://placehold.co/350x335" alt="">
-                                        </div>
-                                        <div class="col-md-7 position-relative ps-16 sm-ps-15px text-center text-md-start">
-                                            <p class="fs-20 lh-28 text-dark-gray mb-20px">Our Africa travel specialist planned the most <span class="text-decoration-line-bottom fw-600">amazing trip</span> to kenya for us. We had an <span class="text-decoration-line-bottom fw-600">incredible time</span> and were able to capture so many awesome pictures.</p>
-                                            <div class="text-center bg-base-color text-white fs-15 border-radius-22px d-inline-block ps-20px pe-20px lh-36 ls-minus-1px">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
+                </div>
+            </section>
+            <!-- end parallax style-1 -->
+            <!-- start section -->
+            <section id="explore" class="cover-background overflow-visible" style="background-image: url('https://placehold.co/1920x780');">
+                <div class="container overlap-section">
+                    <div class="row row-cols-1 row-cols-xl-5 row-cols-md-5 row-cols-sm-3 bg-white border-radius-6px mx-0 ps-8 pe-8 lg-ps-3 lg-pe-3 pt-4 pb-4 sm-pt-8 sm-pb-8 xs-pt-15 xs-pb-40px align-items-center mb-7 xs-mb-50px justify-content-center" data-anime='{ "el": "childs", "translateX": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <div class="col text-center border-end border-color-extra-medium-gray sm-mb-40px xs-border-end-0">
+                            <img src="https://placehold.co/140x125" class="mb-10px w-70px d-block mx-auto" alt="" />
+                            <span class="alt-font fs-19 fw-600 text-dark-gray text-uppercase ls-minus-05px">Adventure</span>
+                        </div>
+                        <div class="col text-center border-end border-color-extra-medium-gray sm-mb-40px xs-border-end-0">
+                            <img src="https://placehold.co/140x125" class="mb-10px w-70px d-block mx-auto" alt="" />
+                            <span class="alt-font fs-19 fw-600 text-dark-gray text-uppercase ls-minus-05px">Friendly</span>
+                        </div>
+                        <div class="col text-center border-end sm-border-end-0 border-color-extra-medium-gray sm-mb-40px">
+                            <img src="https://placehold.co/140x125" class="mb-10px w-70px d-block mx-auto" alt="" />
+                            <span class="alt-font fs-19 fw-600 text-dark-gray text-uppercase ls-minus-05px">Popular</span>
+                        </div>
+                        <div class="col text-center border-end border-color-extra-medium-gray xs-border-end-0 xs-mb-40px">
+                            <img src="https://placehold.co/140x125" class="mb-10px w-70px d-block mx-auto" alt="" />
+                            <span class="alt-font fs-19 fw-600 text-dark-gray text-uppercase ls-minus-05px">Beaches</span>
+                        </div>
+                        <div class="col text-center">
+                            <img src="https://placehold.co/140x125" class="mb-10px w-70px d-block mx-auto" alt="" />
+                            <span class="alt-font fs-19 fw-600 text-dark-gray text-uppercase ls-minus-05px">Honeymoon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row align-items-center justify-content-center" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                        <div class="col-lg-3 md-mb-20px text-center text-lg-start">
+                            <span class="fw-500 text-base-color text-uppercase">Testimonials</span>
+                            <h2 class="alt-font fw-600 text-dark-gray ls-minus-2px">Our happy traveller.</h2>
+                            <div class="d-flex justify-content-center justify-content-lg-start">
+                                <!-- start slider navigation -->
+                                <div class="slider-one-slide-prev-1 bg-white box-shadow-double-large swiper-button-prev slider-navigation-style-04"><i class="bi bi-arrow-left-short icon-very-medium"></i></div>
+                                <div class="slider-one-slide-next-1 bg-white box-shadow-double-large swiper-button-next slider-navigation-style-04"><i class="bi bi-arrow-right-short icon-very-medium"></i></div>
+                                <!-- end slider navigation -->
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-9">
+                            <div class="swiper position-relative magic-cursor" data-slider-options='{ "autoHeight": true, "loop": true, "allowTouchMove": true, "autoplay": { "delay": 3000, "disableOnInteraction": false }, "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }, "effect": "slide" }'>
+                                <div class="swiper-wrapper">
+                                    <!-- start text slider item -->
+                                    <div class="swiper-slide review-style-11">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-5 text-center text-md-start sm-mb-15px">
+                                                <img src="https://placehold.co/350x335" alt="">
                                             </div>
-                                            <div class="position-absolute left-0px top-0px h-100 w-90px sm-w-100 border-end border-color-transparent-dark-very-light sm-position-relative sm-mt-10px sm-border-end-0">
-                                                <div class="vertical-title-center align-items-center justify-content-center sm-vertical-title-inherit">
-                                                    <div class="title fs-20 alt-font text-base-color fw-600 text-uppercase">Alexander moore</div>
+                                            <div class="col-md-7 position-relative ps-16 sm-ps-15px text-center text-md-start">
+                                                <p class="fs-20 lh-28 text-dark-gray mb-20px">Our Africa travel specialist planned the most <span class="text-decoration-line-bottom fw-600">amazing trip</span> to kenya for us. We had an <span class="text-decoration-line-bottom fw-600">incredible time</span> and were able to capture so many awesome pictures.</p>
+                                                <div class="text-center bg-base-color text-white fs-15 border-radius-22px d-inline-block ps-20px pe-20px lh-36 ls-minus-1px">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                                <div class="position-absolute left-0px top-0px h-100 w-90px sm-w-100 border-end border-color-transparent-dark-very-light sm-position-relative sm-mt-10px sm-border-end-0">
+                                                    <div class="vertical-title-center align-items-center justify-content-center sm-vertical-title-inherit">
+                                                        <div class="title fs-20 alt-font text-base-color fw-600 text-uppercase">Alexander moore</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- end text slider item -->
-                                <!-- start text slider item -->
-                                <div class="swiper-slide review-style-11">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-5 text-center text-md-start sm-mb-15px">
-                                            <img src="https://placehold.co/350x335" alt="">
-                                        </div>
-                                        <div class="col-md-7 position-relative ps-16 sm-ps-15px text-center text-md-start">
-                                            <p class="fs-20 lh-28 text-dark-gray mb-20px">Excellent travel company. We have already <span class="text-decoration-line-bottom fw-600">recommended</span> it to our family and friends. We are looking forward to our <span class="text-decoration-line-bottom fw-600">next trip.</span> Everything was very well organized.</p>
-                                            <div class="text-center bg-base-color text-white fs-15 border-radius-22px d-inline-block ps-20px pe-20px lh-36 ls-minus-1px">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
+                                    <!-- end text slider item -->
+                                    <!-- start text slider item -->
+                                    <div class="swiper-slide review-style-11">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-5 text-center text-md-start sm-mb-15px">
+                                                <img src="https://placehold.co/350x335" alt="">
                                             </div>
-                                            <div class="position-absolute left-0px top-0px h-100 w-90px sm-w-100 border-end border-color-transparent-dark-very-light sm-position-relative sm-mt-10px sm-border-end-0">
-                                                <div class="vertical-title-center align-items-center justify-content-center sm-vertical-title-inherit">
-                                                    <div class="title fs-20 alt-font text-base-color fw-600 text-uppercase">Matthew taylor</div>
+                                            <div class="col-md-7 position-relative ps-16 sm-ps-15px text-center text-md-start">
+                                                <p class="fs-20 lh-28 text-dark-gray mb-20px">Excellent travel company. We have already <span class="text-decoration-line-bottom fw-600">recommended</span> it to our family and friends. We are looking forward to our <span class="text-decoration-line-bottom fw-600">next trip.</span> Everything was very well organized.</p>
+                                                <div class="text-center bg-base-color text-white fs-15 border-radius-22px d-inline-block ps-20px pe-20px lh-36 ls-minus-1px">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                                <div class="position-absolute left-0px top-0px h-100 w-90px sm-w-100 border-end border-color-transparent-dark-very-light sm-position-relative sm-mt-10px sm-border-end-0">
+                                                    <div class="vertical-title-center align-items-center justify-content-center sm-vertical-title-inherit">
+                                                        <div class="title fs-20 alt-font text-base-color fw-600 text-uppercase">Matthew taylor</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- end text slider item -->
-                                <!-- start text slider item -->
-                                <div class="swiper-slide review-style-11">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-5 text-center text-md-start sm-mb-15px">
-                                            <img src="https://placehold.co/350x335" alt="">
-                                        </div>
-                                        <div class="col-md-7 position-relative ps-16 sm-ps-15px text-center text-md-start">
-                                            <p class="fs-20 lh-28 text-dark-gray mb-20px">This itinerary was a perfect <span class="text-decoration-line-bottom fw-500">combination</span> of city sights, history and culture together with the peace of the <span class="text-decoration-line-bottom fw-500">amazon rainforest</span> and the adventure.</p>
-                                            <div class="text-center bg-base-color text-white fs-15 border-radius-22px d-inline-block ps-20px pe-20px lh-36 ls-minus-1px">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
+                                    <!-- end text slider item -->
+                                    <!-- start text slider item -->
+                                    <div class="swiper-slide review-style-11">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-5 text-center text-md-start sm-mb-15px">
+                                                <img src="https://placehold.co/350x335" alt="">
                                             </div>
-                                            <div class="position-absolute left-0px top-0px h-100 w-90px sm-w-100 border-end border-color-transparent-dark-very-light sm-position-relative sm-mt-10px sm-border-end-0">
-                                                <div class="vertical-title-center align-items-center justify-content-center sm-vertical-title-inherit">
-                                                    <div class="title fs-20 alt-font text-base-color fw-600 text-uppercase">Herman miller</div>
+                                            <div class="col-md-7 position-relative ps-16 sm-ps-15px text-center text-md-start">
+                                                <p class="fs-20 lh-28 text-dark-gray mb-20px">This itinerary was a perfect <span class="text-decoration-line-bottom fw-500">combination</span> of city sights, history and culture together with the peace of the <span class="text-decoration-line-bottom fw-500">amazon rainforest</span> and the adventure.</p>
+                                                <div class="text-center bg-base-color text-white fs-15 border-radius-22px d-inline-block ps-20px pe-20px lh-36 ls-minus-1px">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                                <div class="position-absolute left-0px top-0px h-100 w-90px sm-w-100 border-end border-color-transparent-dark-very-light sm-position-relative sm-mt-10px sm-border-end-0">
+                                                    <div class="vertical-title-center align-items-center justify-content-center sm-vertical-title-inherit">
+                                                        <div class="title fs-20 alt-font text-base-color fw-600 text-uppercase">Herman miller</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- end text slider item -->
                                 </div>
-                                <!-- end text slider item -->
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- end section -->
-        <!-- end section -->
-        <section class="bg-very-light-gray background-position-center-top background-no-repeat overlap-height" style="background-image:url('{{ asset("asset/images/demo-travel-agency-home-bg-04.png") }}');">
-            <div class="container overlap-gap-section">
-                <div class="row justify-content-center mb-2">
-                    <div class="col-lg-7 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <span class="fw-500 text-base-color text-uppercase d-inline-block">Inspiring story</span>
-                        <h2 class="alt-font fw-600 text-dark-gray ls-minus-2px">Travel blogs</h2>
+            </section>
+            <!-- end section -->
+            <!-- end section -->
+            <section class="bg-very-light-gray background-position-center-top background-no-repeat overlap-height" style="background-image:url('{{ asset("asset/images/demo-travel-agency-home-bg-04.png") }}');">
+                <div class="container overlap-gap-section">
+                    <div class="row justify-content-center mb-2">
+                        <div class="col-lg-7 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                            <span class="fw-500 text-base-color text-uppercase d-inline-block">Inspiring story</span>
+                            <h2 class="alt-font fw-600 text-dark-gray ls-minus-2px">Travel blogs</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="blog-modern blog-wrapper grid-loading grid grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                                <li class="grid-sizer"></li>
+                                <!-- start blog item -->
+                                <li class="grid-item md-mb-20px">
+                                    <div class="box-hover text-center">
+                                        <figure class="mb-0 position-relative">
+                                            <div class="blog-image position-relative overflow-hidden border-radius-6px">
+                                                <a href="demo-travel-agency-blog-single-modern.html"><img src="https://placehold.co/800x1015" alt="" /></a>
+                                            </div>
+                                            <figcaption class="post-content-wrapper overflow-hidden border-radius-6px">
+                                                <div class="position-relative bg-dark-gray post-content p-30px z-index-2 lh-initial">
+                                                    <a href="demo-travel-agency-blog-single-modern.html" class="card-title mb-0 fs-20 lh-28 text-white d-inline-block">It takes a real designer to design for real women</a>
+                                                    <div class="box-overlay bg-dark-gray z-index-minus-1"></div>
+                                                </div>
+                                                <div class="fs-15 bg-white p-15px lg-ps-10px lg-pe-10px lh-initial"><span class="d-inline-block">By <a href="demo-travel-agency-blog.html">Rosald smith</a></span><span class="separator d-inline-block">|</span><a href="#">26 Nov 2023</a></div>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </li>
+                                <!-- end blog item -->
+                                <!-- start blog item -->
+                                <li class="grid-item md-mb-20px">
+                                    <div class="box-hover text-center">
+                                        <figure class="mb-0 position-relative">
+                                            <div class="blog-image position-relative overflow-hidden border-radius-6px">
+                                                <a href="demo-travel-agency-blog-single-modern.html"><img src="https://placehold.co/800x1015" alt="" /></a>
+                                            </div>
+                                            <figcaption class="post-content-wrapper overflow-hidden border-radius-6px">
+                                                <div class="position-relative bg-dark-gray post-content p-30px z-index-2 lh-initial">
+                                                    <a href="demo-travel-agency-blog-single-modern.html" class="card-title mb-0 fs-20 lh-28 text-white d-inline-block">Experience breathtaking views and perspectives</a>
+                                                    <div class="box-overlay bg-dark-gray z-index-minus-1"></div>
+                                                </div>
+                                                <div class="fs-15 bg-white p-15px lg-ps-10px lg-pe-10px lh-initial"><span class="d-inline-block">By <a href="demo-travel-agency-blog.html">Andy glamere</a></span><span class="separator d-inline-block">|</span><a href="#">22 Nov 2023</a></div>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </li>
+                                <!-- end blog item -->
+                                <!-- start blog item -->
+                                <li class="grid-item">
+                                    <div class="box-hover text-center">
+                                        <figure class="mb-0 position-relative">
+                                            <div class="blog-image position-relative overflow-hidden border-radius-6px">
+                                                <a href="demo-travel-agency-blog-single-modern.html"><img src="https://placehold.co/800x1015" alt="" /></a>
+                                            </div>
+                                            <figcaption class="post-content-wrapper overflow-hidden border-radius-6px">
+                                                <div class="position-relative bg-dark-gray post-content p-30px z-index-2 lh-initial">
+                                                    <a href="demo-travel-agency-blog-single-modern.html" class="card-title mb-0 fs-20 lh-28 text-white d-inline-block">Teamwork is essential for small teams to challenges</a>
+                                                    <div class="box-overlay bg-dark-gray z-index-minus-1"></div>
+                                                </div>
+                                                <div class="fs-15 bg-white p-15px lg-ps-10px lg-pe-10px lh-initial"><span class="d-inline-block">By <a href="demo-travel-agency-blog.html">Den viliamson</a></span><span class="separator d-inline-block">|</span><a href="#">18 Nov 2023</a></div>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </li>
+                                <!-- end blog item -->
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <ul class="blog-modern blog-wrapper grid-loading grid grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                            <li class="grid-sizer"></li>
-                            <!-- start blog item -->
-                            <li class="grid-item md-mb-20px">
-                                <div class="box-hover text-center">
-                                    <figure class="mb-0 position-relative">
-                                        <div class="blog-image position-relative overflow-hidden border-radius-6px">
-                                            <a href="demo-travel-agency-blog-single-modern.html"><img src="https://placehold.co/800x1015" alt="" /></a>
-                                        </div>
-                                        <figcaption class="post-content-wrapper overflow-hidden border-radius-6px">
-                                            <div class="position-relative bg-dark-gray post-content p-30px z-index-2 lh-initial">
-                                                <a href="demo-travel-agency-blog-single-modern.html" class="card-title mb-0 fs-20 lh-28 text-white d-inline-block">It takes a real designer to design for real women</a>
-                                                <div class="box-overlay bg-dark-gray z-index-minus-1"></div>
-                                            </div>
-                                            <div class="fs-15 bg-white p-15px lg-ps-10px lg-pe-10px lh-initial"><span class="d-inline-block">By <a href="demo-travel-agency-blog.html">Rosald smith</a></span><span class="separator d-inline-block">|</span><a href="#">26 Nov 2023</a></div>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </li>
-                            <!-- end blog item -->
-                            <!-- start blog item -->
-                            <li class="grid-item md-mb-20px">
-                                <div class="box-hover text-center">
-                                    <figure class="mb-0 position-relative">
-                                        <div class="blog-image position-relative overflow-hidden border-radius-6px">
-                                            <a href="demo-travel-agency-blog-single-modern.html"><img src="https://placehold.co/800x1015" alt="" /></a>
-                                        </div>
-                                        <figcaption class="post-content-wrapper overflow-hidden border-radius-6px">
-                                            <div class="position-relative bg-dark-gray post-content p-30px z-index-2 lh-initial">
-                                                <a href="demo-travel-agency-blog-single-modern.html" class="card-title mb-0 fs-20 lh-28 text-white d-inline-block">Experience breathtaking views and perspectives</a>
-                                                <div class="box-overlay bg-dark-gray z-index-minus-1"></div>
-                                            </div>
-                                            <div class="fs-15 bg-white p-15px lg-ps-10px lg-pe-10px lh-initial"><span class="d-inline-block">By <a href="demo-travel-agency-blog.html">Andy glamere</a></span><span class="separator d-inline-block">|</span><a href="#">22 Nov 2023</a></div>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </li>
-                            <!-- end blog item -->
-                            <!-- start blog item -->
-                            <li class="grid-item">
-                                <div class="box-hover text-center">
-                                    <figure class="mb-0 position-relative">
-                                        <div class="blog-image position-relative overflow-hidden border-radius-6px">
-                                            <a href="demo-travel-agency-blog-single-modern.html"><img src="https://placehold.co/800x1015" alt="" /></a>
-                                        </div>
-                                        <figcaption class="post-content-wrapper overflow-hidden border-radius-6px">
-                                            <div class="position-relative bg-dark-gray post-content p-30px z-index-2 lh-initial">
-                                                <a href="demo-travel-agency-blog-single-modern.html" class="card-title mb-0 fs-20 lh-28 text-white d-inline-block">Teamwork is essential for small teams to challenges</a>
-                                                <div class="box-overlay bg-dark-gray z-index-minus-1"></div>
-                                            </div>
-                                            <div class="fs-15 bg-white p-15px lg-ps-10px lg-pe-10px lh-initial"><span class="d-inline-block">By <a href="demo-travel-agency-blog.html">Den viliamson</a></span><span class="separator d-inline-block">|</span><a href="#">18 Nov 2023</a></div>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </li>
-                            <!-- end blog item -->
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- start section -->
-        <!-- start footer -->
+            </section>
+            <!-- start section -->
+            <!-- start footer -->
 
 
 
