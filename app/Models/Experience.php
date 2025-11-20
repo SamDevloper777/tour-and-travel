@@ -11,6 +11,9 @@ class Experience extends Model
         'name',
         'slug',
         'status',
+        'image',
+        'storage_path',
+        'imagekit_file_id',
     ];
 
     protected $casts = [

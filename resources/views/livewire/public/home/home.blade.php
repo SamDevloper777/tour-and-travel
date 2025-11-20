@@ -142,7 +142,7 @@
                 <div class="row justify-content-center mb-3">
                     <div class="col-lg-6 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
                         <span class="fw-500 text-base-color text-uppercase d-inline-block">Most popular tours</span>
-                        <h2 class="alt-font fw-600 text-dark-gray ls-minus-2px">Popular packages</h2>
+                        <h2 class="alt-font fw-600 text-dark-gray ls-minus-2px">Popular Destinations</h2>
                     </div>
                 </div>
                 <div class="row row-cols-1 justify-content-center mb-10 md-mb-5 xs-mb-10">

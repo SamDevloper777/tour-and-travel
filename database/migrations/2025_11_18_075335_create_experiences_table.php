@@ -14,6 +14,9 @@ return new class extends Migration
         Schema::create('experiences', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('image')->nullable();
+            $table->string('storage_path')->nullable();
+            $table->string('imagekit_file_id')->nullable();
             $table->string('slug')->unique();
             $table->boolean('status')->default(true);
             $table->timestamps();

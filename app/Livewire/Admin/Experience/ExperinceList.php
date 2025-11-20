@@ -6,12 +6,15 @@ namespace App\Livewire\Admin\Experience;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
 use Livewire\WithPagination;
+use Livewire\WithFileUploads;
 use App\Models\Experience;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
+use App\Services\ImageKitService;
 
 class ExperinceList extends Component
 {
-    use WithPagination;
+    use WithPagination, WithFileUploads;
 
     protected $paginationTheme = 'bootstrap';
 
@@ -20,10 +23,15 @@ class ExperinceList extends Component
     public $showModal = false;
     public $showDeleteModal = false;
 
+    public $image; // temporary uploaded image
+    public $currentImageUrl;
+
     public $experienceId;
     public $name;
     public $slug;
     public $status = true;
+    public $imagekit_file_id;
+    public $storage_path;
 
     protected function rules()
     {
@@ -32,6 +40,7 @@ class ExperinceList extends Component
             'name' => 'required|string|max:255',
             'slug' => ['required', 'string', 'max:255', $uniqueRule],
             'status' => 'boolean',
+            'image' => 'nullable|image|max:5120',
         ];
     }
 
@@ -72,24 +81,61 @@ class ExperinceList extends Component
         $this->name = $exp->name;
         $this->slug = $exp->slug;
         $this->status = (bool) $exp->status;
+        $this->imagekit_file_id = $exp->imagekit_file_id ?? null;
+        $this->storage_path = $exp->storage_path ?? null;
+        $this->currentImageUrl = $exp->image ?? ($exp->storage_path ? Storage::url($exp->storage_path) : null);
         $this->showModal = true;
     }
 
     public function save()
     {
         $this->validate();
+
         $data = [
             'name' => $this->name,
             'slug' => $this->slug,
             'status' => $this->status,
         ];
+
         if ($this->experienceId) {
-            Experience::findOrFail($this->experienceId)->update($data);
-           $this->dispatch('success', 'Experience updated successfully.');
+            $exp = Experience::findOrFail($this->experienceId);
+            $exp->update($data);
         } else {
-            Experience::create($data);
-           $this->dispatch('success', 'Experience created successfully.');
+            $exp = Experience::create($data);
         }
+
+        // image handling
+        if ($this->image) {
+            $useImageKit = env('IMAGEKIT_PRIVATE_KEY') && env('IMAGEKIT_URL_ENDPOINT');
+            try {
+                if ($useImageKit) {
+                    $ik = new ImageKitService();
+                    $upload = $ik->uploadToFolder($this->image->getRealPath(), $this->image->getClientOriginalName(), '/experiences');
+                    $dataIk = is_array($upload) ? $upload : json_decode(json_encode($upload), true);
+                    $url = $dataIk['result']['url'] ?? $dataIk['result']['filePath'] ?? null;
+                    $fileId = $dataIk['result']['fileId'] ?? null;
+
+                    $exp->update([
+                        'image' => $url,
+                        'imagekit_file_id' => $fileId,
+                        'storage_path' => null,
+                    ]);
+                } else {
+                    throw new \Exception('no imagekit');
+                }
+            } catch (\Exception $e) {
+                // fallback to local storage
+                $path = $this->image->store('experiences', 'public');
+                $url = Storage::url($path);
+                $exp->update([
+                    'image' => $url,
+                    'storage_path' => $path,
+                    'imagekit_file_id' => null,
+                ]);
+            }
+        }
+
+        $this->dispatch('success', $this->experienceId ? 'Experience updated successfully.' : 'Experience created successfully.');
         $this->closeModal();
         $this->resetPage();
     }
@@ -103,8 +149,22 @@ class ExperinceList extends Component
     public function delete()
     {
         if ($this->experienceId) {
-            Experience::destroy($this->experienceId);
-           $this->dispatch('success', 'Experience deleted.');
+            $exp = Experience::find($this->experienceId);
+            if ($exp) {
+                if (!empty($exp->imagekit_file_id)) {
+                    try {
+                        $ik = new ImageKitService();
+                        $ik->deleteFile($exp->imagekit_file_id);
+                    } catch (\Exception $e) {
+                        // ignore
+                    }
+                }
+                if (!empty($exp->storage_path)) {
+                    try { Storage::disk('public')->delete($exp->storage_path); } catch (\Exception $e) {}
+                }
+                $exp->delete();
+                $this->dispatch('success', 'Experience deleted.');
+            }
         }
         $this->showDeleteModal = false;
         $this->resetPage();
@@ -128,6 +188,10 @@ class ExperinceList extends Component
         $this->name = null;
         $this->slug = null;
         $this->status = true;
+        $this->image = null;
+        $this->imagekit_file_id = null;
+        $this->storage_path = null;
+        $this->currentImageUrl = null;
         $this->resetValidation();
     }
 }

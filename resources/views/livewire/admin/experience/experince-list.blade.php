@@ -41,6 +41,13 @@
                     <tbody>
                         @forelse($experiences as $experience)
                         <tr>
+                            <td>
+                                @if($experience->image)
+                                <img src="{{ $experience->image }}" alt="{{ $experience->name }}" class="rounded" style="width:56px;height:56px;object-fit:cover;">
+                                @else
+                                <div class="bg-light rounded d-inline-block" style="width:56px;height:56px;"></div>
+                                @endif
+                            </td>
                             <td>{{ $experience->name }}</td>
                             <td>{{ $experience->slug }}</td>
                             <td class="text-center">
@@ -53,7 +60,7 @@
                         </tr>
                         @empty
                         <tr>
-                            <td colspan="4" class="text-center text-muted">No experiences found.</td>
+                            <td colspan="5" class="text-center text-muted">No experiences found.</td>
                         </tr>
                         @endforelse
                     </tbody>
@@ -81,7 +88,7 @@
                     <div class="modal-body">
                         <div class="mb-3">
                             <label class="form-label">Name</label>
-                            <input wire:model.defer="name" type="text" class="form-control @error('name') is-invalid @enderror">
+                            <input wire:model.live="name" type="text" class="form-control @error('name') is-invalid @enderror">
                             @error('name') <div class="invalid-feedback">{{ $message }}</div> @enderror
                         </div>
                         <div class="mb-3">
@@ -92,6 +99,18 @@
                         <div class="form-check mb-3">
                             <input wire:model.defer="status" class="form-check-input" type="checkbox" id="isActive">
                             <label class="form-check-label" for="isActive">Active</label>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Image</label>
+                            <input type="file" wire:model="image" accept="image/*" class="form-control @error('image') is-invalid @enderror">
+                            @error('image') <div class="invalid-feedback">{{ $message }}</div> @enderror
+                            <div class="mt-2">
+                                @if (isset($image) && $image)
+                                    <img src="{{ $image->temporaryUrl() }}" alt="Preview" class="rounded" style="width:120px;height:120px;object-fit:cover;">
+                                @elseif(!empty($currentImageUrl))
+                                    <img src="{{ $currentImageUrl }}" alt="Current Image" class="rounded" style="width:120px;height:120px;object-fit:cover;">
+                                @endif
+                            </div>
                         </div>
                     </div>
                     <div class="modal-footer">
