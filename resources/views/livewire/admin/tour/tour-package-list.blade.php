@@ -19,6 +19,32 @@
         <input type="text" wire:model.debounce.live.300ms="search" placeholder="Search..." class="form-control" />
     </div>
 
+    <div class="mb-3 d-flex gap-2">
+        <div style="min-width:180px">
+            <select class="form-select" wire:model.live="filter_status">
+                <option value="all">Status: All</option>
+                <option value="active">Status: Active</option>
+                <option value="hidden">Status: Hidden</option>
+            </select>
+        </div>
+
+        <div style="min-width:200px">
+            <select class="form-select" wire:model.live="filter_featured">
+                <option value="all">Featured: All</option>
+                <option value="featured">Only Featured</option>
+                <option value="not_featured">Not Featured</option>
+            </select>
+        </div>
+
+        <div class="ms-auto">
+            <select class="form-select" wire:model.live="perPage">
+                <option value="5">5 / page</option>
+                <option value="10">10 / page</option>
+                <option value="25">25 / page</option>
+            </select>
+        </div>
+    </div>
+
     <div class="card">
         <div class="table-responsive">
             <table class="table table-hover align-middle">
@@ -27,9 +53,6 @@
                         <th style="width:90px">Image</th>
                         <th>Title</th>
                         <th>Slug</th>
-                        <th>Categories</th>
-                        <th>Destinations</th>
-                        <th>Experiences</th>
                         <th class="text-end">Price</th>
                         <th>Status</th>
                         <th class="text-end">Actions</th>
@@ -55,37 +78,7 @@
 
                         <td class="small text-muted">{{ $p->slug }}</td>
 
-                        <td style="min-width:150px">
-                            @if($p->categories && $p->categories->count())
-                                @foreach($p->categories as $c)
-                                    <span class="badge bg-light text-dark me-1">{{ $c->name }}</span>
-                                @endforeach
-                            @else
-                                <span class="text-muted small">—</span>
-                            @endif
-                        </td>
-
-                        <td style="min-width:150px">
-                            @if($p->destinations && $p->destinations->count())
-                                @foreach($p->destinations as $d)
-                                    <span class="badge bg-light text-dark me-1">{{ $d->name }}</span>
-                                @endforeach
-                            @else
-                                <span class="text-muted small">—</span>
-                            @endif
-                        </td>
-
                         <td class="text-end fw-semibold">{{ $p->price ? '$' . number_format($p->price,2) : '—' }}</td>
-
-                        <td style="min-width:150px">
-                            @if($p->experiences && $p->experiences->count())
-                                @foreach($p->experiences as $e)
-                                    <span class="badge bg-light text-dark me-1">{{ $e->name ?? $e->title ?? 'Experience' }}</span>
-                                @endforeach
-                            @else
-                                <span class="text-muted small">—</span>
-                            @endif
-                        </td>
 
                         <td>
                             <span class="badge bg-{{ $p->status ? 'success' : 'secondary' }}">{{ $p->status ? 'Active' : 'Hidden' }}</span>
@@ -98,7 +91,7 @@
                     </tr>
                     @empty
                     <tr>
-                        <td colspan="8" class="text-center text-muted">No packages found.</td>
+                        <td colspan="6" class="text-center text-muted">No packages found.</td>
                     </tr>
                     @endforelse
                 </tbody>

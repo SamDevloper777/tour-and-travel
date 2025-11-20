@@ -10,11 +10,15 @@ use App\Models\TourPackage;
 class TourPackageList extends Component
 {
     use WithPagination;
+    
+    protected $paginationTheme = 'bootstrap';
 
     public $search = '';
     public $perPage = 10;
+    public $filter_status = 'all';
+    public $filter_featured = 'all';
 
-    protected $queryString = ['search'];
+    protected $queryString = [];
 
     public function delete($id)
     {
@@ -34,9 +38,23 @@ class TourPackageList extends Component
                   ->orWhere('slug', 'like', '%'.$this->search.'%');
         }
 
-        $packages = $query->orderBy('id', 'desc')->paginate($this->perPage);
+        if ($this->filter_status !== 'all') {
+            if ($this->filter_status === 'active') {
+                $query->where('status', 1);
+            } elseif ($this->filter_status === 'hidden') {
+                $query->where('status', 0);
+            }
+        }
 
-        $packages->load('categories');
+        if ($this->filter_featured !== 'all') {
+            if ($this->filter_featured === 'featured') {
+                $query->where('is_featured', 1);
+            } elseif ($this->filter_featured === 'not_featured') {
+                $query->where('is_featured', 0);
+            }
+        }
+
+        $packages = $query->orderBy('id', 'desc')->paginate($this->perPage);
 
         return view('livewire.admin.tour.tour-package-list', compact('packages'));
     }
