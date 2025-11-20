@@ -27,5 +27,6 @@ class DatabaseSeeder extends Seeder
         $this->call(\Database\Seeders\BannerSeeder::class);
         $this->call(\Database\Seeders\BlogCategorySeeder::class);
         $this->call(\Database\Seeders\ExperienceSeeder::class);
+        $this->call(\Database\Seeders\TourPackageSeeder::class);
     }
 }

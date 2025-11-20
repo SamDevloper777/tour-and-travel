@@ -17,23 +17,23 @@
             <div class="swiper h-100 magic-cursor swiper-light-pagination" data-slider-options='{ "slidesPerView": 1, "loop": true, "pagination": { "el": ".swiper-pagination-bullets", "clickable": true }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "autoplay": { "delay": 4000, "disableOnInteraction": false },  "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'>
                 <div class="swiper-wrapper">
                     @foreach($banners as $banner)
-                        <div class="swiper-slide cover-background" style="background-image:url('{{ $banner->image_url ?? asset($banner->storage_path) }}');">
-                            <div class="container h-100">
-                                <div class="row align-items-center h-100 xl-ps-10 sm-ps-0">
-                                    <div class="col-xxl-7 col-xl-10 text-white" style="margin-top: 80px;">
-                                        <h1 class="fw-600">{{ $banner->title }}</h1>
-                                        @if($banner->subtitle)
-                                            <div class="fs-20 opacity-6 mb-40px sm-mb-30px">{{ $banner->subtitle }}</div>
-                                        @endif
-                                        @if($banner->button_text && $banner->button_url)
-                                            <div class="lg-mb-8 md-mb-0">
-                                                <a href="{{ $banner->button_url }}" class="btn btn-white btn-extra-large btn-round-edge fw-700 btn-box-shadow me-35px">{{ $banner->button_text }}</a>
-                                            </div>
-                                        @endif
+                    <div class="swiper-slide cover-background" style="background-image:url('{{ $banner->image_url ?? asset($banner->storage_path) }}');">
+                        <div class="container h-100">
+                            <div class="row align-items-center h-100 xl-ps-10 sm-ps-0">
+                                <div class="col-xxl-7 col-xl-10 text-white" style="margin-top: 80px;">
+                                    <h1 class="fw-600">{{ $banner->title }}</h1>
+                                    @if($banner->subtitle)
+                                    <div class="fs-20 opacity-6 mb-40px sm-mb-30px">{{ $banner->subtitle }}</div>
+                                    @endif
+                                    @if($banner->button_text && $banner->button_url)
+                                    <div class="lg-mb-8 md-mb-0">
+                                        <a href="{{ $banner->button_url }}" class="btn btn-white btn-extra-large btn-round-edge fw-700 btn-box-shadow me-35px">{{ $banner->button_text }}</a>
                                     </div>
+                                    @endif
                                 </div>
                             </div>
                         </div>
+                    </div>
                     @endforeach
                 </div>
                 <!-- start slider navigation -->
@@ -49,7 +49,7 @@
         </section>
         <!-- end section -->
         <!-- start section -->
-        <section class="extra-big-section background-position-center-bottom background-size-contain background-no-repeat position-relative pt-0" style="background-image:url('{{ asset("asset/images/demo-travel-agency-home-bg-02.png") }}');">
+        <section class="extra-big-section background-position-center-bottom background-size-contain background-no-repeat position-relative pt-0" style="background-image:url('{{ asset('asset/images/demo-travel-agency-home-bg-02.png') }}');">
             <div class="position-absolute left-0px bottom-minus-50px d-none d-lg-inline-block" data-bottom-top="transform: translateY(-50px)" data-top-bottom="transform: translateY(50px)">
                 <img src="https://placehold.co/88x230" alt="" />
             </div>
@@ -137,7 +137,7 @@
             </div>
         </section>
         <!-- end section -->
-        <section class="bg-very-light-gray background-position-center-bottom background-size-contain background-no-repeat pt-2 pb-6" style="background-image:url('{{ asset("asset/images/demo-travel-agency-home-bg-05.png") }}');">
+        <section class="bg-very-light-gray background-position-center-bottom background-size-contain background-no-repeat pt-2 pb-6" style="background-image:url('{{ asset('asset/images/demo-travel-agency-home-bg-05.png') }}');">
             <div class="container">
                 <div class="row justify-content-center mb-3">
                     <div class="col-lg-6 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
@@ -150,182 +150,26 @@
                     <div class="col position-relative" data-anime='{ "opacity": [0,1], "duration": 800, "delay": 50, "staggervalue": 300, "easing": "easeOutQuad" }'>
                         <div class="swiper slider-four-slide magic-cursor swiper-number-navigation-style" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "loop": true, "pagination": { "el": ".swiper-pagination", "clickable": true }, "autoplay": { "delay": 4000, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-four-slide-next", "prevEl": ".slider-four-slide-prev" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1400": { "slidesPerView": 4 }, "1200": { "slidesPerView": 3 }, "992": { "slidesPerView": 3 }, "576": { "slidesPerView": 2 } }, "effect": "slide" }' data-swiper-number-navigation="true" data-swiper-show-progress="true">
                             <div class="swiper-wrapper pb-5 md-pb-6">
-                                <!-- start content carousal item -->
-                                <div class="swiper-slide">
-                                    <div class="overflow-hidden border-radius-6px box-shadow-large">
-                                        <div class="image">
-                                            <a href="demo-travel-agency-tour-details-page.html">
-                                                <img class="w-100" src="https://placehold.co/800x655" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="bg-white p-35px position-relative">
-                                            <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">10 days</div>
-                                            <div class="fs-24 fw-700 text-dark-gray"><span class="text-uppercase d-block fs-14 lh-18 fw-500 text-medium-gray">Just</span>$1299<span class="ms-5px position-relative text-red fs-19 fw-500">$1500<span class="w-100 h-1px position-absolute left-0px top-50 bg-red"></span></span></div>
-                                            <a href="demo-travel-agency-tour-details-page.html" class="mt-10px fs-18 text-dark-gray fw-500 lh-26 d-block">Majestic india life and great wildlife.</a>
-                                            <div class="d-flex align-items-center pt-15px mt-20px border-top border-color-extra-medium-gray">
-                                                <span class="fw-500 fs-14 d-inline-block text-uppercase">18 Reviews</span>
-                                                <div class="review-star-icon ms-auto">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end content carousal item -->
-                                <!-- start content carousal item -->
-                                <div class="swiper-slide">
-                                    <div class="overflow-hidden border-radius-6px box-shadow-large">
-                                        <div class="image">
-                                            <a href="demo-travel-agency-tour-details-page.html">
-                                                <img class="w-100" src="https://placehold.co/800x655" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="bg-white p-35px position-relative">
-                                            <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">08 days</div>
-                                            <div class="fs-24 fw-700 text-dark-gray"><span class="text-uppercase d-block fs-14 lh-18 fw-500 text-medium-gray">Just</span>$1099<span class="ms-5px position-relative text-red fs-19 fw-500">$1200<span class="w-100 h-1px position-absolute left-0px top-50 bg-red"></span></span></div>
-                                            <a href="demo-travel-agency-tour-details-page.html" class="mt-10px fs-18 text-dark-gray fw-500 lh-26 d-block">Maldives resorts with return flights.</a>
-                                            <div class="d-flex align-items-center pt-15px mt-20px border-top border-color-extra-medium-gray">
-                                                <span class="fw-500 fs-14 d-inline-block text-uppercase">12 Reviews</span>
-                                                <div class="review-star-icon ms-auto">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                                                </div>
-                                            </div>
+                                @foreach($featuredDestinations ?? [] as $destination)
+                                    <div class="swiper-slide">
+                                        <div class="interactive-banner-style-01 text-center last-paragraph-no-margin mb-30px">
+                                            <figure class="m-0 position-relative hover-box border-radius-6px overflow-hidden" style="height:360px;">
+                                                <img src="{{ $destination->image ?? 'https://placehold.co/600x600' }}" alt="{{ $destination->name }}" style="width:100%;height:100%;object-fit:cover;">
+                                                <div class="position-absolute top-0px left-0px w-100 h-100 bg-gradient-gray-light-dark-transparent opacity-1"></div>
+
+                                                <figcaption class="w-100 h-100 d-flex flex-column justify-content-end align-items-center p-30px">
+                                                    <div class="position-relative z-index-1">
+                                                        <a href="#" class="d-flex justify-content-center align-items-center mx-auto icon-box w-70px h-70px rounded-circle bg-white mb-50px box-shadow-quadruple-large">
+                                                            <i class="bi bi-arrow-right-short text-dark-gray icon-medium lh-0px"></i>
+                                                        </a>
+                                                        <a href="#" class="alt-font fs-22 fw-500 text-white d-block text-uppercase">{{ $destination->name }}</a>
+                                                    </div>
+                                                    <div class="box-overlay bg-dark-gray"></div>
+                                                </figcaption>
+                                            </figure>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- end content carousal item -->
-                                <!-- start content carousal item -->
-                                <div class="swiper-slide">
-                                    <div class="overflow-hidden border-radius-6px box-shadow-large">
-                                        <div class="image">
-                                            <a href="demo-travel-agency-tour-details-page.html">
-                                                <img class="w-100" src="https://placehold.co/800x655" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="bg-white p-35px position-relative">
-                                            <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">05 days</div>
-                                            <div class="fs-24 fw-700 text-dark-gray"><span class="text-uppercase d-block fs-14 lh-18 fw-500 text-medium-gray">Just</span>$1349<span class="ms-5px position-relative text-red fs-19 fw-500">$1700<span class="w-100 h-1px position-absolute left-0px top-50 bg-red"></span></span></div>
-                                            <a href="demo-travel-agency-tour-details-page.html" class="mt-10px fs-18 text-dark-gray fw-500 lh-26 d-block">Dubai parks resorts special packages.</a>
-                                            <div class="d-flex align-items-center pt-15px mt-20px border-top border-color-extra-medium-gray">
-                                                <span class="fw-500 fs-14 d-inline-block text-uppercase">10 Reviews</span>
-                                                <div class="review-star-icon ms-auto">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end content carousal item -->
-                                <!-- start content carousal item -->
-                                <div class="swiper-slide">
-                                    <div class="overflow-hidden border-radius-6px box-shadow-large">
-                                        <div class="image">
-                                            <a href="demo-travel-agency-tour-details-page.html">
-                                                <img class="w-100" src="https://placehold.co/800x655" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="bg-white p-35px position-relative">
-                                            <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">10 days</div>
-                                            <div class="fs-24 fw-700 text-dark-gray"><span class="text-uppercase d-block fs-14 lh-18 fw-500 text-medium-gray">Just</span>$1699<span class="ms-5px position-relative text-red fs-19 fw-500">$1800<span class="w-100 h-1px position-absolute left-0px top-50 bg-red"></span></span></div>
-                                            <a href="demo-travel-agency-tour-details-page.html" class="mt-10px fs-18 text-dark-gray fw-500 lh-26 d-block">The everyday urban jungle of city.</a>
-                                            <div class="d-flex align-items-center pt-15px mt-20px border-top border-color-extra-medium-gray">
-                                                <span class="fw-500 fs-14 d-inline-block text-uppercase">16 Reviews</span>
-                                                <div class="review-star-icon ms-auto">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end content carousal item -->
-                                <!-- start content carousal item -->
-                                <div class="swiper-slide">
-                                    <div class="overflow-hidden border-radius-6px box-shadow-large">
-                                        <div class="image">
-                                            <a href="demo-travel-agency-tour-details-page.html">
-                                                <img class="w-100" src="https://placehold.co/800x655" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="bg-white p-35px position-relative">
-                                            <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">10 days</div>
-                                            <div class="fs-24 fw-700 text-dark-gray"><span class="text-uppercase d-block fs-14 lh-18 fw-500 text-medium-gray">Just</span>$1299<span class="ms-5px position-relative text-red fs-19 fw-500">$1500<span class="w-100 h-1px position-absolute left-0px top-50 bg-red"></span></span></div>
-                                            <a href="demo-travel-agency-tour-details-page.html" class="mt-10px fs-18 text-dark-gray fw-500 lh-26 d-block">Majestic india life and great wildlife.</a>
-                                            <div class="d-flex align-items-center pt-15px mt-20px border-top border-color-extra-medium-gray">
-                                                <span class="fw-500 fs-14 d-inline-block text-uppercase">18 Reviews</span>
-                                                <div class="review-star-icon ms-auto">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end content carousal item -->
-                                <!-- start content carousal item -->
-                                <div class="swiper-slide">
-                                    <div class="overflow-hidden border-radius-6px box-shadow-large">
-                                        <div class="image">
-                                            <a href="demo-travel-agency-tour-details-page.html">
-                                                <img class="w-100" src="https://placehold.co/800x655" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="bg-white p-35px position-relative">
-                                            <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">08 days</div>
-                                            <div class="fs-24 fw-700 text-dark-gray"><span class="text-uppercase d-block fs-14 lh-18 fw-500 text-medium-gray">Just</span>$1099<span class="ms-5px position-relative text-red fs-19 fw-500">$1200<span class="w-100 h-1px position-absolute left-0px top-50 bg-red"></span></span></div>
-                                            <a href="demo-travel-agency-tour-details-page.html" class="mt-10px fs-18 text-dark-gray fw-500 lh-26 d-block">Maldives resorts with return flights.</a>
-                                            <div class="d-flex align-items-center pt-15px mt-20px border-top border-color-extra-medium-gray">
-                                                <span class="fw-500 fs-14 d-inline-block text-uppercase">12 Reviews</span>
-                                                <div class="review-star-icon ms-auto">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end content carousal item -->
-                                <!-- start content carousal item -->
-                                <div class="swiper-slide">
-                                    <div class="overflow-hidden border-radius-6px box-shadow-large">
-                                        <div class="image">
-                                            <a href="demo-travel-agency-tour-details-page.html">
-                                                <img class="w-100" src="https://placehold.co/800x655" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="bg-white p-35px position-relative">
-                                            <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">05 days</div>
-                                            <div class="fs-24 fw-700 text-dark-gray"><span class="text-uppercase d-block fs-14 lh-18 fw-500 text-medium-gray">Just</span>$1349<span class="ms-5px position-relative text-red fs-19 fw-500">$1700<span class="w-100 h-1px position-absolute left-0px top-50 bg-red"></span></span></div>
-                                            <a href="demo-travel-agency-tour-details-page.html" class="mt-10px fs-18 text-dark-gray fw-500 lh-26 d-block">Dubai parks resorts special packages.</a>
-                                            <div class="d-flex align-items-center pt-15px mt-20px border-top border-color-extra-medium-gray">
-                                                <span class="fw-500 fs-14 d-inline-block text-uppercase">10 Reviews</span>
-                                                <div class="review-star-icon ms-auto">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end content carousal item -->
-                                <!-- start content carousal item -->
-                                <div class="swiper-slide">
-                                    <div class="overflow-hidden border-radius-6px box-shadow-large">
-                                        <div class="image">
-                                            <a href="demo-travel-agency-tour-details-page.html">
-                                                <img class="w-100" src="https://placehold.co/800x655" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="bg-white p-35px position-relative">
-                                            <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">10 days</div>
-                                            <div class="fs-24 fw-700 text-dark-gray"><span class="text-uppercase d-block fs-14 lh-18 fw-500 text-medium-gray">Just</span>$1699<span class="ms-5px position-relative text-red fs-19 fw-500">$1800<span class="w-100 h-1px position-absolute left-0px top-50 bg-red"></span></span></div>
-                                            <a href="demo-travel-agency-tour-details-page.html" class="mt-10px fs-18 text-dark-gray fw-500 lh-26 d-block">The everyday urban jungle of city.</a>
-                                            <div class="d-flex align-items-center pt-15px mt-20px border-top border-color-extra-medium-gray">
-                                                <span class="fw-500 fs-14 d-inline-block text-uppercase">16 Reviews</span>
-                                                <div class="review-star-icon ms-auto">
-                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end content carousal item -->
+                                @endforeach
                             </div>
                             <!-- start slider pagination -->
                             <div class="swiper-navigation-wrapper d-flex align-items-center justify-content-center">
@@ -373,36 +217,44 @@
                     }'>
 
                         <div class="swiper-wrapper pb-5 md-pb-6 d-flex align-items-center gap-4">
-                            @foreach($category->destinations->where('is_featured', true) as $destination)
-                                <div class="swiper-slide">
-                                    <div class="col text-center interactive-banner-style-01 last-paragraph-no-margin mb-30px">
-                                        <figure class="m-0 position-relative hover-box border-radius-6px overflow-hidden">
-                                            <img src="{{ $destination->image ?? 'https://placehold.co/600x600' }}" alt="{{ $destination->name }}">
-                                            <div class="position-absolute top-0px left-0px w-100 h-100 bg-gradient-gray-light-dark-transparent opacity-1"></div>
-
-                                            <figcaption class="w-100 h-100 d-flex flex-column justify-content-end align-items-center p-30px">
-                                                <div class="position-relative z-index-1">
-                                                    <a href="#" class="d-flex justify-content-center align-items-center mx-auto icon-box w-70px h-70px rounded-circle bg-white mb-50px box-shadow-quadruple-large">
-                                                        <i class="bi bi-arrow-right-short text-dark-gray icon-medium lh-0px"></i>
-                                                    </a>
-                                                    <a href="#" class="alt-font fs-22 fw-500 text-white d-block text-uppercase">{{ $destination->name }}</a>
-                                                </div>
-                                                <div class="box-overlay bg-dark-gray"></div>
-                                            </figcaption>
-                                        </figure>
+                            @php $packages = $categoryPackages[$category->id] ?? collect(); @endphp
+                            @foreach($packages as $p)
+                            @php
+                            $img = $p->featured_image ?? ($p->storage_path ? asset($p->storage_path) : 'https://placehold.co/800x655');
+                            $days = 0;
+                            if ($p->itinerary) {
+                            $decoded = @json_decode($p->itinerary, true);
+                            if (is_array($decoded)) $days = count($decoded);
+                            }
+                            @endphp
+                            <div class="swiper-slide">
+                                <div class="overflow-hidden border-radius-6px box-shadow-large">
+                                    <div class="image">
+                                        <a href="{{ url('/tour/' . ($p->slug ?? $p->id)) }}">
+                                            <img class="w-100" src="{{ $img }}" alt="{{ $p->title }}">
+                                        </a>
+                                    </div>
+                                    <div class="bg-white p-35px position-relative">
+                                        <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">Customizable</div>
+                                        <div class="fs-24 fw-700 text-dark-gray"><span class="text-uppercase d-block fs-14 lh-18 fw-500 text-medium-gray">Starting At</span>{{ $p->price ? '₹' . number_format($p->price,2) : '—' }}</div>
+                                        <a href="{{ url('/tour/' . ($p->slug ?? $p->id)) }}" class="mt-10px fs-18 text-dark-gray fw-500 lh-26 d-block">{{ $p->title }}</a>
+                                   
                                     </div>
                                 </div>
+                            </div>
                             @endforeach
                         </div>
 
                         <!-- PAGINATION (WITH INLINE COLORS) -->
-                        <div class="swiper-pagination"
+                       <div class="mt-2">
+                         <div class="swiper-pagination"
                             style="margin-top: 15px;">
                         </div>
+                       </div>
 
                     </div>
                     @else
-                    <div class="text-center py-4">No destinations available for this category.</div>
+                    <div class="text-center py-4">No packages available for this category.</div>
                     @endif
 
                 </div>
@@ -544,7 +396,7 @@
             </section>
             <!-- end section -->
             <!-- end section -->
-            <section class="bg-very-light-gray background-position-center-top background-no-repeat overlap-height" style="background-image:url('{{ asset("asset/images/demo-travel-agency-home-bg-04.png") }}');">
+            <section class="bg-very-light-gray background-position-center-top background-no-repeat overlap-height" style="background-image:url('{{ asset('asset/images/demo-travel-agency-home-bg-04.png') }}');">
                 <div class="container overlap-gap-section">
                     <div class="row justify-content-center mb-2">
                         <div class="col-lg-7 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
