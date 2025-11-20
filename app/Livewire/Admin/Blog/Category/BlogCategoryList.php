@@ -85,10 +85,10 @@ class BlogCategoryList extends Component
         ];
         if ($this->categoryId) {
             BlogCategory::findOrFail($this->categoryId)->update($data);
-            session()->flash('message', 'Blog category updated successfully.');
+           $this->dispatch('success', 'Blog category updated successfully.');
         } else {
             BlogCategory::create($data);
-            session()->flash('message', 'Blog category created successfully.');
+           $this->dispatch('success', 'Blog category created successfully.');
         }
         $this->closeModal();
         $this->resetPage();
@@ -104,7 +104,7 @@ class BlogCategoryList extends Component
     {
         if ($this->categoryId) {
             BlogCategory::destroy($this->categoryId);
-            session()->flash('message', 'Blog category deleted.');
+           $this->dispatch('success', 'Blog category deleted.');
         }
         $this->showDeleteModal = false;
         $this->resetPage();

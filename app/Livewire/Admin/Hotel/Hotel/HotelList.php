@@ -64,7 +64,7 @@ class HotelList extends Component
 
         $this->confirmingDeleteId = null;
         $this->dispatch('closeDeleteModal');
-        session()->flash('message', 'Hotel deleted successfully.');
+       $this->dispatch('success', 'Hotel deleted successfully.');
     }
 
     public function openHotel($id)

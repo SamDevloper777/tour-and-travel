@@ -25,7 +25,7 @@ class TourPackageList extends Component
         $package = TourPackage::find($id);
         if ($package) {
             $package->delete();
-            session()->flash('message', 'Tour package deleted.');
+           $this->dispatch('success', 'Tour package deleted.');
         }
     }
 

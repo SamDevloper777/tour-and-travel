@@ -85,10 +85,10 @@ class ExperinceList extends Component
         ];
         if ($this->experienceId) {
             Experience::findOrFail($this->experienceId)->update($data);
-            session()->flash('message', 'Experience updated successfully.');
+           $this->dispatch('success', 'Experience updated successfully.');
         } else {
             Experience::create($data);
-            session()->flash('message', 'Experience created successfully.');
+           $this->dispatch('success', 'Experience created successfully.');
         }
         $this->closeModal();
         $this->resetPage();
@@ -104,7 +104,7 @@ class ExperinceList extends Component
     {
         if ($this->experienceId) {
             Experience::destroy($this->experienceId);
-            session()->flash('message', 'Experience deleted.');
+           $this->dispatch('success', 'Experience deleted.');
         }
         $this->showDeleteModal = false;
         $this->resetPage();

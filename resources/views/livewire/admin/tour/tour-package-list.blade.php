@@ -78,10 +78,10 @@
 
                         <td class="small text-muted">{{ $p->slug }}</td>
 
-                        <td class="text-end fw-semibold">{{ $p->price ? '$' . number_format($p->price,2) : '—' }}</td>
+                        <td class="text-end fw-semibold">{{ $p->price ? '₹' . number_format($p->price,2) : '—' }}</td>
 
                         <td>
-                            <span class="badge bg-{{ $p->status ? 'success' : 'secondary' }}">{{ $p->status ? 'Active' : 'Hidden' }}</span>
+                            <span class="badge bg-{{ $p->status ? 'success-lt' : 'secondary-lt' }}">{{ $p->status ? 'Active' : 'Hidden' }}</span>
                         </td>
 
                         <td class="text-end">

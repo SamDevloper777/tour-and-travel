@@ -89,10 +89,10 @@ class HotelCategoryList extends Component
 
         if ($this->hotelCategoryId) {
             HotelCategory::findOrFail($this->hotelCategoryId)->update($data);
-            session()->flash('message', 'Hotel category updated.');
+           $this->dispatch('success', 'Hotel category updated.');
         } else {
             HotelCategory::create($data);
-            session()->flash('message', 'Hotel category created.');
+           $this->dispatch('success', 'Hotel category created.');
         }
 
         $this->closeModal();
@@ -109,7 +109,7 @@ class HotelCategoryList extends Component
     {
         if ($this->hotelCategoryId) {
             HotelCategory::destroy($this->hotelCategoryId);
-            session()->flash('message', 'Hotel category deleted.');
+           $this->dispatch('success', 'Hotel category deleted.');
         }
         $this->showDeleteModal = false;
         $this->resetPage();
@@ -126,7 +126,7 @@ class HotelCategoryList extends Component
         $c = HotelCategory::findOrFail($id);
         $c->status = $c->status ? 0 : 1;
         $c->save();
-        session()->flash('message', 'Status updated.');
+       $this->dispatch('success', 'Status updated.');
     }
 
     public function closeModal()

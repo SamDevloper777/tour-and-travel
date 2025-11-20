@@ -51,15 +51,15 @@ class UpdateTourPackage extends Component
             'meta_title' => 'nullable|string|max:255',
             'meta_description' => 'nullable|string|max:255',
             'meta_keywords' => 'nullable|string|max:255',
-            'slug' => 'nullable|string|max:255|unique:tour_packages,slug,' . ($this->packageId ?? 'NULL'),
+            'slug' => 'required|string|max:255|unique:tour_packages,slug,' . ($this->packageId ?? 'NULL'),
             'description' => 'nullable|string',
-            'price' => 'nullable|numeric',
+            'price' => 'required|numeric',
             'is_featured' => 'boolean',
-            'category_ids' => 'nullable|array',
+            'category_ids' => 'required|array',
             'category_ids.*' => 'exists:categories,id',
-            'destination_ids' => 'nullable|array',
+            'destination_ids' => 'required|array',
             'destination_ids.*' => 'exists:destinations,id',
-            'experience_ids' => 'nullable|array',
+            'experience_ids' => 'required|array',
             'experience_ids.*' => 'exists:experiences,id',
             'images' => 'nullable|array',
             'images.*' => 'image|max:5120', // 5MB
@@ -232,7 +232,7 @@ class UpdateTourPackage extends Component
     }
 
     /**
-     * Optional: set a gallery image as featured image for package
+     * Set a gallery image as featured image for package
      */
     public function setFeaturedGallery($id)
     {
@@ -387,7 +387,7 @@ class UpdateTourPackage extends Component
         $this->galleries = TourPackageGallery::where('tour_package_id', $this->packageId)->get();
         $this->images = [];
 
-        session()->flash('message', 'Tour package updated successfully!');
+       $this->dispatch('success', 'Tour package updated successfully!');
         return redirect()->route('admin.tour.package.list');
     }
 

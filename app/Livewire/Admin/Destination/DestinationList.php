@@ -185,14 +185,14 @@ class DestinationList extends Component
                 $dest->categories()->sync($this->categoryIds);
             } catch (\Throwable $e) {
             }
-            session()->flash('message', 'Destination updated successfully.');
+           $this->dispatch('success', 'Destination updated successfully.');
         } else {
             $dest = Destination::create($data);
             try {
                 $dest->categories()->sync($this->categoryIds);
             } catch (\Throwable $e) {
             }
-            session()->flash('message', 'Destination created successfully.');
+           $this->dispatch('success', 'Destination created successfully.');
         }
 
         $this->closeModal();
@@ -212,7 +212,7 @@ class DestinationList extends Component
             $d = Destination::find($this->destinationId);
             if ($d) {
                 $d->delete();
-                session()->flash('message', 'Destination deleted.');
+               $this->dispatch('success', 'Destination deleted.');
             }
         }
 
@@ -231,7 +231,7 @@ class DestinationList extends Component
         $d = Destination::findOrFail($id);
         $d->status = $d->status ? 0 : 1;
         $d->save();
-        session()->flash('message', 'Destination status updated.');
+       $this->dispatch('success', 'Destination status updated.');
     }
 
     public function closeModal()

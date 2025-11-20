@@ -95,7 +95,7 @@ class UpdateHotel extends Component
         $hotel = HotelModel::find($this->hotelId);
         if ($hotel) {
             $hotel->update($data);
-            session()->flash('message', 'Hotel updated successfully.');
+           $this->dispatch('success', 'Hotel updated successfully.');
         }
 
         return redirect()->route('admin.hotel.list');

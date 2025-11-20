@@ -45,15 +45,15 @@ class AddTourPackage extends Component
         'meta_title' => 'nullable|string|max:255',
         'meta_description' => 'nullable|string|max:255',
         'meta_keywords' => 'nullable|string|max:255',
-        'slug' => 'nullable|string|max:255|unique:tour_packages,slug',
+        'slug' => 'required|string|max:255|unique:tour_packages,slug',
         'description' => 'nullable|string',
-        'price' => 'nullable|numeric',
+        'price' => 'required|numeric',
         'is_featured' => 'boolean',
-        'category_ids' => 'nullable|array',
+        'category_ids' => 'required|array',
         'category_ids.*' => 'exists:categories,id',
-        'destination_ids' => 'nullable|array',
+        'destination_ids' => 'required|array',
         'destination_ids.*' => 'exists:destinations,id',
-        'experience_ids' => 'nullable|array',
+        'experience_ids' => 'required|array',
         'experience_ids.*' => 'exists:experiences,id',
         'images' => 'nullable|array',
         'images.*' => 'image|max:5120', // 5MB each
@@ -261,7 +261,7 @@ class AddTourPackage extends Component
             }
         }
 
-        session()->flash('message', 'Tour package created.');
+       $this->dispatch('success', 'Tour package created.');
         return redirect()->route('admin.tour.package.list');
     }
 

@@ -71,7 +71,7 @@ class AddHotel extends Component
 
         HotelModel::create($data);
 
-        session()->flash('message', 'Hotel created successfully.');
+       $this->dispatch('success', 'Hotel created successfully.');
         return redirect()->route('admin.hotel.list');
     }
 
