@@ -51,6 +51,10 @@ Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     //blog routes
     Route::prefix('blog')->name('blog.')->group(function () {
         Route::get('/category', BlogCategoryList::class)->name('category.list');
+        // posts
+        Route::get('/posts', \App\Livewire\Admin\Blog\Post\PostList::class)->name('post.list');
+        Route::get('/posts/create', \App\Livewire\Admin\Blog\Post\AddPost::class)->name('post.create');
+        Route::get('/posts/{id}/edit', \App\Livewire\Admin\Blog\Post\UpdatePost::class)->name('post.edit');
     });
     //hotel routes
     Route::prefix('hotel')->name('hotel.')->group(function () {

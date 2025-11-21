@@ -25,7 +25,7 @@ return new class extends Migration
             $table->string('thumbnail_image_kit_file_id')->nullable();
             $table->string('title');
             $table->string('slug')->unique();
-            $table->json('main_content');
+            $table->longText('main_content');
             $table->text('tags');
 
             $table->timestamps();
