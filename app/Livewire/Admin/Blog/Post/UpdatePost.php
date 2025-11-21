@@ -98,7 +98,7 @@ class UpdatePost extends Component
 
             $localPath = $this->featured_image->store('posts', 'public');
             $post->featured_storage_path = $localPath;
-            $post->featured_image = Storage::url($localPath);
+            $post->featured_image = asset(Storage::url($localPath));
             try {
                 if ($useImageKit) {
                     $tmp = storage_path('app/public/' . $localPath);
@@ -121,7 +121,7 @@ class UpdatePost extends Component
 
             $localPath = $this->thumbnail_image->store('posts', 'public');
             $post->thumbnail_storage_path = $localPath;
-            $post->thumbnail_image = Storage::url($localPath);
+            $post->thumbnail_image = asset(Storage::url($localPath));
             try {
                 if ($useImageKit) {
                     $tmp = storage_path('app/public/' . $localPath);

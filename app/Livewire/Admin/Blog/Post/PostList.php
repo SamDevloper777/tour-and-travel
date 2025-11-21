@@ -21,7 +21,7 @@ class PostList extends Component
     {
         $posts = Post::when($this->search, function ($q) {
             $q->where('title', 'like', '%' . $this->search . '%')
-              ->orWhere('slug', 'like', '%' . $this->search . '%');
+                ->orWhere('slug', 'like', '%' . $this->search . '%');
         })->orderByDesc('created_at')->paginate($this->perPage);
 
         return view('livewire.admin.blog.post.post-list', [
@@ -36,19 +36,31 @@ class PostList extends Component
         if ($useImageKit) {
             $ik = app(ImageKitService::class);
             if ($post->featured_image_kit_file_id) {
-                try { $ik->deleteFile($post->featured_image_kit_file_id); } catch (\Exception $e) {}
+                try {
+                    $ik->deleteFile($post->featured_image_kit_file_id);
+                } catch (\Exception $e) {
+                }
             }
             if ($post->thumbnail_image_kit_file_id) {
-                try { $ik->deleteFile($post->thumbnail_image_kit_file_id); } catch (\Exception $e) {}
+                try {
+                    $ik->deleteFile($post->thumbnail_image_kit_file_id);
+                } catch (\Exception $e) {
+                }
             }
         }
 
         // delete local storage files
         if ($post->featured_storage_path) {
-            try { Storage::disk('public')->delete($post->featured_storage_path); } catch (\Exception $e) {}
+            try {
+                Storage::disk('public')->delete($post->featured_storage_path);
+            } catch (\Exception $e) {
+            }
         }
         if ($post->thumbnail_storage_path) {
-            try { Storage::disk('public')->delete($post->thumbnail_storage_path); } catch (\Exception $e) {}
+            try {
+                Storage::disk('public')->delete($post->thumbnail_storage_path);
+            } catch (\Exception $e) {
+            }
         }
 
         $post->delete();

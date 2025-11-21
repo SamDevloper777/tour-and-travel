@@ -73,7 +73,7 @@ class AddPost extends Component
         if ($this->featured_image) {
             $localPath = $this->featured_image->store('posts', 'public');
             $data['featured_storage_path'] = $localPath;
-            $data['featured_image'] = Storage::url($localPath);
+            $data['featured_image'] = asset(Storage::url($localPath));
             // try imagekit if enabled
             try {
                 if ($useImageKit) {
@@ -91,7 +91,7 @@ class AddPost extends Component
         if ($this->thumbnail_image) {
             $localPath = $this->thumbnail_image->store('posts', 'public');
             $data['thumbnail_storage_path'] = $localPath;
-            $data['thumbnail_image'] = Storage::url($localPath);
+            $data['thumbnail_image'] = asset(Storage::url($localPath));
             try {
                 if ($useImageKit) {
                     $ik = app(ImageKitService::class);

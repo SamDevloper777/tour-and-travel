@@ -69,6 +69,10 @@ class AdminSidebar
                         'title' => 'Categories',
                         'url' => route('admin.blog.category.list'),
                     ],
+                    (object)[
+                        'title' => 'Blog Posts',
+                        'url' => route('admin.blog.post.list'),
+                    ],
                 ],
             ],
             (object)[
